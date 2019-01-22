@@ -78,20 +78,20 @@
             function OnClickSwitch() {
               if (isYL) {//切换到传承
                 isYL = false;
-                $("#switch").css("background-image", " url(../image/row01col03/btn_yuanliu.png)");
+                $("#switch").css("background-image", " url(image/row01col03/btn_yuanliu.png)");
                 $("#CCImg").attr('src', "image/row01col03/CCIcon.png");
                 $("#yuan").attr('src', "image/row01col03/chuan.png");
                 $("#liu").attr('src', "image/row01col03/cheng.png");
                 $("#YLInfoText").html(chuancheng).css("height", "12vw");
-                $(".swiper-pagination-in input:eq(2)").css({ "background": "url(../image/c_hl.png)", "background-size": "6vw 6vw", "background-repeat": "no-repeat" });
+                $(".swiper-pagination-in input:eq(2)").css({ "background": "url(image/c_hl.png)", "background-size": "6vw 6vw", "background-repeat": "no-repeat" });
               } else {//切换到源流.
                 isYL = true;
-                $("#switch").css("background-image", "url(../image/row01col03/btn_chuanchen.png)");
+                $("#switch").css("background-image", "url(image/row01col03/btn_chuanchen.png)");
                 $("#CCImg").attr('src', "image/row01col03/YLIcon.png");
                 $("#yuan").attr('src', "image/row01col03/yuan.png");
                 $("#liu").attr('src', "image/row01col03/liu.png");
                 $("#YLInfoText").html(yuanliu).css("height", "8vw");
-                $(".swiper-pagination-in input:eq(2)").css({ "background": "url(../image/2_hl.png)", "background-size": "6vw 6vw", "background-repeat": "no-repeat" });
+                $(".swiper-pagination-in input:eq(2)").css({ "background": "url(image/2_hl.png)", "background-size": "6vw 6vw", "background-repeat": "no-repeat" });
               }
 
               $("#FCIconDiv").toggleClass('iconInLeft');
