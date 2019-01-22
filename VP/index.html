@@ -1,0 +1,30 @@
+﻿<html>  
+  <head>  
+  <title>视频直播</title>  
+  <meta charset="utf-8">  
+  <link href="http://vjs.zencdn.net/5.5.3/video-js.css" rel="stylesheet">  
+  <!-- If you'd like to support IE8 
+  rtmp服务器 有nginx rtmp
+或者srs 都是用用c c++ 开发的
+现在也有有人用go语言开发
+rtmp://58.200.131.2:1935/livetv/cctv2hd
+rtmp://58.200.131.2:1935/livetv/hunantv
+香港卫视,rtmp://live.hkstv.hk.lxdns.com/live/hks
+香港财经,rtmp://202.69.69.180:443/webcast/bshdlive-pc
+韩国GoodTV,rtmp://mobliestream.c3tv.com:554/live/goodtv.sdp
+韩国朝鲜日报,rtmp://live.chosun.gscdn.com/live/tvchosun1.stream
+美国1,rtmp://ns8.indexforce.com/home/mystream
+美国2,rtmp://media3.scctv.net/live/scctv_800
+美国中文电视,rtmp://media3.sinovision.net:1935/live/livestream
+湖南卫视,rtmp://58.200.131.2:1935/livetv/hunantv
+  -->  
+  <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>  
+</head>  
+<body>
+  
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="480" data-setup="{}">    
+     <source src="rtmp://202.69.69.180:443/webcast/bshdlive-pc" type="rtmp/flv"/>     
+   </video>    
+  
+ </body>
+</html> 

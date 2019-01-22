@@ -1,0 +1,253 @@
+*{
+    font-family: "微软雅黑";
+}
+
+html,body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.BG{
+    position: absolute;
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+    background-image: url("../images/BG.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.header{
+    width: 100vw;
+    height: 16vw;
+    margin-top: 0;
+    
+}
+
+.logo{
+    width: 30vw;
+    height: 9.7vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: 3vw;
+    background-size: 100% 100%;
+    float: left;
+    background-image: url("../images/logo.png");
+}
+
+.options{
+    float: right;
+    width: 7.6vw;
+    height: 5.8vw;
+    margin-top: 5vw;
+    margin-right: 3vw;
+    background-size: 100% 100%;
+    background-image: url("../images/option.png");
+}
+
+.titleimg{
+    width:100vw;
+    height: 58.6vw;
+    background-size: 100% 100%;
+}
+
+.midwords{
+    width:fit-content;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bluebar{
+    height: 3px;
+    background-color: #2b71bb;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5px;
+}
+.deswords{
+    width: 88vw;
+    height: auto;
+    text-align: left;
+    font-size: 13px;
+    line-height: 22px;
+    margin-left: 6vw;
+    margin-top: 20px;
+    color: #4a4a4a;
+}
+
+.routewords{
+    width: 86vw;
+    height: auto;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-left: 8vw;
+    margin-top: 20px;
+    color: #000000; 
+}
+
+.spotscon{
+    margin-left: 5vw;
+    width: 90vw;
+    height: auto;
+    margin-top: 30px;
+}
+
+.spot{
+    background-size: 100% 100%;
+    width: 90vw;
+    height: 25.2vw;
+    margin-top: 20px;
+    box-shadow: 0px 10px 15px 0px #a7a7a7;
+}
+
+.lefttitle{
+    text-align: left;
+    width:95vw;
+    margin-left: 5vw;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000; 
+    margin-top:20px; 
+}
+
+.subwords{
+    width: 90vw;
+    height: auto;
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 5vw;
+    margin-top: 8px;
+    color: #414141;
+}
+
+.autoimg{
+    width: 90vw;  
+    height: auto;
+    margin-left: 5vw; 
+    margin-top: 8px;   
+}
+
+
+/*弹窗*/
+#NoticCon{
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.83);
+    color: #ffffff;
+}
+
+#Ntitle{
+    margin-top: 30px;
+    height: 30px;
+    width: 100%;
+    font-size: 26px;
+}
+
+#Nimg{
+    width: auto;  
+    height: auto;
+    margin-top: 30px;  
+    max-width: 90%;  
+    max-height: 35%;     
+}
+
+#Ndes{
+    width: 88vw;
+    margin-left: 6vw;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.Nclose{
+    position: absolute;
+    bottom: 6%;
+    width: 40px;
+    height: 40px;
+    background-image:url("../images/close.png");
+    background-size: 100% 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/*页脚*/
+.cutline{
+    width: 100%;
+    height: 1px;
+    margin-top:20px;
+    background-color: #a7a7a7;
+ }
+ 
+ .chcon{
+     width: 100%;
+     margin-top: 30px;
+     display: -webkit-flex;
+     display: flex;
+     justify-content: space-around;
+ }
+ .citem{
+     width: 16vw;
+     height: 16vw;
+     position: relative;
+ }
+ .itmImg{
+     margin-left: 2vw;
+     width: 12vw;
+     height: 12vw;
+     background-size: 100% 100%;
+ }
+ 
+ .channel{
+     font-size: 12px;
+     text-align: center;
+     width: 120%;
+     margin-left: -10%;
+ }
+ 
+ .citem:nth-child(1)>.itmImg{
+     background-image: url(../images/channels/1.png);
+ }	
+ .citem:nth-child(2)>.itmImg{
+     background-image: url(../images/channels/2.png);
+ }	
+ .citem:nth-child(3)>.itmImg{
+     background-image: url(../images/channels/3.png);
+ }	
+ .citem:nth-child(4)>.itmImg{
+     background-image: url(../images/channels/4.png);
+ }	
+ .citem:nth-child(5)>.itmImg{
+     background-image: url(../images/channels/5.png);
+ }	
+ .citem:nth-child(6)>.itmImg{    
+    width: 11vw;
+    height: 11vw;
+    margin-top: 1vw;
+    margin-left: 3vw;
+    background-image: url(../images/channels/6.png);
+ }
+ 
+ #footer{
+     width: 100%;
+     text-align: center;
+     font-size: 12px;
+     line-height: 18px;
+     margin-bottom: 20px;
+ }
+ 

@@ -1,0 +1,77 @@
+﻿@charset "utf-8";
+/**
+App下载式样
+作者：李洪
+版本：1.0
+时间：2018年03月07日
+说明：
+默认样式
+**/
+
+html, body {
+	position: relative;
+	height: 100%;
+	overflow: hidden; 
+	font-family: "微软雅黑";
+}
+html{
+	-webkit-text-size-adjust: none;
+}
+
+*{
+	-webkit-text-size-adjust:auto !important;
+	cursor: default;
+}
+
+body {
+	background: #eee;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+	overflow-y:auto;
+}
+
+#AppContainer{
+	margin-top:40px; 
+	margin-bottom:120px; 
+}
+.AppItem{
+	color: rgb(0, 0, 0);
+	font-size: 2vw;
+	font-weight: bold;
+	width: 50vw;
+	height: 4vw;
+	left: 0;
+	right: 0;
+	margin:auto;
+	margin-top: 20px;
+}
+.AppItem p{
+	width: 100%;
+    margin-bottom: 0px;
+}
+
+a {
+	width: 100%;
+	text-align:left;
+	font-size:1.6vw;
+	margin-left: 2vw;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+} 
+a:link {
+	color: blue; 
+	text-decoration:none;
+}
+a:active {
+	color: red; 
+};
+a:visited {
+	color:purple;
+	text-decoration:none;
+}
+a:hover {
+	color: red; 
+	text-decoration:underline;
+}

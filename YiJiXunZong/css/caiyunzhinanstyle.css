@@ -1,0 +1,187 @@
+*{
+    font-family: "微软雅黑";
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.BG{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/BG.jpg");
+    background-size: 100% 100%;
+}
+
+#map{
+    top: 14%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/map.png");
+    width: 82vh;
+    height: 80vh;
+}
+
+.title{
+    background-image: url("../images/title.png");
+    top: 6%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 45vw;
+    height: 5vw;
+}
+
+#km_map{
+    background-image: url("../images/map_km.png");
+    width: 12vh;
+    height: 19.6vh;
+    left: 55.5%;
+    top: 35%;
+    opacity: 0.1;
+}
+
+#yx_map{
+    background-image: url("../images/map_yx.png");
+    width: 17.4vh;
+    height: 15.6vh;
+    left: 45%;
+    top: 53.5%;
+    opacity: 0.1;
+}
+
+.popcon{
+    display: none;
+    width: 55vw;
+    height: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items:Center;
+}
+
+.popcon>div{
+    position: static;
+}
+
+.popdiv{
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    width: 55vw;
+    height: auto;
+    max-height: 100%;
+    min-height: 20%;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius:1.5vw;
+    -moz-border-radius: 1.5vw;
+    -ms-border-radius: 1.5vw;
+    -o-border-radius: 1.5vw;
+}
+
+.close{
+    position: static;
+    margin-left: 52vw;
+    margin-top: 0.5vw;
+    height: 2.5vw;
+    width: 2.5vw;
+    background-image: url("../images/btn_close.png");
+}
+
+.spotitem{
+    position: static;
+    width: 50vw;
+    height: 8vw;
+    margin-left: 2.5vw;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+}
+
+.spotimg{
+    float: left;
+    width: 9vw;
+    height: 6.6vw;
+    background-image: url("../images/km_1.jpg");
+}
+.spotname{
+    float: left;
+    height: 7vw;
+    width: 20vw;
+    margin-left: 10vw;
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 7vw;
+}
+
+.manyoubtn, .xunzongbtn{
+   float: left;
+   width: 8.5vw;
+   height: 5vw;
+   margin-top: 1vw;
+}
+
+.manyoubtn{
+    margin-left: 31vw;
+    background-image:  url("../images/btn_manyou.png");
+}
+
+.xunzongbtn{
+    margin-left: 40.5vw;
+    background-image:  url("../images/btn_xunzong.png");
+}
+
+.line{
+    width: 50vw;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 7vw;
+}
+
+#spotdetailcon{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 55vw;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius:1.5vw;
+    -moz-border-radius: 1.5vw;
+    -ms-border-radius: 1.5vw;
+    -o-border-radius: 1.5vw; 
+}
+
+#details{
+    top: 10%;
+    left: 7.5vw;
+    height: 80%;
+    width: 40vw;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#spotdes{
+    position: static;
+    font-size: 1.8vw;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 2vw;
+}
+
+#spotpic{
+    position: static;
+    max-width: 100%;
+    height: auto;
+    max-height: 60%;
+}

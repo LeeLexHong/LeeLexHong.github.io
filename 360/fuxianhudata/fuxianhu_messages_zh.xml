@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="zh_project_title"><![CDATA[新建项目]]></data>
+
+
+
+  <data name="zh_pano10_title"><![CDATA[fuxianhu]]></data>
+
+
+	<data name="zh_spotmap13_tooltip"><![CDATA[]]></data>
+
+
+
+
+
+
+  <data name="zh_vr_setup_hmd0"><![CDATA[选择你的 HMD]]></data>
+  <data name="zh_vr_setup_advanced"><![CDATA[高级设置]]></data>
+  <data name="zh_vr_setup_title"><![CDATA[WEB VR设置]]></data>
+  <data name="zh_vr_setup_dvn1"><![CDATA[设备:]]></data>
+  <data name="zh_vr_setup_siz1"><![CDATA[屏幕尺寸:]]></data>
+  <data name="zh_vr_setup_ipd1"><![CDATA[集成产品开发:]]></data>
+  <data name="zh_vr_setup_hmd1"><![CDATA[头盔显示器:]]></data>
+  <data name="zh_vr_setup_hmd3"><![CDATA[自定义]]></data>
+  <data name="zh_vr_setup_cal"><![CDATA[校准陀螺仪]]></data>
+  <data name="zh_vr_setup_sav"><![CDATA[保存]]></data>
+  <data name="zh_vr_setup_rst"><![CDATA[重置]]></data>
+  <data name="zh_vr_setup_simple"><![CDATA[简单]]></data>
+  <data name="zh_vr_setup_cls"><![CDATA[关闭]]></data>
+  <data name="zh_vr_setup_m31"><![CDATA[头盔显示器设置]]></data>
+  <data name="zh_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="zh_vr_setup_dst1"><![CDATA[失真:]]></data>
+  <data name="zh_vr_setup_d2tx"><![CDATA[失真度2:]]></data>
+  <data name="zh_vr_setup_vig1"><![CDATA[小插图:]]></data>
+  <data name="zh_vr_setup_cac1"><![CDATA[色差:]]></data>
+  <data name="zh_vr_setup_olp1"><![CDATA[重叠:]]></data>
+  <data name="zh_vr_setup_m35"><![CDATA[返回]]></data>
+  <data name="zh_vr_setup_cb1"><![CDATA[陀螺仪]]></data>
+  <data name="zh_vr_setup_cb2"><![CDATA[将设备放在一个平面上，[br]或者稳定的表面和标签上，[br]以纠正一个陀螺仪偏移。]]></data>
+  <data name="zh_vr_setup_cb3"><![CDATA[校准]]></data>
+  <data name="zh_vr_setup_cb4"><![CDATA[重置]]></data>
+  <data name="zh_vr_setup_cb5"><![CDATA[返回]]></data>
+  <data name="zh_vr_setup_cb6"><![CDATA[校准...]]></data>
+  <data name="zh_vr_setup_cb7"><![CDATA[校准成功]]></data>
+  <data name="zh_vr_setup_cb8"><![CDATA[校准失败]]></data>
+  <data name="zh_vr_setup_unavailable"><![CDATA[VR模式[br]在您的设备上不可用]]></data>
+
+
+
+
+
+
+</krpano>
