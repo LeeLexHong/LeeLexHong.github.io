@@ -1,0 +1,1629 @@
+@charset "utf-8";
+/**
+云游网网页
+作者：李洪
+版本：1.0
+时间：2018年10月08日
+说明：
+默认样式
+**/
+
+html, body {
+	position: relative;
+	height: 100%;
+	overflow: hidden; 
+}
+
+html{
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background: #eee;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	cursor: default;
+	font-family: "微软雅黑";
+}
+
+.bg01 {
+	background-image: url(../image/bg01.jpg);
+}
+
+.bg02 {
+	background-image: url(../image/bg02.jpg);
+}
+
+.bg03{
+	background-image: url(../image/bg03.jpg);
+}
+
+.bg04{
+	background-image: url(../image/bg04.jpg);
+}
+
+.bg05 {
+	background-image: url(../image/bg05.jpg);
+}
+
+.bg06{
+	background-image: url(../image/bg06.jpg);
+}
+
+.bg07{
+	background-image: url(../image/bg07.jpg);
+}
+
+.anime{
+	animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.base-div {
+	width:1024px;
+	height:768px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.base-div .AR {
+	position:absolute;
+}
+.swiper-pagination-out{
+	position: absolute;
+	height: 24%;
+    width: 7px;
+    right: 8%;
+    top: 18%;
+	z-index: 999;
+}
+
+div{
+	position:  absolute; 
+	background-size: 100% 100%;
+}
+
+.shcon{
+	width: 100%;
+	height: 100%;
+}
+
+.search{
+	width: 1.8vw;
+	height: 1.9vw;
+	background-image: url(../image/searchbtn.png);
+	cursor: pointer;
+}
+
+.Mainpage{
+	width: 100%;
+	height: 100%;
+}
+
+.Subpage{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 66vw;
+	height: 33vw;
+	background-color: rgb(255, 255, 255);
+	border-radius: 0.5vw;
+	text-align: left;
+	display: none;
+}
+ 
+.Subpage p{
+   color: rgb(0,0,0);
+}
+
+.bigtitle{
+	font-size: 3.2vw;
+	font-weight: bold;
+}
+
+.autobg{
+	height: auto;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 40%;
+    border-radius: 0.6vw;
+	font-size: 0.9vw;
+	font-weight: bold;
+	line-height: 1.4vw;
+    color: rgb(206, 206, 206);
+}
+
+.autobg p{
+	margin: 9px;
+}
+
+#MouseCon{
+	right: 4vw;
+	bottom: 1vw;
+	width: 12vw;
+	height: 6vw;
+    z-index: 9;
+}
+
+#MIcon{
+	top: 0;
+	left: 0;
+	width: 8.4vw;
+	height: 4.4vw;
+	background-image: url(../image/MouseTip.png);	
+}
+
+.MArrow{
+	left: 8.5vw;
+	height: 1.1vw;
+	width: 1.6vw;
+	background-image: url(../image/MouseDown.png);	
+}
+
+.MArrow:nth-child(2){
+   top:0.8vw;
+}
+.MArrow:nth-child(3){
+	top:1.9vw;
+ }
+.MArrow:nth-child(4){
+	top:3vw;
+}
+
+/*浮窗中子页*/
+.subitem{
+  width: 100%;
+  height: 100%;
+}
+
+.wtbg{
+	width: 100%;
+	height: 100%;
+    border-radius: 0 0.5vw 0.5vw 0.5vw;
+	background-color: rgb(255, 255, 255);
+}
+
+.subpgsel{
+	width: 66vw;
+	height: 10%;
+	left: 0;
+	bottom: 100%;
+}
+
+.pgsel{
+	bottom: 0;
+    border-radius: 0.4vw 0.4vw 0 0;
+    background-color: rgb(232, 232, 232);
+    color: rgb(65, 64, 64);
+    font-size: 1.2vw;
+    line-height: 3vw;
+    width: 11vw;
+    height: 3vw;
+    text-align: center;
+	font-weight: bold;
+	border: 1px rgb(105, 105, 105);
+}
+
+.pgsel_hl{
+	height: 3.5vw;
+	line-height: 3.6vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(248, 114, 114);
+}
+
+.pgsel:nth-child(1){
+	left: 0;
+}
+.pgsel:nth-child(2){
+	left: 11.05vw;
+}
+.pgsel:nth-child(3){
+	left: 22.1vw;
+}
+.pgsel:nth-child(4){
+	left: 33.15vw;
+}
+
+.CloseBtn{
+	top: 1vh;
+	right: 1vh;
+	width: 1.6vw;
+	height: 1.7vw;
+	background-image: url(../image/Close.png);
+}
+
+.PageCon{
+	width: 100%;
+	height: 100%;
+}
+
+.PageCon div{
+	margin: auto;
+}
+
+.topbar {
+	top: 22%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 60%;
+    height: 1px;
+    background-color: rgb(191, 191, 191);
+}
+
+.topbluebar{    
+	bottom: 77.8%;
+    width: 2vw;
+    height: 4px;
+    right: 20vw;
+    background-color: #03A9F4;
+}
+
+/*引言*/
+#innyologo{
+	top: 10%;
+	right: 74.3%;
+	width: 6.5vw;
+	height: 6.6vw;
+	background-image: url(../image/Logo.png);
+}
+
+#yinyanIcon{
+	top: 35%;
+	right: 70%;
+	width: 10.8vw;
+	height: 8vw;
+	background-image: url(../image/row01/yinyan.png);
+}
+#yydivbar{
+	top: 30%;
+	left: 31%;
+	width: 1px;
+	height: 34vh;
+	background-color: rgb(221, 221, 221,0.4);
+}
+
+#yyword{
+	opacity: 0;
+	top: 35%;
+	left: 34%;
+	width: 50%;
+	height: 25vw;
+	text-align: left;
+	font-size: 1vw;
+	line-height: 1.7vw;
+
+	/*animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;*/
+}
+
+#yyword2{
+	top: 68%;
+	left: 34%;
+    width: 24%;
+	height: 3vw;
+	text-align: left;
+	font-size: 1.4vw;
+	line-height: 1.8vw;
+	font-weight: bold;
+}
+
+#yysearch{
+    top: 45%;
+    right: -1%;
+}
+
+.yysubicon{
+	top: 0;
+	bottom:0;
+	margin: auto;
+	width: 11vw;
+	height: 29.5vw;
+}
+
+.yysubicon:nth-child(1){
+	left: 1vw;
+	background-image: url(../image/row01/pic1.jpg);
+}
+
+.yysubicon:nth-child(2){
+	left: 13vw;
+	background-image: url(../image/row01/pic2.jpg);
+}
+
+.yysubicon:nth-child(3){
+	left: 25vw;
+	background-image: url(../image/row01/pic3.jpg);
+}
+
+
+#subwords{
+    text-align: left;
+    left: 39vw;
+    top: 26%;
+    width: 28vw;
+    height: 60%;
+    font-size: 0.8vw;
+    font-weight: bold;
+    line-height: 1.2vw;
+}
+#yyTitle{
+	font-size: 1.6vw;
+	font-weight: bold;
+    margin-top: 0;
+}
+
+#yybar{
+	top: 0;
+	right: 104%;
+	width: 3px;
+	height: 1.6vw;
+    background-color: rgb(92, 160, 251);
+}
+
+
+/*第二页 著名温泉*/
+#zmTitle{
+	bottom: 78.5%;
+	text-align: right;
+	right: 0;
+	width: 30vw;
+	height: 3vw;
+	color: rgb(0,0,0);
+	font-size: 1.2vw;
+}
+
+#zmword{
+    top: 24%;
+    right: 20%;
+    width: 42vw;
+    height: 10vw;
+    text-align: left;
+	font-size: 1.2vw;
+}
+
+#zmword p{    
+	margin-top: 4px;
+}
+
+#zmbig{
+	font-size: 3.2vw;
+	margin: 0;
+}
+
+#zmword2{
+	width: 41vw;
+	right: 20.5%;
+}
+
+#zmword2,#zmword{
+	opacity: 0;
+	/*animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;*/
+}
+
+#zmitem{    
+	width: 41vw;
+    height: 4vw;
+    top: 76%;
+	right: 20.5%;
+	font-size: 1vw;
+	font-weight: bold;
+}
+
+.zmitem>p{
+	margin-top: 0;
+}
+
+.zmitem:nth-child(1){
+	top: 0;
+	left: 1%;
+}
+
+.zmitem:nth-child(2){
+	top: 0;
+	left: 35%;
+}
+
+.zmitem:nth-child(3){
+	top: 0;
+	left: 69%;
+}
+
+#zmsh1{
+	top: -2%;
+	left: 26%;
+}
+#zmsh2{
+	top: -2%;
+	left: 60%;
+}
+#zmsh3{
+	top: -2%;
+	left: 94%;
+}
+
+
+#ca1{	
+	top:  1.5vw;
+    left: 1vw;
+    width: 23.4vw;
+    height: 30.4vw;
+	background-image:  url(../image/row02/ca1.jpg);
+}
+#ca2{
+	top:  1.5vw;
+	left: 25.4vw;
+	width: 23.5vw;
+	height: 18.3vw;
+	background-image:  url(../image/row02/ca2.jpg);
+}
+#ca3{
+	top:  1.5vw;
+	left: 49.9vw;
+	width: 13.5vw;
+	height: 18.3vw;
+	background-image:  url(../image/row02/ca3.jpg);
+}
+
+.wqdes{
+	color: rgb(0,0,0);
+	font-size: 0.85vw;
+	text-align: left;
+	font-weight: bold;
+	line-height: 1.6vw;
+}
+
+#cades{
+	top: 66%;
+	left: 28vw;
+}
+#jpdes{
+	top: 53%;
+    left: 40vw;
+}
+
+#isldes{
+	top: 50%;
+    left: 36vw;
+}
+
+.wqbar{
+	left: -1vw;
+	height: 90%;
+	width: 2px;
+	top: 0;
+	bottom: 0;
+	background-color: rgb(92, 160, 251);
+}
+.wqtitle{
+	font-size: 1.4vw;
+}
+
+#jp1{
+	top: 1.5vw;
+    left: 1vw;
+    width: 19.9vw;
+    height: 15.5vw;
+	background-image:  url(../image/row02/jp1.jpg);
+}
+#jp2{
+	top: 1.5vw;
+    left: 21.9vw;
+    width: 14.5vw;
+    height: 15.5vw;
+	background-image:  url(../image/row02/jp2.jpg);
+}
+#jp3{
+	top: 18vw;
+    left: 1vw;
+    width: 35.4vw;
+    height: 14vw;
+	background-image:  url(../image/row02/jp3.jpg);
+}
+
+#isl1{
+	top: 1.5vw;
+    left: 1vw;
+    width: 17.5vw;
+    height: 16.1vw;
+	background-image:  url(../image/row02/isl1.jpg);
+}
+#isl2{
+	top: 18.6vw;
+    left: 1vw;
+    width: 17.5vw;
+    height: 13.4vw;
+	background-image:  url(../image/row02/isl2.jpg);
+}
+#isl3{
+	top:  1.5vw;
+    left: 19.5vw;
+    width: 12vw;
+    height: 30.4vw;
+	background-image:  url(../image/row02/isl3.jpg);
+}
+
+
+/*第三页腾冲温泉介绍*/
+#bjword{
+    top: 20%;
+    left: 20%;
+    width: 42vw;
+    height: 10vw;
+    text-align: left;
+	font-size: 1.2vw;
+}
+
+#bjword2{
+	width: 36vw;
+	left: 20%;
+	line-height: 1.5vw;
+}
+
+#bjword2,#bjword{
+	opacity: 0;
+}
+
+#bjitemdiv{    
+	width: 41vw;
+    height: 4vw;
+    top: 66%;
+	left: 20%;
+	font-size: 1vw;
+	font-weight: bold;
+}
+
+.bjitem{
+	top: 0;
+	left: 1%;
+}
+
+#bjitem>p{
+	margin-top: 0;
+}
+
+#bjsh{
+	top: -2%;
+	left: 26%;
+}
+
+#bj1{
+	top: 1.5vw;
+    left: 2vw;
+    width: 11vw;
+    height: 24vw;
+	background-image:  url(../image/row03/bj1.jpg);
+}
+
+#bj2{
+	top: 1.5vw;
+    left: 14vw;
+    width: 11.4vw;
+    height: 12vw;
+	background-image:  url(../image/row03/bj2.jpg);
+}
+
+#bj3{
+	top: 1.5vw;
+    left: 26.4vw;
+    width: 11.4vw;
+    height: 12vw;
+	background-image:  url(../image/row03/bj3.jpg);
+}
+
+#bj4{
+	top: 14.5vw;
+    left: 14vw;
+    width: 23.8vw;
+    height: 11vw;
+	background-image:  url(../image/row03/bj4.jpg);
+}
+
+#bjsub{
+    height: 27vw; 
+}
+
+#bjdest{
+    top: 18%;
+    left: 41vw;
+}
+
+#bjdes{
+	top: 38%;
+	left: 41vw;	
+	width: 23.5vw;
+	font-size: 0.8vw;
+	line-height: 1.3vw;
+}
+
+
+
+/*第四页 温泉朝圣地*/
+#csword{
+    top: 20%;
+    left: 20%;
+    width: 42vw;
+    height: 10vw;
+    text-align: left;
+	font-size: 1.2vw;
+}
+
+#csword2{
+	width: 38vw;
+	left: 20%;
+	line-height: 1.5vw;
+}
+
+#csword,#csword2{
+	opacity: 0;
+}
+
+#csitems{
+	width: 41vw;
+    height: 4vw;
+    top: 62%;
+	left: 20%;
+}
+
+
+.csitem{
+	width: 7.5vw;
+	height: 9.2vw;
+	border-radius: 0.4vw;
+	background-color: #000000;
+	opacity: 0;
+}
+
+.csFm{
+	top: 0;
+	width: 7.5vw;
+	height: 7.5vw; 
+	border-radius: 0.4vw;
+	overflow: hidden;
+}
+
+.csIcon{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+.csword{
+	cursor: pointer;
+    width: 100%;
+    text-align: center;
+    top: 7.5vw;
+    font-size: 0.8vw;
+    font-weight: bold;
+    line-height: 1.6vw;
+}
+
+.csitem:nth-child(1){
+  left: 0; 
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+}
+
+.csitem:nth-child(2){
+	left: 8.5vw; 
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.csitem:nth-child(3){
+	left: 17vw; 
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	-o-animation-delay: 1.5s;
+}
+
+.csitem:nth-child(4){
+	left: 25.5vw; 
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+}
+
+.csitem:nth-child(1)>.csFm>.csIcon{
+	background-image: url(../image/row04/csitem1.jpg);
+  }
+  
+.csitem:nth-child(2)>.csFm>.csIcon{
+	  background-image: url(../image/row04/csitem2.jpg);
+  }
+  
+.csitem:nth-child(3)>.csFm>.csIcon{
+	  background-image: url(../image/row04/csitem3.jpg);
+  }
+  
+.csitem:nth-child(4)>.csFm>.csIcon{
+	  background-image: url(../image/row04/csitem4.jpg);
+  }
+
+#fd1{	
+	top:  1.5vw;
+    left: 1vw;
+    width: 29.6vw;
+    height: 15vw;
+	background-image:  url(../image/row04/fd1.jpg);
+}
+#fd2{
+	top:  17.5vw;
+	left: 1vw;
+	width: 15vw;
+	height: 14.6vw;
+	background-image:  url(../image/row04/fd2.jpg);
+}
+#fd3{
+	top:  17.5vw;
+	left: 17vw;
+	width: 13.6vw;
+	height: 14.6vw;
+	background-image:  url(../image/row04/fd3.jpg);
+}
+
+
+#csgobuy{
+	top: 88%;
+	left: 35vw;
+	width: 8vw;
+	height: 1.8vw;
+	border-radius: 0 .9vw .9vw 0;
+	color: #eee;
+	font-size: 0.7vw;
+	line-height: 1.8vw;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb(235, 67, 67);
+	cursor: pointer;
+}
+
+#csgobuy a:link {
+	color: rgb(255, 255, 255);
+	 text-decoration:none;
+	} 
+#csgobuy a:active {
+	color: rgb(184, 219, 248); 
+} 
+#csgobuy a:visited {
+	color:rgb(255, 255, 255);
+	text-decoration:none;
+}  
+#csgobuy a:hover {
+	color: rgb(166, 248, 177); 
+	text-decoration:underline;
+}
+
+.cstitlecon{
+	top: 10%;
+	left: 35vw;
+	width: 27vw;
+	color: #000000;
+    font-weight: bold;
+}
+
+.csbar{
+	top: 50%;
+    width: 96%;
+    height: 3px;
+    background-color: #7b7b7b;
+}
+
+.cstitle{
+	font-size: 1.5vw;
+	margin-bottom: 18px;
+}
+
+.cstdes{
+	margin-top: -8px; 
+	font-size: 0.9vw;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2vw;
+}
+
+.csdes{    
+	color: #000000;
+	top: 44%;
+	left: 35vw;	
+	width: 26vw;
+	font-size: 0.9vw;
+    text-align: left;
+	line-height: 1.3vw;
+	font-weight: bold;
+}
+.waterimg{
+	top: 0;
+	left: 0;
+	width: 3.2vw;
+	height: 3.6vw;
+	background-image: url(../image/water.png);
+}
+
+#waterdes{
+	margin-top: 0;
+	margin-left: 3.2vw;
+	color: #03A9F4;
+}
+
+#gg1{
+	top:  1.5vw;
+    left: 1vw;
+    width: 15.5vw;
+    height: 14.3vw;
+	background-image:  url(../image/row04/gg1.jpg);
+}
+
+#gg2{
+	top:  1.5vw;
+    left: 17.5vw;
+    width: 13.2vw;
+    height: 14.3vw;
+	background-image:  url(../image/row04/gg2.jpg);
+}
+
+#gg3{
+	top:  16.8vw;
+    left: 1vw;
+    width: 29.7vw;
+    height: 15.2vw;
+	background-image:  url(../image/row04/gg3.jpg);
+}
+
+#sz1{
+	top:  1.5vw;
+    left: 1vw;
+    width: 11.7vw;
+    height: 15.2vw;
+	background-image:  url(../image/row04/sz1.jpg);
+}
+
+#sz2{
+	top:  1.5vw;
+    left: 13.7vw;
+    width: 16.9vw;
+    height: 15.2vw;
+	background-image:  url(../image/row04/sz2.jpg);
+}
+
+#sz3{
+	top:  17.7vw;
+    left: 1vw;
+    width: 11.7vw;
+    height: 14.4vw;
+	background-image:  url(../image/row04/sz3.jpg);
+}
+
+#sz4{
+	top:  17.7vw;
+    left: 13.7vw;
+    width: 16.9vw;
+    height: 14.4vw;
+	background-image:  url(../image/row04/sz4.jpg);
+}
+
+#jz1{
+	top:  1.5vw;
+    left: 1vw;
+    width: 11.7vw;
+    height: 15.2vw;
+	background-image:  url(../image/row04/jz1.jpg);
+}
+
+#jz2{
+	top:  1.5vw;
+    left: 13.7vw;
+    width: 16.9vw;
+    height: 15.2vw;
+	background-image:  url(../image/row04/jz2.jpg);
+}
+
+#jz3{
+	top:  17.7vw;
+    left: 1vw;
+    width: 18.8vw;
+    height: 14.4vw;
+	background-image:  url(../image/row04/jz3.jpg);
+}
+
+#jz4{
+	top:  17.7vw;
+    left: 20.8vw;
+    width: 9.8vw;
+    height: 14.4vw;
+	background-image:  url(../image/row04/jz4.jpg);
+}
+
+#fdbar{
+	top: 42%;
+}
+
+/*第5页 腾冲温泉介绍2*/
+
+#tc2Title{
+	bottom: 78.5%;
+	text-align: right;
+	right: 0;
+	width: 30vw;
+	height: 3vw;
+	color: rgb(212, 212, 212);
+	font-size: 1.2vw;
+}
+
+#tc2word{
+    top: 30%;
+    right: 20.5%;
+    width: 42vw;
+    height: 10vw;
+    text-align: right;
+	font-size: 1.2vw;
+	opacity: 0;
+}
+
+#paofa,#zhuyi{
+	right: 20.5%;
+	font-size: 1vw;
+	font-weight: bold;
+	text-align: right;
+}
+
+#paofa{
+	top: 50%;
+}
+#paofa>p{
+	margin-top: 0;
+}
+
+#zhuyi{
+	top: 65%;
+}
+#zhuyi>p{
+	margin-top: 0;
+}
+
+#paofash{
+	top: 50%;
+	right: 32vw;
+}
+
+#zhuyish{
+	top: 65%;
+	right: 39vw;
+}
+
+#pf1{
+	top:  1.5vw;
+    left: 1vw;
+    width: 14.3vw;
+    height: 30.8vw;
+	background-image:  url(../image/row05/pf1.jpg);
+}
+
+#pf2{
+	top:  1.5vw;
+    left: 16.3vw;
+    width: 15.1vw;
+    height: 14.3vw;
+	background-image:  url(../image/row05/pf2.jpg);
+}
+
+#pf3{
+	top:  16.8vw;
+    left: 16.3vw;
+    width: 15.1vw;
+    height: 15.5vw;
+	background-image:  url(../image/row05/pf3.jpg);
+}
+
+.tc2tcon{
+	top: 10%;
+    left: 35vw;
+	width: 27vw;
+	height: 3vw;
+    color: #000000;
+    font-weight: bold;
+}
+.tc2bar {
+    bottom: 0;
+    width: 96%;
+    height: 3px;
+    background-color: #7b7b7b;
+}
+
+.tc2title{
+	font-size: 1vw;
+    text-align: left;
+}
+
+.tc2h{
+	top: 32%;
+	left: 35vw;
+	width: 26vw;
+	height: 3vw;
+	text-align: left;
+	font-size: 1.3vw;
+	font-weight: bold;
+	color: #000000;
+}
+
+.tc2des{
+	top: 42%;
+	left: 35vw;
+	width: 26vw;
+	text-align: left;
+	font-size: 0.9vw;
+}
+
+redtext{
+	color: rgb(240, 61, 29);
+}
+
+#zhy1{
+	top:  1.5vw;
+    left: 1vw;
+    width: 17.7vw;
+    height: 14.6vw;
+	background-image:  url(../image/row05/zhy1.jpg);
+}
+
+#zhy2{
+	top: 1.5vw;
+    left: 19.7vw;
+    width: 10.9vw;
+    height: 14.6vw;
+	background-image:  url(../image/row05/zhy2.jpg);
+}
+
+#zhy3{
+	top: 17.1vw;
+    left: 1vw;
+    width: 14.3vw;
+    height: 15.2vw;
+	background-image:  url(../image/row05/zhy3.jpg);
+}
+
+#zhy4{
+	top: 17.1vw;
+    left: 16.3vw;
+    width: 14.3vw;
+    height: 15.2vw;
+	background-image:  url(../image/row05/zhy4.jpg);
+}
+
+
+/*第6页 腾冲娱乐活动*/
+#tcjqw,#tcmsw,#tctcw{
+	left: 20.5%;
+	font-size: 1vw;
+	font-weight: bold;
+	text-align: left;
+}
+
+#tcjqw>p,#tcmsw>p,#tctcw>p{
+    margin-top: 0;
+}
+
+#tcjqw{
+	top: 50%;
+}
+
+#tcmsw{
+	top: 60%;
+}
+
+#tctcw{
+	top: 70%;
+}
+
+#tcjqsh{
+	top: 50%;
+	left: 33vw;
+}
+
+#tcmssh{
+	top: 60%;
+	left: 30vw;
+}
+
+#tctcsh{
+	top: 70%;
+	left: 30vw;
+}
+
+#tc3word{
+	top: 26%;
+    left: 20.5%;
+    width: 42vw;
+    height: 10vw;
+	text-align: left;
+	opacity: 0;
+}
+
+#lefttbbar{
+	left: 20vw;    
+	bottom: 77.8%;
+	width: 2vw;
+	height: 4px;
+	background-color: #03A9F4;
+}
+
+
+#tc3Title{
+	bottom: 78.5%;
+	text-align: left;
+	left: 0;
+	width: 30vw;
+	height: 3vw;
+	color: rgb(212, 212, 212);
+	font-size: 1.2vw;
+}
+
+#iteminfocon{
+	background-color: rgb(232, 232, 232);
+	top: 2.5vw;
+    left: 15.5vw;
+	width: 48vw;
+    height: 28vw;
+    border-radius: 0 0.5vw 0.5vw 0.5vw;
+	text-align: left;
+	color: #000000;
+}
+
+#itemselcon{
+	background-color: rgb(232, 232, 232);
+	top: 2.5vw;
+    left: 1.5vw;
+	width: 14vw;
+    height: 16.2vw;
+    border-radius: 0.3vw 0 0 0.3vw;
+	text-align: center;
+}
+
+#itemimg1{
+	top: 1vw;
+	left: 2.8vw;
+	width: 27.5vw;
+	height: 15.3vw;
+}
+
+#itemimg2{
+	top: 1vw;
+	left: 31.3vw;
+	width: 15.3vw;
+	height: 15.3vw;
+}
+
+#itemname{
+	top: 20vw;
+	left: 3.5vw;
+	width: 40vw;
+	height: 2vw;
+	font-size: 1.4vw;
+	font-weight: bold;
+}
+
+#itemdes{
+	top: 23vw;
+	left: 3.5vw;
+	width: 40vw;
+	height: 4vw;
+	font-size: 0.9vw;
+}
+
+.itemsel{
+	text-align: center;
+	width: 100%;
+	height: 3.4vw;
+	color: #797878;
+	font-weight: bold;
+	font-size: 1vw;
+	line-height: 3.4vw;
+}
+
+.item_hl{
+	color: rgb(78, 169, 255);
+	font-size: 1.2vw;
+}
+.itembar{
+	width: 100%;
+	height: 1.5px;
+	bottom: 0;
+	background-color: rgba(190, 190, 190, 0.4);
+}
+
+.itemsel:nth-child(1){
+	top: 1vw;
+}
+.itemsel:nth-child(2){
+	top: 4.4vw;
+}
+.itemsel:nth-child(3){
+	top: 7.8vw;
+}
+.itemsel:nth-child(4){
+	top: 11.2vw;
+}
+
+
+/*第七页*/
+#EndDes{
+	top: 0;
+	bottom: 0;
+	left: 46%;
+	text-align: left;
+    width: 28vw;
+	height: 14vw;
+	color: #FFF;
+	letter-spacing: 2.6;
+	line-height: 1.3;
+
+}
+
+midw{
+	font-size: 1.5vw;
+}
+
+#Endlogo{
+	top: 0;
+	bottom: 0;
+	right: 56%;
+	width: 5.4vw;
+	height: 5.5vw;
+	cursor: pointer;
+	background-image: url(../image/Logo.png);
+}
+
+#Endlogo,#EndDes{
+	opacity: 0;
+}
+
+#com{
+	width: 30vw;
+	height: 6vw;
+	left: 0;
+	right: 0;
+    top: 70%;
+	display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+.citem{
+	width: 5vw;
+	height: 4vw;
+	position: relative;
+}
+.itmImg{
+	cursor: pointer;
+	left: 0;
+    right: 0;
+	margin-left: 0.9vw;
+	width: 2.4vw;
+	height: 2.4vw;
+	bottom: 1%;
+}
+
+.channel{
+	font-size: 0.7vw;
+	top: 110%;
+	left: -0.5vw;
+	text-align: center;
+	height: 1vw;
+    width: 6vw;
+}
+
+.citem:nth-child(1)>.itmImg{
+	background-image: url(../image/row07/1.png);
+}	
+.citem:nth-child(2)>.itmImg{
+	background-image: url(../image/row07/2.png);
+}	
+.citem:nth-child(3)>.itmImg{
+	background-image: url(../image/row07/3.png);
+}	
+.citem:nth-child(4)>.itmImg{
+	background-image: url(../image/row07/4.png);
+}	
+.citem:nth-child(5)>.itmImg{
+	background-image: url(../image/row07/5.png);
+}	
+.citem:nth-child(6)>.itmImg{
+	width: 3.8vw;
+	height: 3.8vw;
+	left: 0;
+	right: 0;
+	background-image: url(../image/row07/6.png);
+	cursor: default;
+}
+
+#endbar{
+    width: 106%;
+    height: 1px;
+    background-color: #c9c9c9;
+    bottom: -15%;
+}
+
+#footer{
+    width: 140%;
+	top: 120%;
+	text-align: center;
+	font-size: 0.7vw;
+}
+
+#footer>p{
+	margin-top: 0;
+}
+
+
+/*动画*/
+
+
+.MoveUp {
+	-webkit-animation-name: MoveUpOffset;
+	animation-name: MoveUpOffset;
+	-moz-animation-name:MoveUpOffset;
+	-o-animation-name: MoveUpOffset;
+
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+  }
+
+  @keyframes MoveUpOffset{
+	from {
+	  transform: translate3d(0, 40px, 0);
+	}
+	to {
+	  opacity: 1;
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+  @-o-keyframes MoveUpOffset{
+	from {
+	  -o-transform: translate3d(0, 40px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -o-transform: translate3d(0, 0, 0);
+	}
+  }
+
+
+  @-moz-keyframes MoveUpOffset{
+	from {
+	  -moz-transform: translate3d(0, 40px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -moz-transform: translate3d(0, 0, 0);
+	}
+  }
+
+@-webkit-keyframes MoveUpOffset{
+	from {
+	  -webkit-transform: translate3d(0, 40px, 0);
+	  transform: translate3d(0, 40px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+  .LeftIn {
+	-webkit-animation-name: LeftIn;
+	animation-name: LeftIn;
+	-moz-animation-name: LeftIn;
+	-o-animation-name: LeftIn;
+
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+  }
+  @keyframes LeftIn{
+	from {
+	  transform: translate3d(-40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+  @-o-keyframes LeftIn{
+	from {
+		-o-transform: translate3d(-40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  -o-transform: translate3d(0, 0, 0);
+	}
+  }
+
+  @-moz-keyframes LeftIn{
+	from {
+	  -moz-transform: translate3d(-40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  -moz-transform: translate3d(0, 0, 0);
+	}
+  }
+
+@-webkit-keyframes LeftIn{
+	from {
+	  -webkit-transform:  translate3d(-40px, 0, 0);
+	  transform:  translate3d(-40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  -webkit-transform:  translate3d(0, 0, 0);
+	  transform:  translate3d( 0, 0, 0);
+	}
+  }
+
+
+  .RightIn {
+	-webkit-animation-name: RightIn;
+	animation-name: RightIn;
+	-moz-animation-name: RightIn;
+	-o-animation-name: RightIn;
+
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+  }
+  @keyframes RightIn{
+	from {
+	  transform: translate3d(40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+  @-o-keyframes RightIn{
+	from {
+		-o-transform: translate3d(40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  -o-transform: translate3d(0, 0, 0);
+	}
+  }
+
+  @-moz-keyframes RightIn{
+	from {
+	  -moz-transform: translate3d(40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  -moz-transform: translate3d(0, 0, 0);
+	}
+  }
+
+@-webkit-keyframes RightIn{
+	from {
+	  -webkit-transform:  translate3d(40px, 0, 0);
+	  transform:  translate3d(40px, 0, 0);
+	}
+	to {
+	  opacity: 1;
+	  -webkit-transform:  translate3d(0, 0, 0);
+	  transform:  translate3d(0, 0, 0);
+	}
+  }
+
+  
+.RotaShow{
+	animation-name: RotaShow;
+	-webkit-animation-name: RotaShow;
+	-moz-animation-name: RotaShow;
+	-o-animation-name: RotaShow;
+
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+}
+
+@keyframes RotaShow {	
+	from {
+		opacity: 1;
+		transform: rotateY(180deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateY(0deg);
+	  }
+  }
+  
+  @-webkit-keyframes RotaShow {	
+	from {
+		opacity: 1;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+	  }
+  }
+
+  @-moz-keyframes RotaShow {	
+	from {
+		opacity: 1;
+		transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+	}
+	to {
+		opacity: 1;
+		-moz-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	  }
+  }
+
+  @-o-keyframes RotaShow {	
+	from {
+		opacity: 1;
+		transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+	}
+	to {
+		opacity: 1;
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+ }

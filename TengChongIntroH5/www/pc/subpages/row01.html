@@ -1,0 +1,103 @@
+<!--
+腾冲专题页引言
+作者：李洪
+版本：1.0
+时间：2018年10月11日
+-->
+<section class="swiper-slide">
+    <!--页面内容从此开始-->
+    <div class="page">
+        <div class="PageCon">
+            <div class="Mainpage">
+                <div id="innyologo"></div>
+                <div id="yinyanIcon"></div>
+                <div id="yydivbar"></div>
+                <div id="yyword" class="anime MoveUp">
+                    <p>
+                        白露、秋分、霜降……
+                        <br> 七月流火，九月授衣，
+                        <br> 中秋国庆的长假让人尽情释放了三伏天以来累积的燥热和不安。
+                        <br> 而后，伴随着漫长、困顿的秋冬时节来临，
+                        <br> 重回忙碌、为生活奔波着的每一个人，
+                        <br> 纵使身心疲惫，也都在心中找寻着属于自己的那份冬日的温暖、
+                        <br> 一份释放身心的酣畅与欢愉。
+                        <br>
+                    </p>
+                </div>
+                <div id="yyword2">
+                    <div class="search" id="yysearch"></div>
+                </div>
+            </div>
+            <div class="Subpage">
+                <div class="yysubicon"></div>
+                <div class="yysubicon"></div>
+                <div class="yysubicon"></div>
+                <div id="subwords">
+                    <div id="yybar"></div>
+                    <p id="yyTitle">如果有那么一个地方...</p>
+                    <p>
+                        如果有那么一个地方，
+                        <br> 山间的植物们在阳光里释放着充盈的氧气，
+                        <br> 负氧离子在丛林间自由奔跑，
+                        <br> 一潭潭冒着白雾的泉水映着蓝天白云，
+                        <br> 恰是刚好适合披着浴巾的你就这么走进去的39℃。
+                        <br>
+                        <br> 浸入水中，抬头向上，
+                        <br> 雾气间映透着翠绿，晨可聆虫唱鸟鸣，夜可观繁星点点；
+                        <br> 低头颔首，舒适的泉水包裹着你的每一寸肌肤，刺激着你的每一滴血液；
+                        <br>
+                        <br> 合上眼睑，冥想、呼吸，
+                        <br> 肩上某些沉重的事物仿佛慢慢褪去……
+                    </p>
+                </div>
+                <div class="CloseBtn"></div>
+            </div>
+        </div>
+        <script>
+            var idx = 0;
+            var sh = null;
+            $(document).ready(function () {
+                $(".Subpage").hide();
+
+                $("#yysearch").click(function () {
+                    $(".Subpage").fadeIn({
+                        duration: 1000
+                    });
+                    $(".Mainpage").fadeOut({
+                        duration: 1000
+                    });
+                });
+
+                $(".CloseBtn").click(function () {
+                    $(".Subpage").fadeOut({
+                        duration: 1000
+                    });
+                    $(".Mainpage").fadeIn({
+                        duration: 1000
+                    });
+                });
+
+                sh = setTimeout(ArrowTipAni, 500);
+                $("#yyword2").prepend("<p id='" + sh + "'>如果，有那么一个地方……&nbsp;&nbsp;</p>")
+            });
+
+            function ArrowTipAni() {
+                if (idx == -1) {
+                    $("#yyword2>#" + sh).html("如果，有那么一个地方……&nbsp;&nbsp;");
+                } else if (idx == 0) {
+                    $("#yyword2>#" + sh).html("如果，有那么一个地方……&nbsp;&nbsp;>");
+                } else if (idx == 1) {
+                    $("#yyword2>#" + sh).html("如果，有那么一个地方……&nbsp;&nbsp;>>");
+                } else {
+                    $("#yyword2>#" + sh).html("如果，有那么一个地方……&nbsp;&nbsp;>>>");
+                }
+                idx++;
+                if (idx >= 3)
+                    idx = -1;
+                clearTimeout(sh);
+                setTimeout(ArrowTipAni, 500);
+            }
+        </script>
+    </div>
+    <!--页面内容至此结束-->
+</section>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--
+
+作者：lihong
+版本：1.0
+时间：2018年1月23日
+说明：
+张胜温画卷专题页  城市介绍----大理
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/hexagon.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>Saki html5 ppt frame</title>
+</head>
+
+<body class="page bg02">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+
+          <div class="CityPage">
+            <div id="DaliTitle" class="anime ItemMoveDown forwardani CityTitle"></div>
+            <div class="Desc">
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.3s;
+              -ms-animation-duration: 1.3s;
+              -o-animation-duration: 1.3s;
+              -moz-animation-duration: 1.3s;
+              -webkit-animation-duration: 1.3s;
+             
+              animation-delay:1.2s;
+              -moz-animation-delay: 1.2s;
+              -webkit-animation-delay:1.2s;
+              -ms-animtion-delay:1.2s;
+              -o-animation-delay: 1.2s;">古大理国身处南亚东南亚交通中枢，是亚洲文化的十字路口、南方丝绸之路和茶马古道上的重要驿站。</p>
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.5s;
+              -ms-animation-duration: 1.5s;
+              -o-animation-duration: 1.5s;
+              -moz-animation-duration: 1.5s;
+              -webkit-animation-duration: 1.5s;
+              animation-delay:1s;
+              -moz-animation-delay: 1s;
+              -webkit-animation-delay:1s;
+              -ms-animtion-delay:1s;
+              -o-animation-delay: 1s;">凭借着这份得天独厚的地理优势，不同的宗教文化在这里融会贯通，南传、汉传、藏传佛教，儒家学说，道家道教学说，印度教，以及本土少数民族的原始宗教都得以在这个和平稳定、繁华开放的土地上传播弘扬，使得古大理国在文化和宗教水平上达到了相当的高度，被誉为“苍山与洱水，佛教之齐鲁”。</p>
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.7s;
+              -ms-animation-duration: 1.7s;
+              -o-animation-duration: 1.7s;
+              -moz-animation-duration: 1.7s;
+              -webkit-animation-duration: 1.7s;
+              animation-delay:0.8s;
+              -moz-animation-delay: 0.8s;
+              -webkit-animation-delay:0.8s;
+              -ms-animtion-delay:0.8s;
+              -o-animation-delay: 0.8s;">这份文化描绘在了《张胜温画卷》之上，写进了金庸先生的小说之中，也凝固在了如今大理的青砖绿瓦之内，在您来到大理，尽享苍山雪与洱海月的同时，也不妨细细品位一下这座千年古城的历史韵味。</p>
+              <div onclick="OnClickTour();" class="anime ItemMoveDown forwardani TourBtn"></div>
+              <div class="line anime ItemMoveDown forwardani">
+              </div>
+            </div>
+            <div id="HistoryTitle" class="anime TitleMoveDown forwardani"></div>
+            <div id="DaliGuCheng" class="anime GuChengLeftIn forwardani MidSpotBtn" onclick="OnClickGuCheng();">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p>大理古城</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="DaliSanTa" onclick="OnClickSanTa();" class="anime SanTaZoomIn forwardani MidSpotBtn">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p class="SpotBtnText">崇圣寺景区（大理三塔）</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="DaliErHai" class="anime ErHaiRightIn forwardani MidSpotBtn" onclick="OnClickErHai();">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p class="SpotBtnText">苍山洱海</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="DaliMark" class="CityMark"></div>
+
+          <div id="GuChengInfo" class="SpotContainer">
+            <div id="GuChengText" class="SpotTextImg anime ItemMoveDown forwardani"></div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="GCImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="GCImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="GCImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="SanTaInfo" class="SpotContainer">
+            <div id="SanTaText" class="SpotTextImg anime ItemMoveDown forwardani">
+              <div class="TicketBtn" onclick="OnClickTicket();"></div>
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="STImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="STImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="STImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ErHaiInfo" class="SpotContainer">
+            <div id="ErHaiText" class="SpotTextImg anime ItemMoveDown forwardani">
+                <div class="TicketBtn" onclick="OnClickCangShanTicket();"></div>
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="EHImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="EHImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="EHImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--页面内容至此结束-->
+        <script>
+
+          $(".SpotImg").mouseover(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1.2, 1.2)
+            }, 1500);
+          });
+
+          $(".SpotImg").mouseout(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1, 1)
+            }, 1500);
+          });
+
+          $("#DaliGuCheng, #DaliErHai, #DaliSanTa").mouseover(function () {
+            $(this).children('.SpotBtnCover').show();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1.1, 1.1)
+            }, 500);
+          });
+
+          $("#DaliGuCheng, #DaliErHai, #DaliSanTa").mouseout(function () {
+            $(this).children('.SpotBtnCover').hide();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1, 1)
+            }, 500);
+          });
+
+          function OnClickTour() {
+            window.open('http://www.innyo.com/content.aspx?id=211965782237');
+          };
+
+          function OnClickTicket() {
+            window.open('http://shop.innyo.com:8080/yysc/a/yysc/yyscLog/jumpurl?cpid=53ac0409236b42c9b3ae82b80dcb401e');
+          };
+
+          function OnClickCangShanTicket(){
+            window.open('http://shop.innyo.com:8080/yysc/a/yysc/yyscLog/jumpurl?cpid=860cd7d801324b8a928edda47c048073');
+          }
+
+          function OnClickGuCheng() {
+            $(".CityPage").hide();
+            $("#GuChengInfo").show();
+          };
+
+          function OnClickSanTa() {
+            $(".CityPage").hide();
+            $("#SanTaInfo").show();
+          };
+          function OnClickErHai() {
+            $(".CityPage").hide();
+            $("#ErHaiInfo").show();
+          };
+
+          function OnClickBack() {
+            $(".SpotContainer").hide();
+            $(".CityPage").show();
+          };
+        </script>
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

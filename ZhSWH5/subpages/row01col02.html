@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--
+张胜温画卷主题页
+作者：李洪
+版本：1.0
+时间：2017年12月25日
+说明：
+风采页面
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+  <title>风采</title>
+</head>
+
+<body class="bg01 page">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div id="FCIconDiv" class="anime iconInLeft forwardani">
+            <img id="feng" src="image/row01col02/word_feng.png" />
+            <img id="cai" src="image/row01col02/word_cai.png" />
+            <img id="fclogo" src="image/row01col02/Name.png" />
+          </div>
+          <div id="bigIcon">
+            <img id="showIcon" />
+          </div>
+          <!-- 滚动页 -->
+          <div class="anime fadeIn forwardani" id="IconContainer">
+            <div class="swiper-container-horizontal" id="wrappercontainer">
+              <div class="swiper-wrapper" id="iconwrapper">
+                <!--<div class="swiper-slide" data-swiper-slide-index="0">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/01.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>中国古代绘画
+                          <br>赏析方法简介</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+                <div class="swiper-slide" data-swiper-slide-index="1">
+                  <div class="iconFm" onclick="OnClickIcon(2);">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/02.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>利贞皇帝礼佛图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="2">
+                  <div class="iconFm" onclick="OnClickIcon(3);">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/03.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>金刚力士图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="3">
+                  <div class="iconFm" onclick="OnClickIcon(4);">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/04.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>释迦降魔图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="swiper-slide" data-swiper-slide-index="4">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/05.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>龙众与天众图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide " data-swiper-slide-index="5">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/06.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>十六罗汉图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide " data-swiper-slide-index="6">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/07.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>法脉传承图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide " data-swiper-slide-index="7">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/08.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>大理国八大
+                          <br>高僧图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+                <div class="swiper-slide " data-swiper-slide-index="8">
+                  <div class="iconFm" onclick="OnClickIcon(9);">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/09.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>维摩诘辩经图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="swiper-slide " data-swiper-slide-index="9">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/10.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>三大佛会图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide " data-swiper-slide-index="10">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/11.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>诸佛群像图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+                <div class="swiper-slide " data-swiper-slide-index="11">
+                  <div class="iconFm" onclick="OnClickIcon(12);">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/12.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>云南福星阿
+                          <br>嵯耶观音图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="swiper-slide " data-swiper-slide-index="12">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/13.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>观音群像图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide " data-swiper-slide-index="13">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/14.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>大理国历代
+                          <br>皇帝图</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="swiper-slide " data-swiper-slide-index="14">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/15.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>护法群像图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+                <div class="swiper-slide " data-swiper-slide-index="15">
+                  <div class="iconFm" onclick="OnClickIcon(16);">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/16.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>经幢及十六
+                          <br>国大众图</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="swiper-slide " data-swiper-slide-index="16">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/17.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>题跋及签章</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="swiper-slide " data-swiper-slide-index="17">
+                  <div class="iconFm">
+                  </div>
+                  <div class="iconitem">
+                    <div class="icon" style="background-image: url(../image/row01col02/18.png);"></div>
+                    <div class="middle-box">
+                      <div class="iconword">
+                        <p>佛国精妙法器
+                          <br>法物简介</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>-->
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next" id="btnnext"></div>
+            <div class="swiper-button-prev" id="btnpre"></div>
+          </div>
+          <div id="FCInfoText" class="anime LogoTextIn forwardani">
+            <p> 在这幅长16米的画卷中，层次感分明的画面，描金彩绘的着色衬托出北宋时期大理的繁荣昌盛；628个不同形象的人物，劲利流畅的线条勾勒佛教文化的博大精深，此外画中的山水、树木、舟楫、庭院及其动物，形态栩栩如生又给画卷添加了几分生活的气息。也不枉乾隆皇帝对它甚是喜爱，为它题字盖章，小心珍藏。</p>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+
+      var isClick = false;
+
+
+      var swiper = new Swiper('#wrappercontainer', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        speed: 5000,
+        grabCursor: true,
+        keyboardControl: true,
+        mousewheelControl: true,
+        autoplayDisableOnInteraction: false,
+        freeMode: true,
+        freeModeMomentum: false,
+        //prevButton: '#btnpre',
+        //nextButton: '#btnnext',
+      });
+
+      var PlaySpeed = 50;
+      var leftOffset = parseFloat($("#iconwrapper").css("left"));
+      var rightspace = parseFloat($('#iconwrapper>div').css('margin-right'));
+
+      var childnum = $("#iconwrapper").children().length;
+      var childwid = parseFloat($("#iconwrapper>div").width() + rightspace);
+      var WidTotal = childnum * childwid;
+      //console.log("Widtotal:" + WidTotal);
+      for (var i = 0; i < childnum; i++) {
+        $("#iconwrapper").append($("#iconwrapper>div").eq(i).clone());
+      }
+
+      var Playtimer;
+      setTimeout(StartScroll, 4500);
+
+      function IconsScroll() {
+        var leftOffset = parseFloat($("#iconwrapper").css("left"));
+        if (!leftOffset)
+          leftOffset = 0;
+        leftOffset--;
+        $("#iconwrapper").css({ "left": leftOffset + "px" });
+        if (leftOffset < -WidTotal) {
+          $("#iconwrapper").css({ "left": "0px" });
+        }
+      }
+
+
+      function StartScroll() {
+        Playtimer = clearInterval(Playtimer);
+        Playtimer = setInterval(IconsScroll, PlaySpeed);
+        //console.log("StartScroll!");
+      }
+
+      function StopScroll() {
+        Playtimer = clearInterval(Playtimer);
+        //console.log("StopScroll!");
+      }
+
+      $("#bigIcon,#showIcon").click(function () {
+        $("#bigIcon").hide();
+        StartScroll();
+        isClick = false;
+        $(".swiper-pagination").show();
+      });
+
+      $("#bigIcon").hide();
+
+      $(".iconFm").mouseover(function () {
+        var index = $(".iconFm").index($(this));
+        $(".icon:eq(" + index + ")").stop();
+        var nw = $(".icon:eq(" + index + ")").width();
+        $(".icon:eq(" + index + ")").animate({
+          scale: 1.1
+        }, 500);
+        StopScroll();
+      });
+
+      $(".iconFm").mouseout(function () {
+        var index = $(".iconFm").index($(this));
+        $(".icon:eq(" + index + ")").stop();
+        $(".icon:eq(" + index + ")").animate({
+          scale: 1
+        }, 500);
+        if (!isClick) {
+          StartScroll();
+        }
+      });
+
+      var CardNames = new Array("中国古代绘画赏析方法简介", "利贞皇帝礼佛图", "金刚力士图", "释迦降魔图", "龙众与天众图", "十六罗汉图", "法脉传承图", "大理国八大高僧图",
+        "维摩诘辩经图", "三大佛会图", "诸佛群像图", "云南福星阿嵯耶观音图", "观音群像图", "大理国历代皇帝图", "护法群像图", "经幢及十六国大众图", "题跋及签章", "佛国精妙法器法物简介");
+      $(document).ready(function () {
+        // InitCards();
+
+      });
+
+
+      function OnClickIcon(index) {
+        isClick = true;
+        StopScroll();
+        $(".swiper-pagination").hide();
+        $("#showIcon").attr("src", "image/row01col02/Icon/" + index + ".jpg");
+        $("#bigIcon").show();
+      }
+
+      function InitCards() {
+        var dom;
+        for (var i = 0; i < CardNames.length; i++) {
+          var index;
+          if (i < 9)
+            index = "0" + (i + 1);
+          else
+            index = (i + 1).toString();
+          dom += "<div class=\"swiper-slide\" data-swiper-slide-index=\"" + i + "\">" +
+            "<div class=\"iconFm\">\</div>\<div class=\"iconitem\"><div " +
+            "class=\"icon\" style=\"background-image: url(../image/row01col02/" + index + ".png);\">" +
+            "</div><div class=\"iconword\"><p>" + CardNames[i] + "</p></div></div></div>";
+        }
+        $("#iconwrapper").html(dom);
+      };
+    </script>
+    <!--页面内容至此结束-->
+    </section>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html lang="cmn-Hans-CN">
+<!--
+张胜温画卷主题页
+作者：李洪
+版本：1.0
+时间：2017年12月20日
+说明：
+启动页面
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/animatemore.css">
+  <link rel="stylesheet" type="text/css" href="css/hexagon.css">
+  <link rel="stylesheet" type="text/css" href="css/cicular.css">
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+  <title>《张胜温画卷》主题页</title>
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <div class="load_title">正在加载画卷</div>
+    </div>
+    <div id="HorTip"></div>
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-out">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" aria-page="nested">
+        <div class="swiper-container swiper-container-in">
+          <div class="parallax-bg" style="background-image:url(../image/bg01.jpg)" data-swiper-parallax="-23%"></div>
+          <div id="Initwrapper" class="swiper-wrapper">
+            <div class="swiper-slide" aria-page="row01col01"></div>
+            <div class="swiper-slide" aria-page="row01col02"></div>
+            <div class="swiper-slide" aria-page="row01col03"></div>
+            <div class="swiper-slide" aria-page="row01col04"></div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-in"></div>
+        </div>
+      </div>
+      <div class="swiper-slide" aria-page="row02">
+        <div class="swiper-container swiper-container-row2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg02" aria-page="row02col01"></div>
+            <div class="swiper-slide bg03" aria-page="row02col02"></div>
+            <div class="swiper-slide bg04" aria-page="row02col03"></div>
+            <div class="swiper-slide bg05" aria-page="row02col04"></div>
+            <div class="swiper-slide bg06" aria-page="row02col05"></div>
+            <div class="swiper-slide bg07" aria-page="row02col06"></div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-row2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination-out"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- cicular JS -->
+  <script src="js/circular.min.js"></script>
+  <!-- shell JS -->
+  <script src="js/suzimiya-shell.js"></script>
+  <script src="js/jquery.transit.js"></script> 
+</body>
+</html>

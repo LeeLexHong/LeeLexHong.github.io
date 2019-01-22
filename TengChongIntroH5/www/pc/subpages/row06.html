@@ -1,0 +1,261 @@
+<!--
+  腾冲专题页娱乐活动介绍页
+作者：李洪
+版本：1.0
+时间：2018年10月17日
+-->
+<section class="swiper-slide">
+  <!--页面内容从此开始-->
+  <div class="page">
+    <div class="PageCon">
+      <div class="Mainpage">
+        <div class="topbar">
+          <div id="tc3Title">
+            <p>到“世界温泉朝圣地”，开启一段康养之旅</p>
+          </div>
+        </div>
+        <div id="lefttbbar"></div>
+        <div id="tc3word"  class="anime RightIn">
+          <p class="bigtitle">和温泉有关的娱乐活动</p>
+        </div>
+        <div id="tcjqw"></div>
+        <div id="tcmsw"></div>
+        <div id="tctcw"></div>
+        <div class="shcon">
+          <div class="search" id="tcjqsh"></div>
+          <div class="search" id="tcmssh"></div>
+          <div class="search" id="tctcsh"></div>
+        </div>
+      </div>
+      <div class="Subpage">
+        <div class="subpgsel">
+          <div class="pgsel pgsel_hl">腾冲景区介绍</div>
+          <div class="pgsel">腾冲美食</div>
+          <div class="pgsel">腾冲特产</div>
+        </div>
+        <div class="wtbg"></div>
+        <div id="iteminfocon">
+          <div id="itemimg1"></div>
+          <div id="itemimg2"></div>
+          <div id="itemname"></div>
+          <div id="itemdes"></div>
+        </div>
+        <div id="itemselcon">
+          <div class="itemsel">
+          </div>
+          <div class="itemsel">
+          </div>
+          <div class="itemsel">
+          </div>
+          <div class="itemsel">
+          </div>
+        </div>
+        <div class="CloseBtn"></div>
+      </div>
+    </div>
+    <script>
+      var midx = 0;
+      var sidx = 0;
+      var itemdata = new Array(
+        new Array(
+          {
+            title: "火山热海",
+            name: "腾冲火山热海旅游区",
+            des: "亿万年前亚欧大陆与印巴次大陆板块的激烈碰撞，造就了拥有独特自然地质景观、珍稀温泉资源的腾冲火山热海旅游区。"
+          },
+          {
+            title: "和顺古镇",
+            name: "和顺古镇",
+            des: "全镇住宅从东到西、环山而建，渐次递升，绵延两三公里。八大祠堂、七座寺庙，明清古建疏疏落落围绕着这块小坝子。有“华侨之乡”“书香名里”的美名。"
+          },
+          {
+            title: "云峰山",
+            name: "云峰山",
+            des: "云峰山拔地擎天，高壑重叠之上，莹莹岚光之中屹立着雄奇高耸的主峰，峰奇绝壁；谷深峡险，林海翁郁，崖苔滴翠，猿嬉葛藤，莺啼溪涧。"
+          },
+          {
+            title: "银杏村",
+            name: "银杏村",
+            des: "银杏村冬春晴朗，气候暖和，夏秋晴雨相兼，气候凉爽宜人，冬季平均15℃天气暖洋洋，夏季气温平均25℃宜度假，无愧“最适宜人类居住的地方之一”称号。景区负氧离子最高达38000多个，全然一个“天然大氧吧”。"
+          }
+        ),
+        new Array(
+          {
+            title: "大救驾",
+            name: "大救驾",
+            des: "大救驾是腾冲的知名风味小吃，因传说在明朝永历皇帝逃亡途中为其解饥而得名。是将饵块切成薄片，配以各种香辣作料爆炒而成。其味满口留香，滑嫩不腻。"
+          },
+          {
+            title: "坛子鸡",
+            name: "坛子鸡",
+            des: "坛子鸡是腾冲著名的汉族小吃，颜色金黄玉润，入口细品，皮脆肉嫩骨酥，满口溢香。坛子鸡因为经过中药秘方的卤制，有活血舒筋，清肺健胃之功，尤为适合老人和小孩食用。"
+          },
+          {
+            title: "腾冲土锅子",
+            name: "腾冲土锅子",
+            des: "土锅子是腾冲的名菜之一，为腾冲独有。使用当地土法烧制的土陶火锅，讲究慢火熬煮，汤底为土鸡和鲜排骨熬成的高汤，底菜丰富，且保持原汁原味，味道鲜浓醇厚。"
+          },
+          {
+            title: "大滚锅饵丝",
+            name: "大滚锅饵丝",
+            des: "“大滚锅”饵丝是腾冲的独特风味美味。“大滚锅”的汤又清又鲜，油轻不腻，其中的饵丝与米线不同，相当入味，同时较面条和一般饵丝而言，劲道十足。"
+          }
+        ),
+        new Array(
+          {
+            title: "腾冲翡翠",
+            name: "腾冲翡翠",
+            des: "腾冲是翡翠加工业的发祥地，玉雕则是腾冲工业和经济发展的第一块奠基石，至今已有400多年的历史，其内涵之丰富、功用之广泛、工艺之精美，在全国玉雕行业中享有一定的声誉。"
+          },
+          {
+            title: "腾冲藤编",
+            name: "腾冲藤编",
+            des: "腾冲以盛产藤篾著称，腾冲藤编密实坚固，冬暖夏凉，轻巧坚韧，牢固，不怕挤压，柔顺有弹性，具有日晒雨淋不起泡，在潮湿和干燥的环境下不变形，不开裂的特点。"
+          },
+          {
+            title: "腾冲手工纸",
+            name: "腾冲手工纸",
+            des: "腾冲手工造纸白净细腻、质地古朴、柔韧性强，纸质优良。抗战期间，大批内地习用宣纸的书画名家避祸西南，使用腾冲手工纸进行创作，并给予其高度评价。"
+          },
+          {
+            title: "固东荥阳纸伞",
+            name: "固东荥阳纸伞",
+            des: "腾冲固东镇的荥阳村，祖上几乎家家都做纸伞，他们做的纸伞工艺精细，轻巧耐用，价钱低廉。远销滇西各地和缅甸，颇受人们喜爱。"
+          }
+        )
+      );
+      var idx1 = 0, idx2 = 0, idx3 = 0;
+      var sh1 = null, sh2 = null, sh3 = null;
+      var str1 = "腾冲景区介绍&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;",
+        str2 = "腾冲美食&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;",
+        str3 = "腾冲特产&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;";
+      $(document).ready(function () {
+        $(".Subpage").hide();
+
+        $(".search").click(function () {
+          $(".Subpage").fadeIn({
+            duration: 1000
+          });
+          $(".Mainpage").fadeOut({
+            duration: 1000
+          });
+          midx = $(this).index();
+          sidx = 0;
+          OpenSubpage(10);
+        });
+
+        $(".pgsel").click(function () {
+          if (midx == $(this).index())
+            return;
+          midx = $(this).index();
+          sidx = 0;
+          OpenSubpage(500);
+        });
+
+        $(".itemsel").click(function () {
+          if (sidx == $(this).index())
+            return;
+          sidx = $(this).index();
+          ChangeItemInfo(500);
+        });
+
+        $(".CloseBtn").click(function () {
+          $(".Subpage").fadeOut({
+            duration: 1000
+          });
+          $(".Mainpage").fadeIn({
+            duration: 1000
+          });
+        });
+
+        sh1 = setTimeout(ArrowTipAni1, 500);
+        $("#tcjqw").prepend("<p id='" + sh1 + "'>" + str1 + "</p>");
+
+        sh2 = setTimeout(ArrowTipAni2, 500);
+        $("#tcmsw").prepend("<p id='" + sh2 + "'>" + str2 + "</p>");
+
+        sh3 = setTimeout(ArrowTipAni3, 500);
+        $("#tctcw").prepend("<p id='" + sh3 + "'>" + str3 + "</p>");
+      });
+
+      function ArrowTipAni1() {
+        if (idx1 == -1) {
+          $("#tcjqw>#" + sh1).html(str1);
+        } else if (idx1 == 0) {
+          $("#tcjqw>#" + sh1).html(str1 + ">");
+        } else if (idx1 == 1) {
+          $("#tcjqw>#" + sh1).html(str1 + ">>");
+        } else {
+          $("#tcjqw>#" + sh1).html(str1 + ">>>");
+        }
+        idx1++;
+        if (idx1 >= 3)
+          idx1 = -1;
+        clearTimeout(sh1);
+        setTimeout(ArrowTipAni1, 500);
+      }
+
+      function ArrowTipAni2() {
+        if (idx2 == -1) {
+          $("#tcmsw>#" + sh2).html(str2);
+        } else if (idx2 == 0) {
+          $("#tcmsw>#" + sh2).html(str2 + ">");
+        } else if (idx2 == 1) {
+          $("#tcmsw>#" + sh2).html(str2 + ">>");
+        } else {
+          $("#tcmsw>#" + sh2).html(str2 + ">>>");
+        }
+        idx2++;
+        if (idx2 >= 3)
+          idx2 = -1;
+        clearTimeout(sh2);
+        setTimeout(ArrowTipAni2, 500);
+      }
+
+      function ArrowTipAni3() {
+        if (idx3 == -1) {
+          $("#tctcw>#" + sh3).html(str3);
+        } else if (idx3 == 0) {
+          $("#tctcw>#" + sh3).html(str3 + ">");
+        } else if (idx3 == 1) {
+          $("#tctcw>#" + sh3).html(str3 + ">>");
+        } else {
+          $("#tctcw>#" + sh3).html(str3 + ">>>");
+        }
+        idx3++;
+        if (idx3 >= 3)
+          idx3 = -1;
+        clearTimeout(sh3);
+        setTimeout(ArrowTipAni3, 500);
+      }
+
+      function OpenSubpage(tm) {
+        $(".pgsel").removeClass("pgsel_hl");
+        $(".pgsel:eq(" + midx + ")").addClass("pgsel_hl");
+
+        for (var i = 0; i < itemdata[midx].length; i++) {
+          $(".itemsel:eq(" + i + ")").html(itemdata[midx][i].title + "<div class='itembar'></div>");
+        }
+        ChangeItemInfo(tm);
+      }
+
+      function ChangeItemInfo(tm) {
+        $(".itemsel").removeClass("item_hl");
+        $(".itemsel:eq(" + sidx + ")").addClass("item_hl");
+        $("#itemimg2,#itemname,#itemdes").fadeOut({
+          duration:tm/2
+        });
+        $("#itemimg1").fadeOut(tm / 2, function () {
+          $("#itemimg1").css("background-image", "url(image/row06/img_" + midx + "_" + sidx + "_1.jpg)");
+          $("#itemimg2").css("background-image", "url(image/row06/img_" + midx + "_" + sidx + "_2.jpg)");
+          $("#itemname").html(itemdata[midx][sidx].name);
+          $("#itemdes").html(itemdata[midx][sidx].des);
+          $("#itemimg1,#itemimg2,#itemname,#itemdes").fadeIn({
+            duration: tm / 2
+          });
+        });
+      }
+    </script>
+  </div>
+  <!--页面内容至此结束-->
+</section>

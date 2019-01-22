@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+张胜温画卷主题页
+作者：李洪
+版本：1.0
+时间：2017年12月22日
+说明：
+引言页面
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+    />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+    <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+    <title>引言</title>
+</head>
+
+<body class="bg01 page ">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <section class="swiper-slide">
+                <!--页面内容从此开始-->
+                <div class="page">
+                    <div id="ArrowMove"></div>
+                    <div id="LogoInkDiv">
+                        <img src="image/row01col01/Ink.png" class="anime InkIn forwardani" />
+                    </div>
+                    <div id="SkipCover" onclick="OnClickSkipAnima();"></div>
+                    <div id="LogoTextDiv">
+                        <img src="image/row01col01/TextLogo.png" class="anime LogoTextIn forwardani" />
+                    </div>
+                    <div id="WordDiv" class="anime fadeOut forwardani">
+                        <div class="anime TextIn forwardani" style="animation-delay:0.5s;-ms-animation-delay: 0.5s;-webkit-animation-delay:0.5s;-moz-animation-delay:0.5s;-o-animation-delay:0.5s;">
+                            <p>这是一颗璀璨的宝石，它被深藏于历史的沧海中沉睡了8百余年。</p>
+                        </div>
+                        <div class="anime TextIn forwardani" style="animation-delay:3s;-ms-animation-delay: 3s;-webkit-animation-delay:3s;-moz-animation-delay:3s;-o-animation-delay:3s;">
+                            <p>1944年在重庆，它的初次亮相惊艳了世人。</p>
+                        </div>
+                        <div class="anime TextIn forwardani" style="animation-delay:5.5s;-ms-animation-delay: 5.5s;-webkit-animation-delay:5.5s;-moz-animation-delay:5.5s;-o-animation-delay:5.5s;">
+                            <p>这就是与《清明上河图》齐名，被誉为绘画艺术史上南北双绝的《张胜温画卷》。</p>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            setTimeout("closeSkip()", 10500);
+                        });
+
+                        function closeSkip() {
+                            $("#SkipCover").hide();
+                        }
+                        function OnClickSkipAnima() {
+                            $("#WordDiv").hide();
+                            closeSkip();
+                            $(".swiper-pagination-in input").removeClass("fadeIn").css("opacity", "1");
+                            $("#LogoTextDiv img").css({
+                                "animation-delay":"0s",
+                                "-moz-animation-delay": "0s",
+                                "-webkit-animation-delay":"0s",
+                                "-ms-animtion-delay":"0s",
+                                "-o-animation-delay": "0s",
+                                "display":"none",
+                            });
+                            $("#LogoTextDiv img").show();
+                        }
+                    </script>
+                </div>
+                <!--页面内容至此结束-->
+            </section>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- jquery JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- suzimiya help JS -->
+    <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

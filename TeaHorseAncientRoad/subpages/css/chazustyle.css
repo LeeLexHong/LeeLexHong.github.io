@@ -1,0 +1,40 @@
+
+#chazuimg{
+    background-image: url("../images/chazu.jpg");
+}
+
+#chazuroute{
+    width: 100vw;
+    height: 105.8vw;
+    background-image: url("../images/chazuroute1.png");
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+
+#routewords{
+    height: 50px;
+}
+
+#mapbtnscon{     
+    width: 100%;
+    margin-top: 20px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapbtn{
+    height: 15vw;
+    width: 27vw;  
+    background-size: 100% 100%;
+} 
+
+.mapbtn:nth-child(1){
+    background-image: url(../images/mapbtn1_hl.png);
+}
+.mapbtn:nth-child(2){
+    background-image: url(../images/mapbtn2.png);
+}	
+.mapbtn:nth-child(3){
+    background-image: url(../images/mapbtn3.png);
+}	

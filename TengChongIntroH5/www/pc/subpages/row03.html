@@ -1,0 +1,102 @@
+<!--
+  腾冲专题页腾冲温泉介绍页
+作者：李洪
+版本：1.0
+时间：2018年10月15日
+-->
+<section class="swiper-slide">
+  <!--页面内容从此开始-->
+  <div class="page">
+    <div class="PageCon">
+      <div class="Mainpage">
+        <div id="bjword" class="anime RightIn">
+          <p class="bigtitle">腾冲·“极边第一城”</p>
+        </div>
+        <div id="bjword2" class="anime MoveUp autobg">
+          <p>
+            山河因万年变迁而壮阔、万物生灵因繁衍不息而伟大。
+            <br> 腾冲作为中国三大地热区之一，境内的97座火山历经了千百万年的汹涌喷发，
+            <br> 而后进入了沉睡，这些沉睡中的火山造就了腾冲独特的人文、自然及其温泉文化。
+            <br> 这里的火山国家地质公园“十山九无头”，被称为火山地质的博物馆；
+            <br> 这里的和顺古镇月合照壁、田园牧歌，是“中国十大魅力古镇之首”；
+            <br> 这里的高黎贡山冬无严寒，夏无酷暑，是世界物种基因库；
+            <br> 这里的樱花谷终年无霜，雨量充沛，一片粉红如霞；
+          </p>
+        </div>
+        <div id="bjitemdiv">
+          <div id="bjitem"></div>
+          <div class="search" id="bjsh"></div>
+        </div>
+      </div>
+      <div class="Subpage" id="bjsub">
+        <div id="bj1"></div>
+        <div id="bj2"></div>
+        <div id="bj3"></div>
+        <div id="bj4"></div>
+        <div id="bjdest">
+          <p class="wqtitle">关于腾冲温泉</p>
+        </div>
+
+        <div id="bjdes" class="wqdes">
+          <p>
+            腾冲温泉自古以来就有“一泓热海”的美称。
+            <br> 这里地热温度之高，蒸汽之盛，水热活动之强烈较为罕见。
+            <br>
+            <br> 沸泉、气泉、喷泉等温泉群上百处；
+            <br> 热气、热泉遍地喷涌，气势磅礴；
+            <br>
+            <br> 可供浸泡的80余处地热温泉各具特色，
+            <br> 包括珍贵的碳酸泉、具有医疗价值的氟化偏硅酸泉、疗效独特的硫磺泉和富含稀土元素的碳酸泉等。
+          </p>
+        </div>
+        <div class="CloseBtn"></div>
+      </div>
+    </div>
+    <script>
+      var idx = 0;
+      var sh = null;
+      var str ="关于腾冲温泉&nbsp;&nbsp;&nbsp;&nbsp;";
+      $(document).ready(function () {
+        $(".Subpage").hide();
+
+        $(".search").click(function () {
+          $(".Subpage").fadeIn({
+            duration: 1000
+          });
+          $(".Mainpage").fadeOut({
+            duration: 1000
+          });
+        });
+
+        $(".CloseBtn").click(function () {
+          $(".Subpage").fadeOut({
+            duration: 1000
+          });
+          $(".Mainpage").fadeIn({
+            duration: 1000
+          });
+        });
+
+        sh = setTimeout(ArrowTipAni, 500);
+        $("#bjitem").prepend("<p id='" + sh + "'>"+str+"</p>");
+      });
+      function ArrowTipAni() {
+                if (idx == -1) {
+                    $("#bjitem>#" + sh).html(str);
+                } else if (idx == 0) {
+                    $("#bjitem>#" + sh).html(str+">");
+                } else if (idx == 1) {
+                    $("#bjitem>#" + sh).html(str+">>");
+                } else {
+                    $("#bjitem>#" + sh).html(str+">>>");
+                }
+                idx++;
+                if (idx >= 3)
+                    idx = -1;
+                clearTimeout(sh);
+                setTimeout(ArrowTipAni, 500);
+            }
+    </script>
+  </div>
+  <!--页面内容至此结束-->
+</section>

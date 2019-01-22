@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+作者：李洪
+版本：1.0
+时间：2018年02月05日
+说明：
+张胜温画卷专题页  城市介绍----弥渡
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>宾川介绍</title>
+</head>
+
+<body class="page bg02">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div class="CityPage">
+            <div id="MiDuTitle" class="anime ItemMoveDown forwardani CityTitle"></div>
+            <div class="Desc">
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.5s;
+                        -ms-animation-duration: 1.5s;
+                        -o-animation-duration: 1.5s;
+                        -moz-animation-duration: 1.5s;
+                        -webkit-animation-duration: 1.5s;
+                        animation-delay:1s;
+                        -moz-animation-delay: 1s;
+                        -webkit-animation-delay:1s;
+                        -ms-animtion-delay:1s;
+                        -o-animation-delay: 1s;">旋律带着曼妙轻盈的舞步来到耳畔，歌声带着对未来的憧憬融入心尖，这曲《小河淌水》初次听闻便感觉是从河的对岸悠悠扬扬地飘荡而来，用歌声代替语言描述着弥渡的风土人情。</p>
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.7s;
+                        -ms-animation-duration: 1.7s;
+                        -o-animation-duration: 1.7s;
+                        -moz-animation-duration: 1.7s;
+                        -webkit-animation-duration: 1.7s;
+                        animation-delay:0.8s;
+                        -moz-animation-delay: 0.8s;
+                        -webkit-animation-delay:0.8s;
+                        -ms-animtion-delay:0.8s;
+                        -o-animation-delay: 0.8s;">位于大理州东南部，在古代曾被称为 “六诏咽喉” 的弥渡，而今是闻名全国的花灯之乡和民歌之乡。 花灯和民歌现均已列入国家级非物质文化遗产名录。 此外， 今弥渡县内有依法登记开放的宗教活动场所20多处，包含了佛教、 道教、 伊斯兰教和基督教，可谓众教汇聚、 交融和谐， 良好的展示了当地包容开放、 平等友好的人文氛围。</p>
+              <div onclick="OnClickTour();" id="MiDuTour" class="anime ItemMoveDown forwardani TourBtn"></div>
+              <div class="line anime ItemMoveDown forwardani"></div>
+            </div>
+            <div id="HistoryTitle" class="anime TitleMoveDown forwardani"></div>
+            <div id="TieZhuMiao" onclick="OnClickTZM();" class="anime SanTaZoomIn forwardani MidSpotBtn">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p class="SpotBtnText">南诏铁柱庙</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="MiDuMark" class="CityMark"></div>
+
+          <div id="TieZhuMiaoInfo" class="SpotContainer">
+            <div id="TZMText" class="SpotTextImg anime ItemMoveDown forwardani">
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="TZMImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="TZMImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="TZMImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--页面内容至此结束-->
+        <script>
+
+          $(".SpotImg").mouseover(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1.2, 1.2)
+            }, 1500);
+          });
+
+          $(".SpotImg").mouseout(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1, 1)
+            }, 1500);
+          });
+
+          $("#TieZhuMiao").mouseover(function () {
+            $(this).children('.SpotBtnCover').show();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1.1, 1.1)
+            }, 500);
+          });
+
+          $("#TieZhuMiao").mouseout(function () {
+            $(this).children('.SpotBtnCover').hide();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1, 1)
+            }, 500);
+          });
+
+          function OnClickTour() {
+            window.open('http://www.innyo.com/content.aspx?id=545639628929');
+          };
+
+          function OnClickTZM() {
+            $(".CityPage").hide();
+            $("#TieZhuMiaoInfo").show();
+          };
+
+          function OnClickBack() {
+            $(".SpotContainer").hide();
+            $(".CityPage").show();
+          };
+        </script>
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!--
+  腾冲专题页娱乐活动介绍页
+作者：李洪
+版本：1.0
+时间：2018年10月17日
+-->
+<section class="swiper-slide">
+  <!--页面内容从此开始-->
+  <div class="page">
+    <div class="PageCon">
+      <div class="Mainpage">
+        <div class="topbar">
+          <div id="tc3Title">
+            <p>到“世界温泉朝圣地”，开启一段康养之旅</p>
+          </div>
+        </div>
+        <div id="lefttbbar"></div>
+        <div id="EndDes" class="anime MoveUp">
+          <p>
+            <midw>这个</midw>
+            <br>
+            <bigw class="bigtitle">秋冬</bigw>
+            <br> 愿你被高黎贡山美景环抱，
+            <br> 在上万个负氧离子的氧吧里，
+            <br> 在39℃的碳酸型弱碱性软水里，
+            <br> 焕发身心，疲惫尽消……
+          </p>
+        </div>
+        <div id="Endlogo" class="anime RotaShow"></div>
+        <div id="com">
+          <div class="citem">
+            <div class="itmImg"></div>
+            <div class="channel">微博</div>
+          </div>
+          <div class="citem">
+            <div class="itmImg"></div>
+            <div class="channel">今日头条</div>
+          </div>
+          <div class="citem">
+            <div class="itmImg"></div>
+            <div class="channel">一点资讯</div>
+          </div>
+          <div class="citem">
+            <div class="itmImg"></div>
+            <div class="channel">搜狐自媒体</div>
+          </div>
+          <div class="citem">
+            <div class="itmImg"></div>
+            <div class="channel">网易订阅</div>
+          </div>
+          <div class="citem">
+            <div class="itmImg"></div>
+            <div class="channel">云游网公众号</div>
+          </div>
+          <div id="endbar"></div>
+          <div id="footer">
+            <p>Copyright(C)1999-2014 云南旅游信息网络有限公司 innyo.com ALL RIGHTS RESERVED
+              <br> 滇ICP备05000709号 滇网文许字[2014]1061-001号 滇B2-20100025
+              <br> 增值电信业务经营许可证编号：滇B2-20100025
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var urls = new Array(
+        "https://weibo.com/innyo?refer_flag=1001030101_&is_all=1",
+        "https://www.toutiao.com/c/user/3608942175/#mid=3684704996",
+        "http://www.yidianzixun.com/channel/m4164",
+        "http://mp.sohu.com/profile?xpt=aW5ueW9feW5Ac29odS5jb20=&_f=index_pagemp_1&qq-pf-to=pcqq.c2c",
+        "http://dy.163.com/v2/article/detail/DFJ99B6Q052486PU.html"
+      );
+      $(document).ready(function () {
+
+        $(".citem").click(function () {
+          var idx = $(this).index();
+          if (idx == 5)
+            return;
+          window.open(urls[idx]);
+        });
+
+        $("#Endlogo").click(function () {
+          window.open("http://www.innyo.com/");
+        });
+
+      });
+
+
+    </script>
+  </div>
+  <!--页面内容至此结束-->
+</section>

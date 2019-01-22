@@ -1,0 +1,632 @@
+/*页头*/
+* { touch-action: pan-y; } 
+
+body{
+  width: 100%;
+  background-image: url(../images/bj.jpg);
+  background-repeat:repeat-y; 
+  background-size: 100%;
+}
+.banner{
+  width: 100%;
+}
+.banner img{
+  width: 100%;
+}
+
+.clearfix{
+  clear: both;
+}
+
+/*正文*/
+.content{
+  width:100%;
+}
+.content .title{
+  width:90%;
+  margin:0 5%;
+}
+.content .title img{
+  width:100%;
+}
+
+.content .cont1{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont1 .cont1_tit{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont1 .movie{
+  width: 90%;
+  margin:0 5%;
+  margin-top: 20px;
+}
+.content .cont1 .movie video{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+.content .cont1 p{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+  width: 90%;
+  margin:50px 5%;
+}
+
+
+.content .cont2{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont2 .cont2_tit{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont2 .pic{
+  width: 90%;
+  margin:0 5%;
+  margin-top: 20px;
+}
+.content .cont2 .pic img{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+.content .cont2 p{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+  width: 90%;
+  margin:20px 5%;
+}
+
+
+.content .cont3{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont3 .cont3_tit{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont3 .pic{
+  width: 90%;
+  margin:0 5%;
+  margin-top: 20px;
+}
+.content .cont3 .pic img{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+.content .cont3 p{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+  width: 90%;
+  margin:20px 5%;
+}
+.content .cont3 .cherk_box{
+  width: 90%;
+  margin:0 5%;
+  padding:0;
+}
+.content .cont3 .cherk_box li{
+  width:30%;
+  float: left;
+  margin-right: 5%;
+  list-style-type: none;
+}
+.content .cont3 .cherk_box .dask_btn3{
+  margin-right: 0;
+}
+.content .cont3 .cherk_box li img{
+  width: 100%;
+}
+
+.content .cont4{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont4 .cont4_tit{
+  margin:0;
+  padding:0;
+  margin-top: 30px;
+  width:100%;
+}
+.content .cont4 .pic{
+  width: 90%;
+  margin:0 5%;
+  margin-top: 20px;
+}
+.content .cont4 .pic img{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+.content .cont4 p{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+  width: 90%;
+  margin:20px 5%;
+}
+
+.content .cont5{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont5 h2{
+  font-size: 1.6rem;
+  line-height: 4rem;
+  color: #000;
+  text-align: center;
+}
+.content .cont5 ul{
+  margin:0;
+  padding:0;
+  width: 90%;
+  margin:0 5%;
+}
+.content .cont5 ul li{
+  margin:0;
+  padding:0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  list-style-type: none;
+}
+.content .cont5 .gonglue li .img_box{
+  float: left;
+  width: 25%;
+  height: auto;
+  border-radius: 0;
+  overflow: hidden;
+}
+.content .cont5 .gonglue li{
+  margin:20px 0;
+}
+.content .cont5 ul li .img_box{
+  float: left;
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content .cont5 ul li .img_box img{
+  width: 100%;
+}
+.content .cont5 ul li .jianjie{
+  float: left;
+  width: 70%;
+  margin-left: 5%;
+  text-align: left;
+}
+.content .cont5 ul li .jianjie h3{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #000; 
+}
+.content .cont5 ul li .jianjie a{
+  display: block;
+  width: 5rem;
+  margin-top: 5px;
+  text-decoration: none;
+  float: left;
+}
+.content .cont5 ul li .jianjie a img{
+  width: 100%;
+}
+.content .cont5 ul li .img_right{
+  float: right;
+}
+.content .cont5 ul li .text_right{
+  float: right;
+  text-align: right;
+  margin-right: 5%;
+  margin-left: 0;
+}
+.content .cont5 ul li .text_right a{
+  float: right;
+  display: block;
+}
+
+
+.content .cont6{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont6 .cont6_tit{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont6 .pic{
+  width: 90%;
+  margin:0 5%;
+  margin-top: 20px;
+}
+.content .cont6 .pic img{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+.content .cont6 p{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+  width: 90%;
+  margin:20px 5%;
+}
+.content .cont6 .cherk_box2{
+  width: 90%;
+  margin:0 5%;
+  padding:0;
+}
+.content .cont6 .cherk_box2 li{
+  width:30%;
+  float: left;
+  margin-right: 5%;
+  list-style-type: none;
+}
+.content .cont6 .cherk_box2 .dask2_btn3{
+  margin-right: 0;
+}
+.content .cont6 .cherk_box2 li img{
+  width: 100%;
+}
+
+.content .cont7{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.content .cont7 .cont7_tit{
+  margin:0;
+  padding:0;
+  margin-top: 10px;
+  width:100%;
+}
+.content .cont7 .pic{
+  width: 50%;
+  margin:0 25%;
+  margin-top: 0px;
+}
+.content .cont7 .pic img{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+
+.content .cont7 .guanzhu{
+  width: 100%;
+  margin:0;
+  padding:0;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #959595;
+}
+.content .cont7 .guanzhu li{
+  width:16.5%;
+  float: left;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+.content .cont7 .guanzhu li a{
+  display: block;
+  width: 100%;
+  margin:0 auto;
+  text-decoration: none;
+}
+.content .cont7 .guanzhu li a img{
+  width:80%;
+  margin:0 10%;
+}
+.content .cont7 .guanzhu li a h4{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+  margin:0;
+  padding:0;
+  font-weight: 500;
+}
+
+.content .cont7 .Copyright{
+  width: 90%;
+  margin:0 5%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+  text-align: center;
+}
+
+
+
+
+
+.dask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(../images/bj.jpg);
+  background-repeat:no-repeat; 
+  overflow: hidden;
+}
+.dask .dask_cont{
+  width: 90%;
+  height: 100%;
+  margin:0 5%;
+}
+.dask .dask_cont h2{
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  color: #000;
+  text-align: center;
+}
+.dask .dask_cont p{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+  width: 100%;
+  margin:20px 0;
+}
+.dask .dask_cont .back{
+  position: absolute;
+  width: 120px;
+  left: 50%;
+  bottom: 10px;
+  margin-left:-60px;
+  z-index: 10;
+}
+.dask .dask_cont .back img{
+  width: 100%;
+}
+.mui-slider .mui-slider-group .mui-slider-item img {
+  width: auto;  
+  height: auto;
+  max-width: 60%;  
+  max-height: 35%;  
+    margin:0 10%;
+    margin-top: 6%;
+    margin-bottom: -6%;
+}
+.mui-slider .mui-slider-item a{
+  padding-bottom:5rem;
+  text-align: center;
+}
+.mui-slider .mui-slider-item a h3{
+  font-size: 1.2rem;
+  line-height:2rem;
+  color: #000;
+  text-align: center;
+}
+.mui-slider .mui-slider-item a p{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+  width: 90%;
+  margin:20px 5%;
+
+}
+.mui-slider-indicator .mui-active.mui-indicator {
+    background: #fff;
+    border:1px solid #000;
+}
+.mui-slider-indicator .mui-indicator{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 1px 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #000;
+    -webkit-box-shadow: 0 0 1px 1px rgba(130,130,130,.7);
+    box-shadow: 0 0 1px 1px rgba(130,130,130,.7);
+}
+
+
+
+.dask4 .mui-slider .mui-slider-group .mui-slider-item img {
+  width: auto;  
+  height: auto;
+  max-width: 60%;  
+  max-height: 35%;     
+  margin: 0 10%;
+  margin-top: 3%;
+}
+
+.dask5 .mover_box{
+  width: 90%;
+  margin:0 5%;
+  height: 74%;
+  overflow-y: auto;
+}
+.dask5 .mover_box ul{
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+.dask5 .mover_box ul li{
+  width: 100%;
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 2px solid #887347;
+}
+.dask5 .mover_box ul li .left_box{
+  width: 80%;
+  float: left;
+}
+.dask5 .mover_box ul li .left_box h3{
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: #000;
+  margin:0;
+  padding: 0;
+}
+.dask5 .mover_box ul li .left_box p{
+  font-size: 0.9rem;
+  line-height: 2rem;
+  margin-bottom: 10px;
+  color: #000;
+  margin: 0;
+}
+.dask5 .mover_box ul li .right_img{
+  width:20%;
+  float: right;
+  margin-top: 1rem;
+}
+
+.dask6 .mover_box{
+  width: 90%;
+  margin:0 5%;
+  height: 74%;
+  overflow-y: auto;
+}
+
+
+/*平板样式*/
+@media screen and (min-width: 600px) {
+.content .cont1 p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #000;
+    width: 90%;
+    margin: 50px 5%;
+}
+.content .cont2 p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #000;
+    width: 90%;
+    margin: 20px 5%;
+}
+.dask .dask_cont p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #000;
+    width: 100%;
+    margin: 20px 0;
+}
+.mui-slider .mui-slider-item a h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #000;
+    text-align: center;
+}
+.mui-slider .mui-slider-item a p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #000;
+    width: 90%;
+    margin: 20px 5%;
+}
+.content .cont5 h2 {
+    font-size: 3rem;
+    line-height: 6rem;
+    color: #000;
+    text-align: center;
+}
+.content .cont5 ul li .jianjie h3 {
+    font-size: 2.2rem;
+    line-height: 4rem;
+    color: #000;
+}
+.content .cont5 ul li .jianjie a {
+    display: block;
+    width: 9rem;
+    margin-top: 5px;
+    text-decoration: none;
+    float: left;
+}
+.dask5 .mover_box ul li .left_box h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.dask5 .mover_box ul li .left_box p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 10px;
+    color: #000;
+    margin: 0;
+}
+.content .cont7 .guanzhu li a h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+.content .cont7 .Copyright {
+    width: 90%;
+    margin: 0 5%;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000;
+    text-align: center;
+}
+}
+
+
+
+/*小屏幕样式*/
+@media screen and (max-width: 350px) {
+.dask .dask_cont p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #000;
+    width: 100%;
+    margin: -10px 0;
+}
+.dask .dask_cont .back {
+    position: absolute;
+    width: 120px;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -60px;
+    z-index: 10;
+}
+.mui-slider .mui-slider-item a {
+    padding-bottom: 2rem;
+}
+}
+
+.tips{
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  text-align: left;
+  transform: rotate(90deg);
+  bottom: 16%;
+  left: 94%;
+  font-size: 14px;
+}

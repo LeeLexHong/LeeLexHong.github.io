@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+张胜温画卷主题页
+作者：李洪
+版本：1.0
+时间：2017年12月26日
+说明：
+源流/传承页面
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>源流/传承</title>
+</head>
+
+<body class="bg01 page">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div id="VideoDiv">
+            <video id="videoElement" src="Story.mp4" controls>
+              您的浏览器不支持视频标签！
+            </video>
+            <a id="close-btn"></a>
+          </div>
+          <div id="FCIconDiv" class="anime iconInLeft forwardani">
+            <img id="yuan" src="image/row01col03/yuan.png" />
+            <img id="liu" src="image/row01col03/liu.png" />
+            <img id="fclogo" src="image/row01col02/Name.png" />
+          </div>
+          <div class="anime fadeIn forwardani" id="YuanIconContainer">
+            <img id="CCImg" src="image/row01col03/YLIcon.png" />
+          </div>
+          <div id="btns">
+            <div id="switch" onclick="OnClickSwitch();" class="anime ButtonInRight forwardani"></div>
+            <div id="play" onclick="OnClickVideo();" class="anime ButtonInRight forwardani">
+            </div>
+          </div>
+          <div id="YLInfoText" class="anime LogoTextIn forwardani">
+            <p> 追溯历史的渊源就可以揭开这颗宝石沉睡百年的秘密。盛德五年（公元1180年），当时的大理国宫廷画师张胜温，奉大理国王段智兴的旨意开始绘制此图。画卷规模宏大，张胜温协同弟子也是呕心沥血、耗费四年时间才得以完工。</p>
+          </div>
+
+          <script>
+            var yuanliu = "<p>追溯历史的渊源就可以揭开这颗宝石沉睡百年的秘密。盛德五年（公元1180年），当时的大理国宫廷画师张胜温，奉大理国王段智兴的旨意开始绘制此图。画卷规模宏大，张胜温协同弟子也是呕心沥血、耗费四年时间才得以完工。</p>";
+            var chuancheng = "<p>随着朝代历史的变迁它的坎坷之路也拉开了序幕，明朝初年开朝皇帝朱元璋平定云南时下令将典籍都全部烧毁。大理官吏为保此画冒险偷带出宫，几经周折流落他乡。就在这时江南寺院出重金收购，这颗璀璨的宝石才得以在乱世中保存下来，直到乾隆皇帝下江南时带回清宫。<br>" +
+              "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;画卷历经百年沧桑见证了朝代更替但是依旧无法回归故里， 1949年日本战败投降，国民政府撤守台湾，在众多文物中选取部分将其带走，这副《张胜温画卷》就其中。</p>";
+            $("#VideoDiv").hide();
+            var ve = document.getElementById("videoElement");
+
+            var isYL = true;
+
+            function CloseVideo() {
+              ve.pause();
+              $("#VideoDiv").hide();
+              $(".swiper-pagination").css("z-index", "10");
+            };
+
+            function Replay() {
+              $("#FCIconDiv").toggleClass('iconInLeft');
+              $("#YuanIconContainer").toggleClass('fadeIn');
+              $("#switch").toggleClass('ButtonInRight');
+              $("#play").toggleClass('ButtonInRight');
+              $("#YLInfoText").toggleClass('LogoTextIn');
+            };
+
+            function OnClickSwitch() {
+              if (isYL) {//切换到传承
+                isYL = false;
+                $("#switch").css("background-image", " url(../image/row01col03/btn_yuanliu.png)");
+                $("#CCImg").attr('src', "image/row01col03/CCIcon.png");
+                $("#yuan").attr('src', "image/row01col03/chuan.png");
+                $("#liu").attr('src', "image/row01col03/cheng.png");
+                $("#YLInfoText").html(chuancheng).css("height", "12vw");
+                $(".swiper-pagination-in input:eq(2)").css({ "background": "url(../image/c_hl.png)", "background-size": "6vw 6vw", "background-repeat": "no-repeat" });
+              } else {//切换到源流.
+                isYL = true;
+                $("#switch").css("background-image", "url(../image/row01col03/btn_chuanchen.png)");
+                $("#CCImg").attr('src', "image/row01col03/YLIcon.png");
+                $("#yuan").attr('src', "image/row01col03/yuan.png");
+                $("#liu").attr('src', "image/row01col03/liu.png");
+                $("#YLInfoText").html(yuanliu).css("height", "8vw");
+                $(".swiper-pagination-in input:eq(2)").css({ "background": "url(../image/2_hl.png)", "background-size": "6vw 6vw", "background-repeat": "no-repeat" });
+              }
+
+              $("#FCIconDiv").toggleClass('iconInLeft');
+              $("#YuanIconContainer").toggleClass('fadeIn');
+              $("#switch").toggleClass('ButtonInRight');
+              $("#play").toggleClass('ButtonInRight');
+              $("#YLInfoText").toggleClass('LogoTextIn');
+
+              window.setTimeout(Replay, 200);
+            }
+
+            $('#close-btn').click(function () {
+              CloseVideo();
+            });
+
+            // 判断浏览器种类
+            function exitFullscreen() {
+              if (document.exitFullscreen) {
+                document.exitFullscreen();
+                $(".page").text("exitFullscreen");
+              } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+                $(".page").text("msExitFullscreen");
+              } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+                $(".page").text("mozCancelFullScreen");
+              } else if (document.oRequestFullscreen) {
+                document.oCancelFullScreen();
+                $(".page").text("oCancelFullScreen");
+              } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+                $(".page").text("webkitExitFullscreen");
+              } else {
+                $(".page").text("noneExitFullscreen");
+              }
+            }
+
+            // 判断各种浏览器，找到正确的方法
+            function launchFullscreen(element) {
+              if (element.requestFullscreen) {
+                element.requestFullscreen();
+                //$(".page").text("requestFullscreen");
+              } else if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+                //$(".page").text("mozRequestFullScreen");
+              } else if (element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+                //$(".page").text("msRequestFullscreen");
+              } else if (element.oRequestFullscreen) {
+                element.oRequestFullscreen();
+                // $(".page").text("oRequestFullscreen");
+              }
+              else if (element.webkitRequestFullscreen) {
+                element.webkitRequestFullScreen();
+                //$(".page").text("webkitRequestFullScreen");
+              } else {
+                // $(".page").text("noneRequestFullScreen");
+              }
+            };
+
+            document.addEventListener("webkitfullscreenchange", function () {
+              var doc = document;
+              if (!doc.webkitIsFullScreen) { //退出全屏停视频
+                CloseVideo();
+              };
+            }, false);
+
+            document.addEventListener("fullscreenchange ", function () {
+              if (!doc.webkitIsFullScreen) { //退出全屏停视频
+                CloseVideo();
+              };
+            }, false);
+
+
+            document.addEventListener("mozfullscreenchange ", function () {
+              if (!doc.mozIsFullScreen) { //退出全屏停视频
+                CloseVideo();
+              };
+            }, false);
+
+
+            ve.addEventListener("ended", function () {
+              CloseVideo();
+            });
+
+
+            function OnClickVideo() {
+              ve.currentTime = 0;
+              $(".swiper-pagination").css("z-index", "0");
+              $("#VideoDiv").show();
+              ve.play();
+              //launchFullscreen(ve);
+            };
+
+          </script>
+        </div>
+        <!--页面内容至此结束-->
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

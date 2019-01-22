@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+作者：李洪
+版本：1.0
+时间：2018年01月15日
+说明：
+城市介绍界面
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/hexagon.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>城市介绍</title>
+</head>
+
+<body class="page bg02">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div id="ArrowMove"></div>
+          <div class="row02col01 base-div">
+            <div id="MapContain" class="anime CityMapAnimate forwardani">
+              <div class="City" id="jianchuan">
+                <div class="CityBG" onclick="OnClickCity(1);"></div>
+                <div class="CityFM" onclick="OnClickCity(1);"></div>
+                <div class="CityText" onclick="OnClickCity(1);">
+                  <img class="CircleImg" src="image\row02col01\Circle.png">
+                  <img class="CityNameImg" src="image\row02col01\w_jianchuan.png">
+                </div>
+              </div>
+              <div class="City" id="binchuan">
+                <div class="CityBG" onclick="OnClickCity(2);"></div>
+                <div class="CityFM" onclick="OnClickCity(2);"></div>
+                <div class="CityText" style="right: 18%;" onclick="OnClickCity(2);">
+                  <img class="CircleImg" src="image\row02col01\Circle.png">
+                  <br>
+                  <img class="CityNameImg" src="image\row02col01\w_binchuan.png">
+                </div>
+              </div>
+              <div class="City" id="dali">
+                <img id="ScrollImg" src="image\row02col01\ScrollPop.png">
+                <div class="CityBG" onclick="OnClickCity(3);"></div>
+                <div class="CityFM" onclick="OnClickCity(3);"></div>
+                <div class="CityText" style="left: 2%;top: 28%;" onclick="OnClickCity(3);">
+                  <img class="StarImg" src="image\row02col01\Star.png">
+                  <br>
+                  <img class="CityNameImg" src="image\row02col01\w_dali.png">
+                </div>
+              </div>
+              <div class="City" id="weishan">
+                <div class="CityBG" onclick="OnClickCity(4);"></div>
+                <div class="CityFM" onclick="OnClickCity(4);"></div>
+                <div class="CityText" onclick="OnClickCity(4);">
+                  <img class="CircleImg" src="image\row02col01\Circle.png">
+                  <br>
+                  <img class="CityNameImg" src="image\row02col01\w_weishan.png">
+                </div>
+              </div>
+              <div class="City" id="midu">
+                <div class="CityBG" onclick="OnClickCity(5);"></div>
+                <div class="CityFM" onclick="OnClickCity(5);"></div>
+                <div class="CityText" style="top:30%;left: 10%;"  onclick="OnClickCity(5);">
+                  <img class="CircleImg" src="image\row02col01\Circle.png">
+                  <br>
+                  <img class="CityNameImg" src="image\row02col01\w_midu.png">
+                </div>
+              </div>
+              <img id="MapFm" src="image\row02col01\MapFm.png">
+            </div>
+            <div id="CityIcon" class="anime fadeIn forwardani"></div>
+            <div id="CityDes" class="anime CityDesAnimate forwardani">
+              <p>这里曾经有一段辉煌的历史，这里孕育过两个神秘的古国，它的人民崇尚宗教文化，它的故事充满神话色彩，这里就是《张胜温画卷》的故乡——大理。</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--页面内容至此结束-->
+    <script>
+      var DesArray = new Array("这里曾经有一段辉煌的历史，这里孕育过两个神秘的古国，它的人民崇尚宗教文化，它的故事充满神话色彩，这里就是《张胜温画卷》的故乡——大理。"
+        ,"大理剑川，记忆以石窟艺术的形式得以保存。《张胜温画卷》中的纤细线条在这里变得立体，普通的石头化作纸张记录着过去的真实面貌，从人民的生活到礼佛的场景，从供奉的造像到皇室的相貌，都记录在此供后世瞻仰。" 
+        , "大理州的宾川县，留下了这片土地的信仰。在宾川鸡足山的众多庙宇中，可以看见古国曾经礼佛朝圣的盛况，而如今经过千年时间的洗礼这里已经成为佛教的圣地，引领游客与信者纷至沓来。"
+        , "大理州的首府大理，传承与记载着这片土地的记忆。它们埋藏在古城的柱梁斗拱之内，沉淀在苍洱美景之中，浮现于三塔轮廓之上，青砖绿瓦间的千载的历史至今仍让世人驻足惊叹。" 
+        , "大理巍山与历史结下了深厚的渊源。南诏统一之前的第一座都城建立于此，云南道教发源于此，融合汉、白、彝三族古风的巍山古城也矗立于此，向世人展现着古大理国文化贯通、兼容并蓄的盛世风采。"
+        , "屹立着南诏千年铁柱的大理弥渡，人们用歌声转达着对生活的希望，一首《小河淌水》传遍中国大江南北，为这厚重的历史增添了一抹人心的暖意。");
+      $(".City").mouseover(function () {
+        var index = $(".City").index($(this));
+        $(".CityFM:eq(" + index + ")").css("opacity","0.5");
+      });
+
+      $(".City").mouseout(function () {
+        var index = $(".City").index($(this));
+        $(".CityFM:eq(" + index + ")").css("opacity","0");
+      });
+
+      function ReplayAnima(){
+        $("#CityIcon").toggleClass("fadeIn");
+        $("#CityDes").toggleClass("CityDesAnimate");
+      }
+      
+      function OnClickCity(index) {
+        if (index > 0 && index < DesArray.length) {
+          $(".CityFM").hide();
+          $(".CityFM:eq(" + (index-1) + ")").show();
+          $("#CityIcon").css("background-image", "url(image/row02col01/CityIcon/" + index + ".png)");
+          $("#CityDes p").html(DesArray[index]);
+
+          $("#CityIcon").toggleClass("fadeIn");
+          $("#CityDes").toggleClass("CityDesAnimate");
+          window.setTimeout(ReplayAnima, 20);
+        }
+      };
+
+    </script>
+    </section>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

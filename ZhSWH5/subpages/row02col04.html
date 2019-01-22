@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+作者：李洪
+版本：1.0
+时间：2018年02月01日
+说明：
+张胜温画卷专题页  城市介绍----宾川
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>宾川介绍</title>
+</head>
+
+<body class="page bg02">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div class="CityPage">
+            <div id="BinChuanTitle" class="anime ItemMoveDown forwardani CityTitle"></div>
+            <div class="Desc">
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.7s;
+                        -ms-animation-duration: 1.7s;
+                        -o-animation-duration: 1.7s;
+                        -moz-animation-duration: 1.7s;
+                        -webkit-animation-duration: 1.7s;
+                        animation-delay:0.8s;
+                        -moz-animation-delay: 0.8s;
+                        -webkit-animation-delay:0.8s;
+                        -ms-animtion-delay:0.8s;
+                        -o-animation-delay: 0.8s;">作为古时茶马古道的重要驿站，宾川像是一坛混合陈酿，多元文化在这里融合交汇、 生根发芽：作为西方文化代表之一的咖啡，在这里第一次植根于中国；24个少数民族世居于此，各民族和谐共处； 禅宗的发源地鸡足山，三传佛教与本土密宗交汇于此，各宗派和顺发展。 宾川文化的包容并蓄，伴随着中国的悠久历史发酵成为一道独特风景。</p>
+              <div onclick="OnClickTour();" id="BinChuanTour" class="anime ItemMoveDown forwardani TourBtn"></div>
+              <div class="line anime ItemMoveDown forwardani">
+              </div>
+            </div>
+            <div id="HistoryTitle" class="anime TitleMoveDown forwardani"></div>
+            <div id="JiZuShan" onclick="OnClickJiZuShan();" class="anime SanTaZoomIn forwardani MidSpotBtn">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p class="SpotBtnText">宾川鸡足山风景区</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="BinChuanMark" class="CityMark"></div>
+
+          <div id="JiZuShanInfo" class="SpotContainer">
+            <div id="JiZuShanText" class="SpotTextImg anime ItemMoveDown forwardani">
+              <div class="TicketBtn" onclick="OnClickTicket();"></div>
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="JZSImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="JZSImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="JZSImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--页面内容至此结束-->
+        <script>
+
+          $(".SpotImg").mouseover(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1.2, 1.2)
+            }, 1500);
+          });
+
+          $(".SpotImg").mouseout(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1, 1)
+            }, 1500);
+          });
+
+          $("#JiZuShan").mouseover(function () {
+            $(this).children('.SpotBtnCover').show();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1.1, 1.1)
+            }, 500);
+          });
+
+          $("#JiZuShan").mouseout(function () {
+            $(this).children('.SpotBtnCover').hide();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1, 1)
+            }, 500);
+          });
+
+          function OnClickTour() {
+            window.open('http://www.innyo.com/content.aspx?id=270791893900');
+          };
+
+          function OnClickTicket() {
+            window.open('http://shop.innyo.com:8080/yysc/a/yysc/yyscLog/jumpurl?cpid=480c89dfb239434a8a2c7128fdf5ea58');
+          };
+
+          function OnClickJiZuShan() {
+            $(".CityPage").hide();
+            $("#JiZuShanInfo").show();
+          };
+
+          function OnClickBack() {
+            $(".SpotContainer").hide();
+            $(".CityPage").show();
+          };
+        </script>
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

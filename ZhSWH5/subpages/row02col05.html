@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+作者：李洪
+版本：1.0
+时间：2018年02月05日
+说明：
+张胜温画卷专题页  城市介绍----巍山
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>巍山介绍</title>
+</head>
+
+<body class="page bg02">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div class="CityPage">
+            <div id="WeiShanTitle" class="anime ItemMoveDown forwardani CityTitle"></div>
+            <div class="Desc">
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.7s;
+                        -ms-animation-duration: 1.7s;
+                        -o-animation-duration: 1.7s;
+                        -moz-animation-duration: 1.7s;
+                        -webkit-animation-duration: 1.7s;
+                        animation-delay:0.8s;
+                        -moz-animation-delay: 0.8s;
+                        -webkit-animation-delay:0.8s;
+                        -ms-animtion-delay:0.8s;
+                        -o-animation-delay: 0.8s;">云南省的6座国家级历史文化名城中，大理州占其二，一座是游客耳熟能详的州府大理市，而另一座就是距大理市以南约50公里外的巍山。巍山是古南诏国的起源与发祥之地，第四代诏主皮罗阁迁都大理太和城前，南诏都城近百年时间均位于今巍山境内。当我们循着《张胜温画卷》踏上旅程时，巍山这块根源之地将为我们诉说这渊远历史中的片片珍贵记忆。</p>
+              <div onclick="OnClickTour();" id="WeiShanTour" class="anime ItemMoveDown forwardani TourBtn"></div>
+              <div class="line anime ItemMoveDown forwardani">
+              </div>
+            </div>
+            <div id="HistoryTitle" class="anime TitleMoveDown forwardani"></div>
+            <div id="WeiBaoShan" class="anime GuChengLeftIn forwardani MidSpotBtn" onclick="OnClickWBS();">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p>巍宝山</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="WeiShanGuCheng" class="anime ErHaiRightIn forwardani MidSpotBtn" onclick="OnClickWSGC();">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p>巍山古城</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="WeiShanMark" class="CityMark"></div>
+
+          <div id="WeiBaoShanInfo" class="SpotContainer">
+            <div id="WBSText" class="SpotTextImg anime ItemMoveDown forwardani">
+              <div class="TicketBtn" onclick="OnClickTicket();"></div>
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="WBSImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="WBSImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="WBSImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="WeiShaneGuChengInfo" class="SpotContainer">
+            <div id="WSGCText" class="SpotTextImg anime ItemMoveDown forwardani">
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="WSGCImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="WSGCImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="WSGCImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--页面内容至此结束-->
+        <script>
+
+          $(".SpotImg").mouseover(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1.2, 1.2)
+            }, 1500);
+          });
+
+          $(".SpotImg").mouseout(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1, 1)
+            }, 1500);
+          });
+
+          $("#WeiShanGuCheng, #WeiBaoShan").mouseover(function () {
+            $(this).children('.SpotBtnCover').show();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1.1, 1.1)
+            }, 500);
+          });
+
+          $("#WeiShanGuCheng, #WeiBaoShan").mouseout(function () {
+            $(this).children('.SpotBtnCover').hide();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1, 1)
+            }, 500);
+          });
+
+          function OnClickTour() {
+            window.open('http://www.innyo.com/content.aspx?id=066608660652');
+          };
+
+          function OnClickTicket() {
+            window.open('http://you.ctrip.com/sight/dali31/4361.html');
+          };
+
+          function OnClickWBS() {
+            $(".CityPage").hide();
+            $("#WeiBaoShanInfo").show();
+          };
+
+          function OnClickWSGC() {
+            $(".CityPage").hide();
+            $("#WeiShaneGuChengInfo").show();
+          };
+
+          function OnClickBack() {
+            $(".SpotContainer").hide();
+            $(".CityPage").show();
+          };
+        </script>
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

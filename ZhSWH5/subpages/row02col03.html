@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+作者：李洪
+版本：1.0
+时间：2018年02月02日
+说明：
+张胜温画卷专题页  城市介绍----剑川
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>剑川介绍</title>
+</head>
+
+<body class="page bg02">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div class="CityPage">
+            <div id="JianChuanTitle" class="anime ItemMoveDown forwardani CityTitle"></div>
+            <div class="Desc">
+              <p class="anime ItemMoveDown forwardani" style="animation-duration:1.7s;
+                        -ms-animation-duration: 1.7s;
+                        -o-animation-duration: 1.7s;
+                        -moz-animation-duration: 1.7s;
+                        -webkit-animation-duration: 1.7s;
+                        animation-delay:0.8s;
+                        -moz-animation-delay: 0.8s;
+                        -webkit-animation-delay:0.8s;
+                        -ms-animtion-delay:0.8s;
+                        -o-animation-delay: 0.8s;">从云贵高原青铜与稻耕文化的发源，到“南方丝绸之路”与滇藏茶马古道的繁荣，位于大理州北部的剑川记录着这片土地数千年的发展与变迁。时至今日，剑川的沙溪仍保留着南方丝路与茶马要冲的集市风貌，石宝山的石窟造像向世人诉说着南诏-大理国的文化自信与辉煌，剑川的人民传承着历史的记忆，伴随着古乐悠韵以歌会友静候四方来客。</p>
+              <div onclick="OnClickTour();" id="JianChuanTour" class="anime ItemMoveDown forwardani TourBtn"></div>
+              <div class="line anime ItemMoveDown forwardani">
+              </div>
+            </div>
+            <div id="HistoryTitle" class="anime TitleMoveDown forwardani"></div>
+            <div id="ShiKu" class="anime GuChengLeftIn forwardani MidSpotBtn" onclick="OnClickShiKu();">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p>石钟山石窟（剑川石窟）</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="ShaXi" class="anime ErHaiRightIn forwardani MidSpotBtn" onclick="OnClickShaXi();">
+              <div class="SpotBtnCover"></div>
+              <div class="SpotBtnText">
+                <div class="middle-box">
+                  <div class="iconword">
+                    <p>沙溪古镇</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="JianChuanMark" class="CityMark"></div>
+
+          <div id="ShiKuInfo" class="SpotContainer">
+            <div id="ShiKuText" class="SpotTextImg anime ItemMoveDown forwardani">
+              <div class="TicketBtn" onclick="OnClickTicket();"></div>
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="SKImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="SKImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="SKImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ShaXiInfo" class="SpotContainer">
+            <div id="ShaXiText" class="SpotTextImg anime ItemMoveDown forwardani">
+            </div>
+            <div class="SpotItem ItemLeft">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="SXImg1"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="SXImg2"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani"></div>
+            </div>
+
+            <div class="SpotItem ItemRight">
+              <div class="SpotImgFm anime ItemMoveDown forwardani">
+                <div class="SpotImg" id="SXImg3"></div>
+              </div>
+              <div class="ImgShadow anime ItemMoveDown forwardani">
+                <div class="SpotBack" onclick="OnClickBack();"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--页面内容至此结束-->
+        <script>
+
+          $(".SpotImg").mouseover(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1.2, 1.2)
+            }, 1500);
+          });
+
+          $(".SpotImg").mouseout(function () {
+            $(this).stop();
+            $(this).animate({
+              scale: (1, 1)
+            }, 1500);
+          });
+
+          $("#ShiKu, #ShaXi").mouseover(function () {
+            $(this).children('.SpotBtnCover').show();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1.1, 1.1)
+            }, 500);
+          });
+
+          $("#ShiKu, #ShaXi").mouseout(function () {
+            $(this).children('.SpotBtnCover').hide();
+            $(this).children('.SpotBtnText').stop();
+            $(this).children('.SpotBtnText').animate({
+              scale: (1, 1)
+            }, 500);
+          });
+
+          function OnClickTour() {
+            window.open('http://www.innyo.com/content.aspx?id=916059828894');
+          };
+
+          function OnClickTicket() {
+            window.open('http://shop.innyo.com:8080/yysc/a/yysc/yyscLog/jumpurl?cpid=c85f9c7820aa445cb9ece6a7ab5e6d82');
+          };
+
+          function OnClickShiKu() {
+            $(".CityPage").hide();
+            $("#ShiKuInfo").show();
+          };
+
+          function OnClickShaXi() {
+            $(".CityPage").hide();
+            $("#ShaXiInfo").show();
+          };
+
+          function OnClickBack() {
+            $(".SpotContainer").hide();
+            $(".CityPage").show();
+          };
+        </script>
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+</body>
+
+</html>

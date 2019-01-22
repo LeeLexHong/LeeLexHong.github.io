@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+云游网介绍H5业务介绍手机版
+作者：李洪
+版本：1.0
+时间：2017年03月07日
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <title>业务介绍</title>
+</head>
+
+<body class="page">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div id="Items">
+            <div class="YwItem anime BounceMoveUpAnima">
+              <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+            </div>
+            <div class="YwItem anime BounceMoveUpAnima">
+              <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+            </div>
+            <div class="YwItem anime BounceMoveUpAnima">
+              <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+            </div>
+            <div class="YwItem anime BounceMoveUpAnima">
+              <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+            </div>
+            <div class="YwSysTitle CnItem"></div>
+            <div class="YwSysTitle EnItem"></div>
+          </div>
+
+          <div id="SubPages">
+            <div class="SubPage">
+              <div id="Yw1Title" class="YwTitle CnItem"></div>
+              <div id="Yw1Word" class="YwWord CnItem"></div>
+              <div id="Yw1Icon" class="YwIcon CnItem"></div>
+
+              <div id="EnYw1Title" class="YwTitle EnItem"></div>
+              <div id="EnYw1Word" class="YwWord EnItem"></div>
+              <div id="EnYw1Icon" class="YwIcon EnItem"></div>
+
+              <div class="CloseBtn"></div>
+            </div>
+            <div class="SubPage">
+              <div id="Yw2Title" class="YwTitle CnItem"></div>
+              <div id="Yw2Word" class="YwWord CnItem"></div>
+              <div id="EnYw2Title" class="YwTitle EnItem"></div>
+              <div id="EnYw2Word" class="YwWord EnItem"></div>
+
+              <div id="Yw2Scroll" class="swiper-no-swiping CnItem">
+                <div id="ZswIcon">
+                  <div class="IconWord"></div>
+                </div>
+                <div id="ShanHaiIcon">
+                  <div class="IconWord"></div>
+                </div>
+                <div id="ChaMaIcon">
+                  <div id="ChaMaWords"></div>
+                </div>
+              </div>
+
+              <div id="EnYw2Scroll" class="swiper-no-swiping EnItem">
+                <div id="ZswIcon">
+                  <div class="EnIconWord"></div>
+                </div>
+                <div id="EnShanHaiIcon">
+                  <div class="EnIconWord"></div>
+                </div>
+                <div id="EnChaMaIcon">
+                  <div class="EnIconWord"></div>
+                </div>
+              </div>
+              <div class="CloseBtn"></div>
+            </div>
+            <div class="SubPage">
+              <div id="Yw3Title" class="YwTitle CnItem"></div>
+              <div id="Yw3Word" class="YwWord CnItem"></div>
+              <div id="Yw3Icon" class="YwIcon CnItem"></div>
+
+              <div id="EnYw3Title" class="YwTitle EnItem"></div>
+              <div id="EnYw3Word" class="YwWord EnItem"></div>
+              <div id="EnYw3Icon" class="YwIcon EnItem"></div>
+              <div class="CloseBtn"></div>
+            </div>
+            <div class="SubPage">
+              <div id="Yw4Title" class="YwTitle CnItem"></div>
+              <div id="Yw4Word" class="YwWord CnItem"></div>
+              <div id="Yw4Icon" class="YwIcon CnItem"></div>
+
+              <div id="EnYw4Title" class="YwTitle EnItem"></div>
+              <div id="EnYw4Word" class="YwWord EnItem"></div>
+              <div id="EnYw4Icon" class="YwIcon EnItem"></div>
+              <div class="CloseBtn"></div>
+            </div>
+          </div>
+          <script>
+            var InT, OutT;
+            var ZoomNum = 0;
+
+            function YwItemMoveOut() {
+              for (var i = 3; i > -1; i--) {
+                $(".YwItem:eq(" + i + ")").animate({ top: "3000px" }, (4 - i) * 500);
+              }
+              setTimeout("MoveOutEnd()", 1000);
+            };
+
+            function ImgZoomInEffect() {
+              if (ZoomNum > 3 || ZoomNum < 0)
+                ZoomNum = 0;
+              $('.cover:eq(' + ZoomNum + ')').fadeOut({
+                duration: 3000
+              });
+              $('.YwBG:eq(' + ZoomNum + ')').animate({
+                scale: 1.1
+              }, 3000);
+              InT = setTimeout("ImgZoomOutEffect()", 3000);
+            };
+
+            function ImgZoomOutEffect() {
+              $('.cover:eq(' + ZoomNum + ')').fadeIn({
+                duration: 3000
+              });
+              $('.YwBG:eq(' + ZoomNum + ')').animate({
+                scale: 1
+              }, 3000);
+              ZoomNum++;
+              OutT = setTimeout("ImgZoomInEffect()", 3000);
+            };
+
+            function MoveOutEnd() {
+              isAnima = false;
+              $(Ele).fadeIn({
+                duration: 1000
+              });
+              $(".YwItem").stop();
+              $(".YwItem").removeAttr("style");
+              $("#Items").hide();
+            };
+
+            var Ele;
+            var isAnima;
+            $(document).ready(function () {
+              $(".SubPage").hide();
+              isAnima = false;
+              $(".YwItem").click(function () {
+                if (isAnima)
+                  return;
+                isAnima = true;
+                Ele = ".SubPage:eq(" + $(this).index() + ")";
+                YwItemMoveOut();
+              });
+
+              $(".CloseBtn").click(function () {
+                $(".SubPage").fadeOut({
+                  duration: 1000
+                });
+                $("#Items").show();
+              });
+              clearTimeout(InT);
+              clearTimeout(OutT);
+              ImgZoomInEffect();
+            });  
+          </script>
+        </div>
+        <!--页面内容至此结束-->
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!--
+  腾冲专题页关于温泉·Q&A之其二介绍页
+作者：李洪
+版本：1.0
+时间：2018年10月16日
+-->
+<section class="swiper-slide">
+  <!--页面内容从此开始-->
+  <div class="page">
+    <div class="PageCon">
+      <div class="Mainpage">
+        <div class="topbar">
+          <div id="tc2Title">
+            <p>到“世界温泉朝圣地”，开启一段康养之旅</p>
+          </div>
+        </div>
+        <div class="topbluebar"></div>
+        <div id="tc2word" class="anime LeftIn">
+          <p id="zmbig" class="bigtitle">如何更好地泡自己</p>
+        </div>
+        <div id="paofa"></div>
+        <div id="zhuyi"></div>
+        <div class="shcon">
+          <div class="search" id="paofash"></div>
+          <div class="search" id="zhuyish"></div>
+        </div>
+      </div>
+      <div class="Subpage">
+        <div class="subpgsel">
+          <div class="pgsel pgsel_hl">温泉的泡法</div>
+          <div class="pgsel">注意事项</div>
+        </div>
+        <div class="wtbg"></div>
+        <div class="subitem">
+          <div id="pf1"></div>
+          <div id="pf2"></div>
+          <div id="pf3"></div>
+          <div class="tc2tcon">
+            <div class="tc2bar"></div>
+            <p class="tc2title">关于温泉·Q&A之其二</p>
+          </div>
+          <div class="tc2h">温泉的泡法</div>
+          <div class="tc2des">
+            <p>矿泉浸浴是应用最广泛的一种方法，可以在浴盆或浴池中进行。全身浸浴使人体充分的接触矿泉水，产生显著的生物效应。
+              <br>
+              <br>泡温泉时，应该尽量合上双眼，以冥想的心情，缓缓地深呼吸数次，才能真正达到释放身心压力。下水前先探试池温，从低温度泉到高温度泉浸泡要循序渐进。
+              <br>
+              <br>
+              <redtext>不要在烫身的池水中每次浸泡时间超过10分钟，要温热交替浸泡。若出现胸闷口干等不适感，立刻调换凉水浸泡或上水静养稍许，并多喝水即可舒缓。</redtext>
+            </p>
+          </div>
+        </div>
+        <div class="subitem">
+          <div id="zhy1"></div>
+          <div id="zhy2"></div>
+          <div id="zhy3"></div>
+          <div id="zhy4"></div>
+          <div class="tc2tcon">
+            <div class="tc2bar"></div>
+            <p class="tc2title">关于温泉·Q&A之其二</p>
+          </div>
+          <div class="tc2h">注意事项</div>
+          <div class="tc2des">
+            <p>
+              1.高血压、心脏病患者，在规则服药的前提下，可以泡温泉，但每次以不超过20分钟为限。起身时应谨慎缓慢，以防因血管扩张、血压下降导致头昏眼花而跌倒。泡温泉后，人体水分迅速蒸发，要喝水补充。
+              <br>
+              <br> 2.泡温泉对风湿和骨关节疾病有很好的疗效，可以在泡温泉的同时请专业技师按摩穴位效果更好。
+              <br>
+              <br> 3.避免空腹、饭后、酒后泡温泉，泡温泉与吃饭时间至少应间隔一小时。
+              <br>
+              <br> 4.要记得把身上的金属饰品摘下来，否则首饰会被硫化成黑色。
+              <br>
+              <br> 5.部分皮肤病患者，不宜泡温泉。
+            </p>
+          </div>
+        </div>
+        <div class="CloseBtn"></div>
+      </div>
+    </div>
+    <script>
+
+      var idx1 = 0;
+      var sh1 = null;
+      var str1 ="&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;温泉的泡法";
+      var idx2 = 0;
+      var sh2 = null;
+      var str2 ="&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;到腾冲泡温泉需要注意什么";
+
+      $(document).ready(function () {
+        $(".Subpage").hide();
+
+        $(".search").click(function () {
+          $(".Subpage").fadeIn({
+            duration: 1000
+          });
+          $(".Mainpage").fadeOut({
+            duration: 1000
+          });
+          OpenSubpage($(this).index(), 10);
+        });
+
+        $(".pgsel").click(function () {
+          OpenSubpage($(this).index(), 500);
+        });
+
+        $(".CloseBtn").click(function () {
+          $(".Subpage").fadeOut({
+            duration: 1000
+          });
+          $(".Mainpage").fadeIn({
+            duration: 1000
+          });
+        });
+
+        sh1 = setTimeout(ArrowTipAni1, 500);
+        $("#paofa").prepend("<p id='" + sh1 + "'>"+str1+"</p>");
+
+        sh2 = setTimeout(ArrowTipAni2, 500);
+        $("#zhuyi").prepend("<p id='" + sh2 + "'>"+str2+"</p>");
+      });
+
+      function ArrowTipAni1() {
+                if (idx1 == -1) {
+                    $("#paofa>#" + sh1).html(str1);
+                } else if (idx1 == 0) {
+                    $("#paofa>#" + sh1).html("＜"+str1);
+                } else if (idx1 == 1) {
+                    $("#paofa>#" + sh1).html("＜＜"+str1);
+                } else {
+                    $("#paofa>#" + sh1).html("＜＜＜"+str1);
+                }
+                idx1++;
+                if (idx1 >= 3)
+                    idx1 = -1;
+                clearTimeout(sh1);
+                setTimeout(ArrowTipAni1, 500);
+            }
+
+        function ArrowTipAni2() {
+                if (idx2 == -1) {
+                    $("#zhuyi>#" + sh2).html(str2);
+                } else if (idx2 == 0) {
+                    $("#zhuyi>#" + sh2).html("＜"+str2);
+                } else if (idx2 == 1) {
+                    $("#zhuyi>#" + sh2).html("＜＜"+str2);
+                } else {
+                    $("#zhuyi>#" + sh2).html("＜＜＜"+str2);
+                }
+                idx2++;
+                if (idx2 >= 3)
+                    idx2 = -1;
+                clearTimeout(sh2);
+                setTimeout(ArrowTipAni2, 500);
+            }    
+      function OpenSubpage(index, tm) {
+        $(".pgsel").removeClass("pgsel_hl");
+        $(".pgsel:eq(" + index + ")").addClass("pgsel_hl");
+
+        $(".subitem").fadeOut({
+          duration: tm
+        });
+        $(".subitem:eq(" + index + ")").fadeIn({
+          duration: tm
+        });
+      }
+    </script>
+  </div>
+  <!--页面内容至此结束-->
+</section>

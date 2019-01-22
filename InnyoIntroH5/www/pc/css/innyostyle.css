@@ -1,0 +1,2308 @@
+@charset "utf-8";
+/**
+云游网网页
+作者：李洪
+版本：1.0
+时间：2018年03月05日
+说明：
+默认样式
+**/
+
+html, body {
+	position: relative;
+	height: 100%;
+	overflow: hidden; 
+	font-family: "微软雅黑";
+}
+html{
+	-webkit-text-size-adjust: none;
+}
+
+*{
+	-webkit-text-size-adjust:auto !important;
+	cursor: default;
+}
+body {
+	background: #eee;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+
+#HorTip{
+	position: absolute;
+	width: 90.5vw;
+	height: 56.8vw;
+	background-image: url(../image/Tip.png);
+	background-size: 100% 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.bg01 {
+	background-image: url(../image/bg01.jpg);
+}
+
+.bg02 {
+	background-image: url(../image/bg02.jpg);
+}
+
+.bg03{
+	background-image: url(../image/bg03.jpg);
+}
+
+.bg04{
+	background-image: url(../image/bg04.jpg);
+}
+
+.anime{
+	animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.page {
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.base-div {
+	width:1024px;
+	height:768px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.base-div .AR {
+	position:absolute;
+}
+
+/*具体内容*/
+.swiper-pagination-out{
+	position: absolute;
+	height: 100%;
+    width: 7px;
+    right: 8%;
+    top: 18%;
+	z-index: 999;
+}
+
+/*云游网介绍*/
+.PagItem{
+	display: block;
+	cursor: pointer;
+}
+
+.PagNormal{
+	width: 8px;
+	height:70px;
+	background-color: rgb(27, 27, 27);
+	margin-top: 4px;
+}
+
+.PagSelect{
+	width: 20px;
+	height:72px;
+	background-color: rgb(255, 255, 255);
+	margin-left: -5px;
+	margin-top: 4px;
+}
+
+.pagText{
+	position: relative;
+	width: 141px;
+	height: 44px;
+	background-image: url(../image/PagBG.png);
+	background-size: 100% 100%;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 44px;
+	top: 13px;
+	right: 145px;
+}
+
+#TitleBS{
+	line-height: 22px;
+}
+
+.Comdiv div{
+	position: absolute;
+	z-index: 50;
+}
+.innyologo{
+	top: 30px;
+	left: 30px;
+	width: 200px;
+    height: 64.91px;
+	background-image: url(../image/Logo.png);
+	background-size: 100% 100%;
+
+	opacity: 0;
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+	
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
+	-o-animation-delay:  0.8s;
+}
+
+.lang{
+	text-align: right;
+	position: absolute;
+	width: 200px;
+	height: 20px;
+	color: #004a6e;
+	line-height: 20px;
+	font-size: 20px;
+	top: 20px;
+	right: 20px;
+}
+
+.VerInfo{
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	right: 0;
+	margin: auto;
+    width: 35vw;
+	height: 2.46vw;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.VerInfo.CnItem{
+	background-image: url(../image/VerInfo.png);
+}
+.VerInfo.EnItem{
+	background-image: url(../enimage/VerInfo.png);
+}
+/*首页*/
+#HomeCont div{
+	position: absolute;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+#CirWords{
+	width: 100%;
+	height: 100%;
+}
+
+.CirWord{
+	width: 3.8vw;
+	height: 3.96vw;
+	opacity: 0;
+	animation-duration:0.4s;
+	-moz-animation-duration:0.4s;
+	-webkit-animation-duration:0.4s;
+	-ms-animation-duration:0.4s;
+	-o-animation-duration:0.4s;
+}
+.CirWord:nth-child(1){
+	bottom: 70%;
+    left: 51vw;
+	background-image: url(../image/row01/02.png);
+	
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+}
+
+.CirWord:nth-child(2){
+	bottom: 70%;
+    left: 55vw;
+	background-image: url(../image/row01/03.png);
+	animation-delay: 2.2s;
+	-webkit-animation-delay: 2.2s;
+	-moz-animation-delay: 2.2s;
+	-o-animation-delay: 2.2s;
+}
+
+.CirWord:nth-child(3){
+	bottom: 70%;
+    left: 59vw;
+	background-image: url(../image/row01/04.png);
+	animation-delay: 2.4s;
+	-webkit-animation-delay: 2.4s;
+	-moz-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
+}
+
+.CirWord:nth-child(4){
+	bottom: 70%;
+    left: 63vw;
+	background-image: url(../image/row01/05.png);
+	animation-delay: 2.6s;
+	-webkit-animation-delay: 2.6s;
+	-moz-animation-delay: 2.6s;
+	-o-animation-delay: 2.6s;
+}
+
+.CirWord:nth-child(5){
+	bottom: 62%;
+    left: 51vw;
+	background-image: url(../image/row01/06.png);
+	animation-delay: 2.2s;
+	-webkit-animation-delay: 2.2s;
+	-moz-animation-delay: 2.2s;
+	-o-animation-delay: 2.2s;
+}
+
+.CirWord:nth-child(6){
+	bottom: 62%;
+    left: 55vw;
+	background-image: url(../image/row01/07.png);
+	animation-delay: 2.4s;
+	-webkit-animation-delay: 2.4s;
+	-moz-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
+}
+
+.CirWord:nth-child(7){
+	bottom: 62%;
+    left: 59vw;
+	background-image: url(../image/row01/08.png);
+	animation-delay: 2.6s;
+	-webkit-animation-delay: 2.6s;
+	-moz-animation-delay: 2.6s;
+	-o-animation-delay: 2.6s;
+}
+
+.CirWord:nth-child(8){
+	bottom: 62%;
+    left: 63vw;
+	background-image: url(../image/row01/09.png);
+	animation-delay: 2.8s;
+	-webkit-animation-delay: 2.8s;
+	-moz-animation-delay: 2.8s;
+	-o-animation-delay: 2.8s;
+}
+
+#build{
+	width: 100vw;
+	height: 31.4vw;
+	bottom: 0%;
+	background-image: url(../image/row01/Spot.png);
+	opacity: 0;
+
+	animation-duration:0.8s;
+	-moz-animation-duration:0.8s;
+	-webkit-animation-duration:0.8s;
+	-ms-animation-duration:0.8s;
+	-o-animation-duration:0.8s;
+}
+
+#leaf{
+	top: 6%;
+	right: 0;
+	width: 94vw;
+	height: 23.84vw;
+	background-image: url(../image/row01/leaf.png);
+}
+#LWord{
+	width: 32.2vw;
+    height: 4.2vw;
+    right: 0;
+    left: 0;
+    bottom: 53%;
+	background-image: url(../image/row01/words.png);
+
+	opacity: 0;
+	
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+	
+	animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-o-animation-delay: 3s;
+}
+
+#YunNan{
+	width: 17vw;
+    height: 13.9vw;
+    right: 49%;
+	bottom: 62%;
+	background-image: url(../image/row01/T_YunNan.png);
+
+	opacity: 0;
+	
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	-o-animation-delay: 1.5s;
+}
+
+
+
+.MouseTip{
+	height: 71px;
+	bottom: 4%;
+	right: 2%;
+}
+
+.MouseTip.CnItem{
+	width: 199px;
+	background-image: url(../image/row01/MouseTip.png);	
+}
+
+.MouseTip.EnItem{
+	width: 164px;
+	background-image: url(../enimage/row01/MouseTip.png);	
+}
+
+#LWords{
+	width: 60vw;
+    height: 2.3vw;
+    right: 0;
+	left: 0;
+	top: 40%;
+	background-image: url(../enimage/row01/Lwords.png);
+	opacity: 0;
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+}
+
+#Bwords{
+	width: 74.4vw;
+    height: 9.4vw;
+    right: 0;
+	left: 0;
+	bottom: 58%;
+	background-image: url(../enimage/row01/Bwords.png);
+	opacity: 0;
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.scaleIn{
+	-webkit-animation-name: scaleIn;
+	animation-name: scaleIn;
+	-moz-animation-name:scaleIn;
+	-o-animation-name: scaleIn;
+	-ms-animation-name:scaleIn;
+}
+@-webkit-keyframes scaleIn {
+	from {
+		opacity: 0.6;
+		-webkit-transform: scale3d(0, 0, 0);
+	}
+  
+	to {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+	}
+  }
+  
+  @keyframes scaleIn {
+	from {
+		opacity: 0.6;
+		transform: scale3d(0, 0, 0);
+	}
+  
+	to {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+  }
+  
+  @-o-keyframes scaleIn /* Opera */
+  {
+	from {
+		opacity: 0.6;
+		-o-transform: scale3d(0, 0, 0);
+	}
+  
+	to {
+		opacity: 1;
+		-o-transform: scale3d(1, 1, 1);
+	}
+  }
+  
+  @-moz-keyframes scaleIn{
+	from {
+		opacity: 0.6;
+		-moz-transform: scale3d(0, 0, 0);
+	}
+  
+	to {
+		opacity: 1;
+		-moz-transform: scale3d(1, 1, 1);
+	}
+  }
+  
+  
+  @-ms-keyframes scaleIn{
+	from {
+		opacity: 0.6;
+		-ms-transform: scale3d(0, 0, 0);
+	}
+  
+	to {
+		opacity: 1;
+		-ms-transform: scale3d(1, 1, 1);
+	}
+  }
+
+
+/*首页动画*/
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-moz-animation-name:fadeIn;
+	-o-animation-name: fadeIn;
+	-ms-animation-name:fadeIn;
+  }
+@-webkit-keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  @-o-keyframes fadeIn /* Opera */
+  {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  @-moz-keyframes fadeIn{
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  
+  @-ms-keyframes fadeIn{
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+
+
+  .MoveUpOffsetAnima {
+	-webkit-animation-name: MoveUpOffset;
+	animation-name: MoveUpOffset;
+	-moz-animation-name:MoveUpOffset;
+	-o-animation-name: MoveUpOffset;
+	-ms-animation-name:MoveUpOffset;
+  }
+
+  @keyframes MoveUpOffset{
+	from {
+	  transform: translate3d(0, 200px, 0);
+	}
+	to {
+	  opacity: 1;
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+  @-o-keyframes MoveUpOffset{
+	from {
+	  -o-transform: translate3d(0, 200px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -o-transform: translate3d(0, 0, 0);
+	}
+  }
+
+
+  @-moz-keyframes MoveUpOffset{
+	from {
+	  -moz-transform: translate3d(0, 200px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -moz-transform: translate3d(0, 0, 0);
+	}
+  }
+
+@-webkit-keyframes MoveUpOffset{
+	from {
+	  -webkit-transform: translate3d(0, 200px, 0);
+	  transform: translate3d(0, 200px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+/*业务体系*/
+.YwTitle{
+	position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-size: 100% 100%;
+}
+
+.YwTitle.CnItem{
+	width: 320px;
+	height: 52px;
+	background-image: url(../image/row02/YWTitle.png);
+}
+.YwTitle.EnItem{
+	width: 502px;
+	height: 44px;
+	background-image: url(../enimage/row02/YWTitle.png);
+}
+
+.YwItem{
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: 21%;
+	background-size: 100% 100%;
+	overflow: hidden;
+	opacity: 0;
+
+	cursor: pointer;
+
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	-o-animation-delay: 0.2s;
+}
+
+.YwItem div{
+	position: absolute;
+	background-size: 100% 100%;
+}
+
+.YwBG{
+	width: 100%;
+	height: 100%;
+}
+
+.YwItem:nth-child(1){
+	bottom: 63%;
+	animation-duration:0.8s;
+	-moz-animation-duration:0.8s;
+	-webkit-animation-duration:0.8s;
+	-ms-animation-duration:0.8s;
+	-o-animation-duration:0.8s;
+}
+
+.YwItem:nth-child(2){
+	bottom: 42%;
+	animation-duration:1.1s;
+	-moz-animation-duration:1.1s;
+	-webkit-animation-duration:1.1s;
+	-ms-animation-duration:1.1s;
+	-o-animation-duration:1.1s;
+}
+
+.YwItem:nth-child(3){
+	bottom: 21%;
+	animation-duration:1.4s;
+	-moz-animation-duration:1.4s;
+	-webkit-animation-duration:1.4s;
+	-ms-animation-duration:1.4s;
+	-o-animation-duration:1.4s;
+}
+.YwItem:nth-child(4){
+	bottom: 0%;
+	animation-duration:1.7s;
+	-moz-animation-duration:1.7s;
+	-webkit-animation-duration:1.7s;
+	-ms-animation-duration:1.7s;
+	-o-animation-duration:1.7s;
+}
+
+.YwItem:nth-child(1) .YwBG{
+	background-image: url(../image/row02/Img1.jpg);
+}
+
+.YwItem:nth-child(2) .YwBG{
+	background-image: url(../image/row02/Img2.jpg);
+}
+
+.YwItem:nth-child(3) .YwBG{
+	background-image: url(../image/row02/Img3.jpg);
+}
+.YwItem:nth-child(4) .YwBG{
+	background-image: url(../image/row02/Img4.jpg);
+}
+
+
+.LeftWord,.RightWord,.EnLeftWord,.EnRightWord{
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.LeftWord,.EnLeftWord{
+	left: 20%;
+}
+.RightWord,.EnRightWord{
+	left: 60%;
+}
+
+.cover{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.61);
+	cursor: pointer;
+}
+
+.YwItem:nth-child(1) .EnLeftWord{
+	width: 20vw;
+    height: 2.8vw;
+    background-image: url(../enimage/row02/Left1.png);
+} 
+
+.YwItem:nth-child(2) .EnLeftWord{
+	width: 20vw;
+    height: 2.8vw;
+    background-image: url(../enimage/row02/Left2.png);
+} 
+
+.YwItem:nth-child(3) .EnLeftWord{
+	width: 19.6vw;
+	height: 3vw;
+    background-image: url(../enimage/row02/Left3.png);
+} 
+
+.YwItem:nth-child(4) .EnLeftWord{
+	width: 13.1vw;
+	height: 1.2vw;
+    background-image: url(../enimage/row02/Left4.png);
+} 
+
+.YwItem:nth-child(1) .EnRightWord{
+	width: 23.5vw;
+	height: 4.6vw;
+    background-image: url(../enimage/row02/Right1.png);
+} 
+
+.YwItem:nth-child(2) .EnRightWord{
+	width: 23.4vw;
+	height: 5.3vw;
+    background-image: url(../enimage/row02/Right2.png);
+} 
+
+.YwItem:nth-child(3) .EnRightWord{
+	width: 24.5vw;
+	height: 8vw;
+    background-image: url(../enimage/row02/Right3.png);
+} 
+
+.YwItem:nth-child(4) .EnRightWord{
+	width: 25.4vw;
+	height: 7.1vw;
+    background-image: url(../enimage/row02/Right4.png);
+}
+
+
+
+
+.YwItem:nth-child(1) .LeftWord{
+	width: 14.6vw;
+	height: 4.55vw;
+    background-image: url(../image/row02/Left1.png);
+} 
+
+.YwItem:nth-child(2) .LeftWord{
+	width: 17.55vw;
+	height: 4.6vw;
+    background-image: url(../image/row02/Left2.png);
+} 
+
+.YwItem:nth-child(3) .LeftWord{
+	width: 12.3vw;
+	height: 4.6vw;
+    background-image: url(../image/row02/Left3.png);
+} 
+
+.YwItem:nth-child(4) .LeftWord{
+	width: 10.85vw;
+	height: 3.55vw;
+    background-image: url(../image/row02/Left4.png);
+} 
+
+.YwItem:nth-child(1) .RightWord{
+	width: 21.65vw;
+	height: 4.9vw;
+    background-image: url(../image/row02/Right1.png);
+} 
+
+.YwItem:nth-child(2) .RightWord{
+	width: 22.75vw;
+	height: 4.7vw;
+    background-image: url(../image/row02/Right2.png);
+} 
+
+.YwItem:nth-child(3) .RightWord{
+	width: 22.75vw;
+	height: 7.15vw;
+    background-image: url(../image/row02/Right3.png);
+} 
+
+.YwItem:nth-child(4) .RightWord{
+	width: 22.75vw;
+	height: 7.9vw;
+    background-image: url(../image/row02/Right4.png);
+}
+
+/*子界面*/
+.SubPage{
+	position: absolute;
+	width: 100vw;
+	height: 43.49vw;
+	background-size:100% 100%;
+	top: 16%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: none;
+}
+
+.SubPage div{
+	position: absolute;
+	background-size: 100% 100%;
+}
+
+.CloseBtn{
+	width: 3vw;
+    height: 3vw;
+    top: 1%;
+    right: 1%;
+    background-image: url(../image/Close.png);
+    cursor: pointer;
+}
+
+/*业务一*/
+.SubPage:nth-child(1){
+	background-image: url(../image/row02/01/BG.jpg);
+}
+
+#ProdSimple{
+	width: 35vw;
+	height: 35.14vw;
+	top: 4%;
+	left: 40%;
+	margin: auto;
+	background-image: url(../image/row02/01/SimpleImg.png);
+}
+
+#RightWord{
+	left: 10%;
+	top: 30%;
+	width: 19vw;
+	height: 7.46vw;
+	background-image: url(../image/row02/01/RightWord.png);
+}
+
+#LeftWord{
+	left: 10%;
+	top: 15%;
+	width: 14vw;
+	height: 4.03vw;
+	background-image: url(../image/row02/01/LeftWord.png);
+}
+
+
+#EnRightWord{
+	left: 10%;
+	top: 30%;
+	width: 24.9vw;
+	height: 7vw;
+	background-image: url(../enimage/row02/01/RightWord.png);
+}
+
+#EnLeftWord{
+	left: 10%;
+	top: 15%;
+	width: 24vw;
+	height: 3.3vw;
+	background-image: url(../enimage/row02/01/LeftWord.png);
+}
+
+/*业务二*/
+.SubPage:nth-child(2){
+	background-image: url(../image/row02/02/BG.jpg);
+}
+
+.IconWord{
+	bottom: -4vw;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#RightWord2{
+	left: 38%;
+	top: 10%;
+	width: 35.3vw;
+	height: 3.26vw;
+	background-image: url(../image/row02/02/RightWord.png);
+}
+#EnRightWord2{
+	left: 38%;
+	top: 10%;
+	width: 37.8vw;
+	height: 3.7vw;
+	background-image: url(../enimage/row02/02/RightWord.png);
+}
+
+#LeftWord2{
+	left: 20%;
+	top: 8%;
+	width: 16.13vw;
+	height:4.16vw;
+	background-image: url(../image/row02/02/LeftWord.png);
+}
+#EnLeftWord2{
+	left: 12%;
+	top: 10%;
+	width: 22vw;
+	height: 3.3vw;
+	background-image: url(../enimage/row02/02/LeftWord.png);
+}
+
+#ZswIcon{
+	top: 30%;
+	left: 8%;
+	width: 24.48vw;
+	height: 12.38vw;
+	background-image: url(../image/row02/02/ScrollIcon.png);
+}
+
+#ZswIcon .CnItem{
+	width: 6.07vw;
+	height: 1.16vw;
+	background-image: url(../image/row02/02/ScrollWord.png);
+}
+#ZswIcon .EnItem{
+	width: 19.3vw;
+	height: 4.6vw;
+	bottom: -5vw;
+	background-image: url(../enimage/row02/02/ScrollWord.png);
+}
+
+#ShanHaiIcon{
+	top: 30%;
+	left: 35%;
+	width: 24.48vw;
+	height: 12.38vw;
+	background-image: url(../image/row02/02/ShanHaiIcon.png);
+}
+
+#ShanHaiIcon .CnItem{
+	width: 6vw;
+	height: 1.16vw;
+	background-image: url(../image/row02/02/ShanHaiWord.png);
+}
+#ShanHaiIcon .EnItem{
+	width: 12.1vw;
+	height: 2.2vw;
+	background-image: url(../enimage/row02/02/ShanHaiWord.png);
+}
+
+#ChaMaIcon{
+	top: 20%;
+	left: 62%;
+	width: 28vw;
+	height: 20.5vw;
+	background-image: url(../image/row02/02/ChaMaIcon.png);
+}
+
+#ChaMaIcon .CnItem{
+	width: 4.84vw;
+	height: 1.16vw;
+	background-image: url(../image/row02/02/ChaMaWord.png);
+}
+
+#ChaMaIcon .EnItem{
+	width: 11.7vw;
+	height: 2.2vw;
+	background-image: url(../enimage/row02/02/ChaMaWord.png);
+}
+
+/*业务三*/
+.SubPage:nth-child(3){
+	background-image: url(../image/row02/03/BG.jpg);
+}
+
+#RightWord3{
+	left: 10%;
+	top: 24%;
+	width: 13.08vw;
+	height: 15.1vw;
+	background-image: url(../image/row02/03/RightWord.png);
+}
+#EnRightWord3{
+	left: 5%;
+	top: 26%;
+	width: 18.1vw;
+	height: 19vw;
+	background-image: url(../enimage/row02/03/RightWord.png);
+}
+
+#LeftWord3{
+	left: 10%;
+	top: 8%;
+	width: 11.41vw;
+	height: 4.12vw;
+	background-image: url(../image/row02/03/LeftWord.png);
+}
+#EnLeftWord3{
+	left: 5%;
+	top: 8%;
+	width: 17vw;
+	height: 5.6vw;
+	background-image: url(../enimage/row02/03/LeftWord.png);
+}
+
+.SysIcon{
+   top: 8%;
+   left: 25%;
+   width: 56.69vw;
+   height: 31.93vw;
+   
+}
+.SysIcon.CnItem{
+	background-image: url(../image/row02/03/SysIcon.jpg);
+}
+.SysIcon.EnItem{
+	background-image: url(../enimage/row02/03/SysIcon.jpg);
+}
+
+/*业务四*/
+.SubPage:nth-child(4){
+	background-image: url(../image/row02/04/BG.jpg);
+}
+
+#RightWord4{
+	left: 13%;
+	top: 70%;
+	width: 26.51vw;
+	height: 8.02vw;
+	background-image: url(../image/row02/04/RightWord.png);
+}
+#EnRightWord4{
+	left: 13%;
+	top: 70%;
+	width: 30vw;
+	height: 8.4vw;
+	background-image: url(../enimage/row02/04/RightWord.png);
+}
+
+#LeftWord4{
+	left: 13%;
+	top: 8%;
+	width: 12vw;
+    height: 3.61vw;
+	background-image: url(../image/row02/04/LeftWord.png);
+}
+#EnLeftWord4{
+	left: 13%;
+	top: 8%;
+	width: 14.1vw;
+    height: 1vw;
+	background-image: url(../enimage/row02/04/LeftWord.png);
+}
+
+.FrameIcon{
+	top: 6%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 73.77vw;
+	height: 32.39vw;
+}
+.FrameIcon.CnItem{
+	background-image: url(../image/row02/04/FrameIcon.png);
+}
+.FrameIcon.EnItem{
+	background-image: url(../enimage/row02/04/FrameIcon.png);
+}
+
+/*业务动画*/
+.BounceMoveUpAnima{
+	-webkit-animation-name: BounceMoveUp;
+	-o-animation-name: BounceMoveUp;
+	-moz-animation-name: BounceMoveUp;
+	animation-name: BounceMoveUp;
+
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+}
+
+
+@keyframes BounceMoveUp{
+	from {
+	  opacity: 1;
+	  transform: translate3d(0, 3000px, 0);
+	}
+	to {
+	  opacity: 1;
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+  @-o-keyframes BounceMoveUp{
+	from {
+	  opacity: 1;
+	  -o-transform: translate3d(0, 3000px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -o-transform: translate3d(0, 0, 0);
+	}
+  }
+
+
+  @-moz-keyframes BounceMoveUp{
+	from {
+	  opacity: 1;
+	  -moz-transform: translate3d(0, 3000px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -moz-transform: translate3d(0, 0, 0);
+	}
+  }
+
+@-webkit-keyframes BounceMoveUp{
+	from {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 3000px, 0);
+	  transform: translate3d(0, 3000px, 0);
+	}
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+/*解决方案*/
+.IconCon{
+	width: 100%;
+	height: 100%;
+}
+
+.JJIconItem{
+	width: 13vw;
+	height: 13vw;
+	position: absolute;
+	background-size: 100% 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.JJIconItem.CnItem:nth-child(1){
+	top: 8vw;
+	left: 23.7vw;
+	background-image:  url(../image/row03/Icon1.jpg);
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	-o-animation-delay: 0.5s;
+}
+
+.JJIconItem.CnItem:nth-child(2){
+	top: 8vw;
+	left: 36.9vw;
+	background-image:  url(../image/row03/Icon2.jpg);
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.JJIconItem.CnItem:nth-child(3){
+	top: 8vw;
+	left: 50.1vw;
+	background-image:  url(../image/row03/Icon3.jpg);
+}
+
+.JJIconItem.CnItem:nth-child(4){
+	top: 8vw;
+	left:63.3vw;
+	background-image:  url(../image/row03/Icon4.jpg);
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s
+}
+
+.JJIconItem.CnItem:nth-child(5){
+	top: 21.2vw;
+	left: 23.7vw;
+	background-image:  url(../image/row03/Icon5.jpg);
+}
+
+.JJIconItem.CnItem:nth-child(6){
+	top: 21.2vw;
+	left: 36.9vw;
+	background-image:  url(../image/row03/Icon6.jpg);
+}
+.JJIconItem.CnItem:nth-child(7){
+	top: 34.4vw;
+	left: 23.7vw;
+	background-image:  url(../image/row03/Icon7.jpg);
+}
+
+.JJIconItem.CnItem:nth-child(2),.JJIconItem.CnItem:nth-child(5){
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.JJIconItem.CnItem:nth-child(3),.JJIconItem.CnItem:nth-child(6),.JJIconItem.CnItem:nth-child(7){
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	-o-animation-delay: 1.5s
+}
+
+
+
+.JJIconItem.EnItem:nth-child(1){
+	top: 8vw;
+	left: 23.7vw;
+	background-image:  url(../enimage/row03/Icon1.jpg);
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	-o-animation-delay: 0.5s;
+}
+
+.JJIconItem.EnItem:nth-child(2){
+	top: 8vw;
+	left: 36.9vw;
+	background-image:  url(../enimage/row03/Icon2.jpg);
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.JJIconItem.EnItem:nth-child(3){
+	top: 8vw;
+	left: 50.1vw;
+	background-image:  url(../enimage/row03/Icon3.jpg);
+}
+
+.JJIconItem.EnItem:nth-child(4){
+	top: 8vw;
+	left:63.3vw;
+	background-image:  url(../enimage/row03/Icon4.jpg);
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s
+}
+
+.JJIconItem.EnItem:nth-child(5){
+	top: 21.2vw;
+	left: 23.7vw;
+	background-image:  url(../enimage/row03/Icon5.jpg);
+}
+
+.JJIconItem.EnItem:nth-child(6){
+	top: 21.2vw;
+	left: 36.9vw;
+	background-image:  url(../enimage/row03/Icon6.jpg);
+}
+.JJIconItem.EnItem:nth-child(7){
+	top: 34.4vw;
+	left: 23.7vw;
+	background-image:  url(../enimage/row03/Icon7.jpg);
+}
+
+.JJIconItem.EnItem:nth-child(2),.JJIconItem.EnItem:nth-child(5){
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.JJIconItem.EnItem:nth-child(3),.JJIconItem.EnItem:nth-child(6),.JJIconItem.EnItem:nth-child(7){
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	-o-animation-delay: 1.5s
+}
+
+.SoluTitle{
+	position: absolute;
+	top: 40vw;
+	left: 39vw;
+	background-size: 100% 100%;
+}
+.SoluTitle.CnItem{
+	width: 37vw;
+	height: 4.21vw;
+	background-image:  url(../image/row03/SolutTitle.png);
+}
+
+.SoluTitle.EnItem{
+	width: 32vw;
+	height: 6.2vw;
+	background-image:  url(../enimage/row03/SolutTitle.png);
+}
+
+#SoluPages div{
+	position: absolute;
+	background-size: 100% 100%;
+}
+
+.SoluPage{
+	top: 16%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 78vw;
+	height: 40.11vw;
+	display: none;
+}
+
+.WhiteSoluBG{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.CloseBlack{
+	background-image: url(../image/Close_B.png);
+}
+
+.SoluSubTitle{
+	top: 4%;
+	left:2%;
+}
+
+/*解决方案一*/
+#AppWords{
+	width:7.74vw;
+	height: 1.82vw;
+	background-image: url(../image/row03/01/App.png);
+ }
+#EnAppWords{
+	width: 17.3vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/01/App.png);
+}
+
+#RightIcon, #LeftIcon{
+	top: 16%;
+	width: 13.25vw;
+	height: 23.4vw;
+}
+
+#RightIcon{
+	left: 60.5%;
+	background-image: url(../image/row03/01/RightIcon.png);
+}
+
+#CenterIcon{
+	left: 0;
+	right: 0;
+	top: 6%;
+	margin: auto;
+	width: 16.41vw;
+	height: 32.57vw;
+    background-image: url(../image/row03/01/CenterIcon.png);
+}
+
+#LeftIcon{
+	right: 60.5%;
+	background-image: url(../image/row03/01/LeftIcon.png);
+}
+
+#Solu1Text{
+	bottom: 7%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 70vw;
+	height: 1.3vw;
+	background-image: url(../image/row03/01/words.png);
+}
+#EnSolu1Text{
+	bottom: 5%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 70vw;
+	height: 2.8vw;
+	background-image: url(../enimage/row03/01/words.png);
+}
+
+/*解决方案二*/
+#ManagWord{
+   width:7.74vw;
+   height: 1.82vw;
+   background-image: url(../image/row03/02/ManagWord.png);
+}
+#EnManagWord{
+	width: 22.7vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/02/ManagWord.png);
+ }
+
+#DetailWord{
+	right: 0;
+	left: 0;
+	bottom: 10%;
+	margin: auto;
+	width: 55vw;
+	height: 1.3vw;
+	background-image: url(../image/row03/02/DetailWord.png);
+}
+#EnDetailWord{
+	right: 0;
+	left: 0;
+	bottom: 6%;
+	margin: auto;
+	width: 70vw;
+	height: 2.7vw;
+	background-image: url(../enimage/row03/02/DetailWord.png);
+}
+
+
+#ManagIcon{
+	right: 0;
+	left: 0;
+	top: 25%;
+	margin: auto;
+	width: 70vw;
+	height: 19vw;
+	background-image: url(../image/row03/02/ManagIcon.png);	
+}
+
+#EnManagIcon{
+	right: 0;
+	left: 0;
+	top: 14%;
+	margin: auto;
+	width: 50vw;
+	height: 28.2vw;
+	background-image: url(../enimage/row03/02/ManagIcon.png);	
+}
+
+/*解决方案三*/
+#ServeWord{
+	width:7.74vw;
+	height: 1.82vw;
+	background-image: url(../image/row03/03/ServeWord.png);
+ }
+#EnServeWord{
+	width: 17.2vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/03/ServeWord.png);
+ }
+
+ #ServeIcon{
+	top: 12%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 34vw;
+    height: 28vw;
+	background-image: url(../image/row03/03/ServeIcon.png);
+ }
+ 
+ #ServeDetailWord{
+	 left: 0;
+	 right: 0;
+	 bottom: 8%;
+	 margin: auto;
+	 width: 52vw;
+	 height: 1.3vw;
+	 background-image: url(../image/row03/03/DetailWord.png);
+ }
+
+ #EnServeDetailWord{
+	left: 0;
+	right: 0;
+	bottom: 8%;
+	margin: auto;
+	width: 70vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/03/DetailWord.png);
+}
+
+/*解决方案四*/
+ #MarketWord{
+	width:7.74vw;
+	height: 1.82vw;
+	background-image: url(../image/row03/04/MarketWord.png); 
+ }
+
+ #EnMarketWord{
+	width: 21vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/04/MarketWord.png); 
+ }
+
+#Solu4Text{
+	top: 18%;
+	left: 2%;
+	width: 30vw;
+	height: 4.5vw;
+	background-image: url(../image/row03/04/Words.png); 
+}
+
+#EnSolu4Text{
+	top: 18%;
+	left: 2%;
+	width: 30vw;
+	height: 6vw;
+	background-image: url(../enimage/row03/04/Words.png); 
+}
+
+#MarketIcon{
+	top: 2%;
+	left: 43%;
+	width: 38vw;
+	height: 29vw;
+	background-image: url(../image/row03/04/Icon.png); 
+}
+
+#NativeForeign{
+	width: 10vw;
+	height: 1.4vw;
+	left: 2%;
+	top: 68%;
+	background-image: url(../image/row03/04/Native.png); 
+}
+
+#EnNativeForeign{
+	width: 20.5vw;
+	height: 0.9vw;
+	left: 2%;
+	top: 68%;
+	background-image: url(../enimage/row03/04/Native.png); 
+}
+
+.NativeItem{
+	width: 8vw;
+	height: 9.4vw;
+}
+
+#NativeItems{
+	width: 100%;
+	height: 100%;
+	top: 74%;
+}
+
+.NativeItem.CnItem:nth-child(1){
+	left: 3vw;
+	background-image: url(../image/row03/04/GongGongHao.png); 
+}
+
+.NativeItem.CnItem:nth-child(2){
+	left: 16vw;
+	background-image: url(../image/row03/04/TouTiao.png); 
+}
+
+.NativeItem.CnItem:nth-child(3){
+	left: 29vw;
+	background-image: url(../image/row03/04/YiDian.png); 
+}
+
+.NativeItem:nth-child(4){
+	left: 42vw;
+	background-image: url(../image/row03/04/facebook.png); 
+}
+
+.NativeItem:nth-child(5){
+	left: 55vw;
+	background-image: url(../image/row03/04/twitter.png); 
+}
+
+.NativeItem:nth-child(6){
+	left: 68vw;
+	background-image: url(../image/row03/04/google.png); 
+}
+
+
+.NativeItem.EnItem:nth-child(1){
+	left: 3vw;
+	background-image: url(../enimage/row03/04/GongGongHao.png); 
+}
+
+.NativeItem.EnItem:nth-child(2){
+	left: 16vw;
+	background-image: url(../enimage/row03/04/TouTiao.png); 
+}
+
+.NativeItem.EnItem:nth-child(3){
+	left: 29vw;
+	background-image: url(../enimage/row03/04/YiDian.png); 
+}
+
+
+/*解决方案五*/
+#ExpWord{
+   width:7.74vw;
+   height: 1.82vw;
+   background-image: url(../image/row03/05/ExpWord.png);
+}
+
+#EnExpWord{
+	width:20.4vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/05/ExpWord.png);
+ }
+
+.VRWord{
+	right: 0;
+	left: 0;
+	bottom: 5%;
+	margin: auto;
+}
+.VRWord.CnItem{
+	width: 58vw;
+	height: 1.3vw;
+	background-image: url(../image/row03/05/DetailWord.png);
+}
+.VRWord.EnItem{
+	width: 70vw;
+	height: 2.4vw;
+	background-image: url(../enimage/row03/05/DetailWord.png);
+}
+
+#VRIcon{
+	right: 0;
+	left: 0;
+	bottom: 14%;
+	margin: auto;
+	width: 58vw;
+    height: 29vw;
+	background-image: url(../image/row03/05/VrIcon.jpg);
+}
+
+/*解决方案六*/
+#SpotWord{
+	width:7.74vw;
+	height: 1.82vw;
+	background-image: url(../image/row03/06/SpotWord.png);
+ }
+#EnSpotWord{
+	width: 21.5vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/06/SpotWord.png);
+ } 
+ 
+#SpotWords{
+	 right: 0;
+	 left: 0;
+	 bottom: 10%;
+	 margin: auto;
+	 width: 64.15vw;
+	 height: 1.18vw;
+	 background-image: url(../image/row03/06/DetailWord.png);
+}
+#EnSpotWords{
+	right: 0;
+	left: 0;
+	bottom: 6%;
+	margin: auto;
+	width: 70vw;
+	height: 2.7vw;
+	background-image: url(../enimage/row03/06/DetailWord.png);
+}
+
+ #SpotIcons{
+	 right: 0;
+	 left: 0;
+	 bottom: 8%;
+	 margin: auto;
+	 width: 46.91vw;
+	 height: 34.59vw;
+	 background-image: url(../image/row03/06/Icons.png);
+ }
+ 
+/*解决方案七*/
+#HealthWord{
+	width:21.02vw;
+	height: 1.9vw;
+	background-image: url(../image/row03/07/healthDB.png);
+ }
+#EnHealthWord{
+	width: 48.6vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row03/07/healthDB.png);
+ }
+
+.HealthIcon{
+	right: 0;
+	left: 0;
+	bottom: 16%;
+	margin: auto;
+	width: 47vw;
+	height: 28vw;
+ }
+.HealthIcon.CnItem{
+	background-image: url(../image/row03/07/Icon.png);
+}
+.HealthIcon.EnItem{
+	background-image: url(../enimage/row03/07/Icon.png);
+}
+
+#HealthDBDetail{
+	 right: 0;
+	 left: 0;
+	 bottom: 4%;
+	 margin: auto;
+	 width: 68vw;
+	 height: 2.9vw;
+	 background-image: url(../image/row03/07/DetailWord.png);
+ }
+#EnHealthDBDetail{
+	right: 0;
+	left: 0;
+	bottom: 2%;
+	margin: auto;
+	width: 70vw;
+	height: 5.5vw;
+	background-image: url(../enimage/row03/07/DetailWord.png);
+}
+ 
+/*解决方案动画*/
+
+.SoluRotaAnima{
+	-webkit-animation-name: SoluRota;
+	-o-animation-name: SoluRota;
+	-moz-animation-name: SoluRota;
+	animation-name: SoluRota;
+
+	animation-duration:1s;
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+}
+
+@keyframes SoluRota {	
+	from {
+		opacity: 1;
+		transform: rotateY(180deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateY(360deg);
+	  }
+  }
+  
+  @-webkit-keyframes SoluRota {	
+	from {
+		opacity: 1;
+		-webkit-transform: rotateY(180deg);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: rotateY(360deg);
+	  }
+  }
+
+  @-o-keyframes SoluRota {		
+		from {
+			opacity: 1;
+			-o-transform: rotateY(180deg);
+		}
+		to {
+			opacity: 1;
+			-o-transform: rotateY(360deg);
+		  }
+  }
+
+  @-moz-keyframes SoluRota {	
+	from {
+		opacity: 1;
+		-moz-transform: rotateY(180deg);
+	}
+	to {
+		opacity: 1;
+		-moz-transform: rotateY(360deg);
+	  }
+  }
+
+
+/*公司简介*/
+#ItemCon{
+	position: absolute;
+	top: 11%;
+	left: 12vw;
+	height: 41.2vw;
+	width: 76vw;
+}
+
+.IntroItem{
+	position: absolute;
+	height: 20.6vw;
+	width: 38vw;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.IntroItem div{
+    position: absolute;
+}
+
+.IntroBG{
+	height: 100%;
+	width: 100%;
+	background-size: 100% 100%;
+}
+
+.IntroItem:nth-child(1){
+	left: 0;
+	top: 0;
+}
+
+.IntroItem:nth-child(2){
+	right: 0;
+	top: 0;
+}
+
+.IntroItem:nth-child(3){
+	left: 0;
+	top: 50%;
+}
+
+.IntroItem:nth-child(4){
+	right: 0;
+	top: 50%;
+}
+
+.IntroItem:nth-child(1) .IntroBG{
+	background-image:  url(../image/row04/Icon1.jpg);
+}
+
+.IntroItem:nth-child(2) .IntroBG{
+	background-image:  url(../image/row04/Icon2.jpg);
+}
+
+.IntroItem:nth-child(3) .IntroBG{
+	background-image:  url(../image/row04/Icon3.jpg);
+}
+
+.IntroItem:nth-child(4) .IntroBG{
+	background-image:  url(../image/row04/Icon4.jpg);
+}
+
+.IntroTitle,.EnIntroTitle{
+	background-size: 100% 100%;
+	bottom: 4%;
+}
+
+.IntroItem:nth-child(1) .IntroTitle{
+	width: 17vw;
+    height: 3.2vw;
+	left: 4%;
+	background-image:  url(../image/row04/Team.png);
+}
+
+.IntroItem:nth-child(2) .IntroTitle{
+	width: 20.05vw;
+	height: 3.2vw;
+	right: 4%;
+	background-image:  url(../image/row04/Qualifi.png);
+}
+
+.IntroItem:nth-child(3) .IntroTitle{
+	width: 19vw;
+    height: 3.15vw;
+	left: 4%;
+	background-image:  url(../image/row04/Custm.png);
+}
+
+.IntroItem:nth-child(4) .IntroTitle{
+	width: 16.95vw;
+	height: 3.2vw;
+	right: 4%;
+	background-image:  url(../image/row04/Partner.png);
+}
+
+
+.IntroItem:nth-child(1) .EnIntroTitle{
+	width: 21.1vw;
+    height: 2.4vw;
+	left: 4%;
+	background-image:  url(../enimage/row04/Team.png);
+}
+
+.IntroItem:nth-child(2) .EnIntroTitle{
+	width: 17.2vw;
+	height:  2.8vw;
+	right: 4%;
+	background-image:  url(../enimage/row04/Qualifi.png);
+}
+
+.IntroItem:nth-child(3) .EnIntroTitle{
+	width: 13.5vw;
+    height: 2.4vw;
+	left: 4%;
+	background-image:  url(../enimage/row04/Custm.png);
+}
+
+.IntroItem:nth-child(4) .EnIntroTitle{
+	width: 11.5vw;
+	height: 2.4vw;
+	right: 4%;
+	background-image:  url(../enimage/row04/Partner.png);
+}
+
+
+.IntroCenter{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+	width: 26vw;
+	height: 26vw;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.IntroCenter.CnItem{
+	background-image:  url(../image/row04/Center.png);
+}
+.IntroCenter.EnItem{
+	background-image:  url(../enimage/row04/Center.png);
+}
+
+.PointCon{
+	position: absolute;
+	width: 94%;
+	height: 94%;
+	left: 3%;
+	top: 3%;
+	cursor: pointer;
+}
+
+#Point{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	background-color: rgb(255, 94, 0);
+}
+
+/*简介子界面*/
+#IntroSubPages div{
+	position: absolute;
+	background-size: 100% 100%;
+}
+
+.IntroSubPage{
+	height: 41.2vw;
+	width: 76vw;
+	top: 11%;
+	left: 12vw;
+	display: none;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.IntroPageTitle{
+	top: 4%;
+	left:2%;
+	width: 6.27vw;
+    height: 1.55vw;
+}
+
+
+/*公司简介-业务模型*/
+.YeWuIcon{
+	left: 0;
+	right:0;
+	top: 26%;
+	margin: auto; 
+	width: 40vw;
+    height: 28vw;
+}
+.YeWuIcon.CnItem{
+	background-image: url(../image/row04/01/YeWuIcon.png);
+}
+.YeWuIcon.EnItem{
+	background-image: url(../enimage/row04/01/YeWuIcon.png);
+}
+
+#YeWuWord{
+	width: 7.86vw;
+	top:50%;
+	right: 62vw;
+	height: 1.55vw;
+	background-image: url(../image/row04/01/YeWuWord.png);
+}
+#EnYeWuWord{
+	width: 8vw;
+	top:50%;
+	right: 62vw;
+	height: 2.9vw;
+	background-image: url(../enimage/row04/01/YeWuWord.png);	
+}
+
+#YeWuIntrWord{
+	top: 4%;
+	left:2%;
+	height: 5.83vw;
+	width: 70vw;
+	background-image: url(../image/row04/01/IntroWord.png);
+}
+#EnYeWuIntrWord{
+	top: 12%;
+	left:2%;
+	height: 3.6vw;
+	width: 70vw;
+	background-image: url(../enimage/row04/01/IntroWord.png);
+}
+
+#EnYeWuTitle{
+	height: 1.2vw;
+	width: 9.9vw;
+	background-image: url(../enimage/row04/01/YeWuTitle.png);	
+}
+/*公司简介-版权页*/
+#VerLogoIcon{
+	left: 0;
+	right:0;
+	top: 10%;
+	margin: auto; 
+	width: 13vw;
+	height:17.1vw;
+	background-image: url(../image/row04/06/VertiLogo.png);
+}
+
+.VerPosWord{
+	left: 0;
+	right:0;
+	bottom: 15%;
+	margin: auto;
+	width: 30vw;
+	height: 9.5vw;
+}
+.VerPosWord.CnItem{
+	background-image: url(../image/row04/06/Pos.png);
+}
+.VerPosWord.EnItem{
+	background-image: url(../enimage/row04/06/Pos.png);
+}
+
+.IntroSubPage:nth-child(6){
+	background-color: rgba(255, 255, 255, 1);
+}
+/*公司简介-团队介绍*/
+.TeamIcon{
+	left: 0;
+	right:0;
+	top: 10%;
+    margin: auto;
+    width: 70vw;
+	height: 31vw;
+}
+.TeamIcon.CnItem{
+	background-image: url(../image/row04/02/TeamIcon.png);
+}
+.TeamIcon.EnItem{
+	background-image: url(../enimage/row04/02/TeamIcon.png);
+}
+
+#TeamWord{
+	background-image: url(../image/row04/02/TeamWord.png);
+}
+#EnTeamWord{
+	width: 15.1vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row04/02/TeamWord.png);
+}
+
+.TeamDetail{
+	left: 0;
+	right:0;
+	bottom: 10%;
+	margin: auto; 
+}
+.TeamDetail.CnItem{
+	width: 56vw;
+	height: 1.22vw;
+	background-image: url(../image/row04/02/TeamDetail.png);
+}
+.TeamDetail.EnItem{
+	width: 70vw;
+	height: 2.4vw;
+	background-image: url(../enimage/row04/02/TeamDetail.png);
+}
+
+/*公司简介-公司资质*/
+#QimgScroll{
+	width: 100%;
+	height: 90%;
+	top: 10%;
+	overflow-y:scroll;
+}
+.qimg:nth-child(1){
+	left: 8%;
+	background-image: url(../image/row04/03/qimg/qimg1.png);
+}
+.qimg:nth-child(2){
+	left: 38%;
+	background-image: url(../image/row04/03/qimg/qimg2.png);
+}
+.qimg:nth-child(3){
+	left: 68%;
+	background-image: url(../image/row04/03/qimg/qimg3.png);
+}
+
+.qimg:nth-child(-n+3){
+	width:17.35vw;
+	height: 14.65vw;
+}
+
+.qimg:nth-child(n+4){
+	width: 12vw;
+	height: 18.02vw;
+	top: 16vw;
+}
+
+.qimg:nth-child(n+9){
+	top: 35.5vw;
+}
+
+.qimg:nth-child(4){
+	left: 6.08vw;
+	background-image: url(../image/row04/03/qimg/qimg4.png);
+}
+
+.qimg:nth-child(5){
+	left: 19.04vw;
+	background-image: url(../image/row04/03/qimg/qimg5.png);
+}
+
+.qimg:nth-child(6){
+	left: 32vw;
+	background-image: url(../image/row04/03/qimg/qimg6.png);
+}
+.qimg:nth-child(7){
+	left: 44.96vw;
+	background-image: url(../image/row04/03/qimg/qimg7.png);
+}
+.qimg:nth-child(8){
+	left: 57.92vw;
+	background-image: url(../image/row04/03/qimg/qimg8.png);
+}
+
+.qimg:nth-child(9){
+	left: 6.08vw;
+	background-image: url(../image/row04/03/qimg/qimg9.png);
+}
+
+.qimg:nth-child(10){
+	left: 19.04vw;
+	background-image: url(../image/row04/03/qimg/qimg10.png);
+}
+
+.qimg:nth-child(11){
+	left: 32vw;
+	background-image: url(../image/row04/03/qimg/qimg11.png);
+}
+.qimg:nth-child(12){
+	left: 44.96vw;
+	background-image: url(../image/row04/03/qimg/qimg12.png);
+}
+
+#QualifWord{
+	background-image: url(../image/row04/03/QualifWord.png);
+}
+#EnQualifWord{
+	width: 10.9vw;
+    height: 1.2vw;
+	background-image: url(../enimage/row04/03/QualifWord.png);
+}
+
+#bigIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 63, 63, 0.76);
+	z-index: 8;
+	cursor: pointer;
+}
+
+#showIcon {
+    height: 100%;
+    cursor: pointer;
+}
+/*公司简介-重点客户*/
+.CustomIcon{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto; 
+}
+.CustomIcon.CnItem{
+	width: 45vw;
+	height: 27vw;
+	background-image: url(../image/row04/04/CustomIcon.png);
+}
+.CustomIcon.EnItem{
+	width: 55vw;
+	height: 27.7vw;
+	background-image: url(../enimage/row04/04/CustomIcon.png);
+}
+
+#CustomWord{
+	background-image: url(../image/row04/04/CustomWord.png);
+}
+#EnCustomWord{
+	width: 12.2vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row04/04/CustomWord.png);
+}
+
+/*公司简介-合作伙伴*/
+#PartnerWord{
+	background-image: url(../image/row04/05/PartnerWord.png);
+}
+#EnPartnerWord{
+	width: 8.2vw;
+	height: 1.2vw;
+	background-image: url(../enimage/row04/05/PartnerWord.png);
+}
+
+#PartnerItems{
+	width: 100%;
+	height: 100%;
+}
+
+.PartnerItem{
+   width: 13.48vw;
+   height: 5.91vw;
+}
+
+.PartnerItem:nth-child(-n+4){
+	top: 10vw;
+}
+
+.PartnerItem:nth-child(1){
+	left: 7vw;
+	background-image: url(../image/row04/05/Tencent.png);	
+}
+
+.PartnerItem:nth-child(2){
+	left: 21.48vw;
+	background-image: url(../image/row04/05/Google.png);	
+}
+
+.PartnerItem:nth-child(3){
+	left: 35.96vw;
+	background-image: url(../image/row04/05/GaoDe.png);	
+}
+
+.PartnerItem:nth-child(4){
+	left: 50.44vw;
+	background-image: url(../image/row04/05/WeiJing.png);	
+}
+
+
+.PartnerItem:nth-child(5){
+	left: 7vw;
+	background-image: url(../image/row04/05/XunFei.png);	
+}
+
+.PartnerItem:nth-child(6){
+	left: 21.48vw;
+	background-image: url(../image/row04/05/XieCheng.png);	
+}
+
+.PartnerItem:nth-child(7){
+	left: 35.96vw;
+	background-image: url(../image/row04/05/booking.png);	
+}
+
+.PartnerItem:nth-child(n+5){
+	top: 20vw;
+}

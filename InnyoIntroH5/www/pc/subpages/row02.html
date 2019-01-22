@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+云游网介绍H5业务介绍
+作者：李洪
+版本：1.0
+时间：2017年03月07日
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- suzimiya help JS -->
+  <script src="js/suzimiya-help.js"></script>
+  <title>业务介绍</title>
+</head>
+
+<body class="page">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div id="Items">
+            <div class="YwItem anime BounceMoveUpAnima">
+              <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="RightWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+              <div class="EnRightWord EnItem"></div>
+            </div>
+            <div class="YwItem anime BounceMoveUpAnima">
+                <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="RightWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+              <div class="EnRightWord EnItem"></div>
+            </div>
+            <div class="YwItem anime BounceMoveUpAnima">
+                <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="RightWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+              <div class="EnRightWord EnItem"></div>
+            </div>
+            <div class="YwItem anime BounceMoveUpAnima">
+                <div class="YwBG"></div>
+              <div class="cover"></div>
+              <div class="LeftWord CnItem"></div>
+              <div class="RightWord CnItem"></div>
+              <div class="EnLeftWord EnItem"></div>
+              <div class="EnRightWord EnItem"></div>
+            </div>
+          </div>
+          <div class="YwTitle CnItem"></div>
+          <div class="YwTitle EnItem"></div>
+          <div id="SubPages">
+            <div class="SubPage">
+              <div id="RightWord" class="CnItem"></div>
+              <div id="LeftWord" class="CnItem"></div>
+              <div id="EnRightWord" class="EnItem"></div>
+              <div id="EnLeftWord" class="EnItem"></div>
+              <div id="ProdSimple"></div>
+              <div class="CloseBtn"></div>
+            </div>
+            <div class="SubPage">
+              <div id="RightWord2" class="CnItem"></div>
+              <div id="LeftWord2" class="CnItem"></div>
+              <div id="EnRightWord2" class="EnItem"></div>
+              <div id="EnLeftWord2" class="EnItem"></div>
+              <div id="ZswIcon">
+                <div class="IconWord CnItem"></div>
+                <div class="IconWord EnItem"></div>
+              </div>
+              <div id="ShanHaiIcon">
+                <div class="IconWord CnItem"></div>
+                <div class="IconWord EnItem"></div>
+              </div>
+              <div id="ChaMaIcon">
+                <div class="IconWord CnItem"></div>
+                <div class="IconWord EnItem"></div>
+              </div>
+              <div class="CloseBtn"></div>
+            </div>
+            <div class="SubPage">
+                <div id="RightWord3" class="CnItem"></div>
+                <div id="LeftWord3" class="CnItem"></div>
+                <div id="EnRightWord3" class="EnItem"></div>
+                <div id="EnLeftWord3" class="EnItem"></div>
+                <div class="SysIcon CnItem"></div>
+                <div class="SysIcon EnItem"></div>
+                <div class="CloseBtn"></div>
+            </div>
+            <div class="SubPage">
+                <div id="RightWord4" class="CnItem"></div>
+                <div id="LeftWord4" class="CnItem"></div>
+                <div id="EnRightWord4" class="EnItem"></div>
+                <div id="EnLeftWord4" class="EnItem"></div>
+                <div class="FrameIcon CnItem"></div>
+                <div class="FrameIcon EnItem"></div>
+                <div class="CloseBtn"></div>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $(".SubPage").hide();
+              $(".YwItem").mouseenter(function () {
+                $(this).children('.cover').stop();
+                $(this).children('.cover').fadeOut({
+                  duration: 1000
+                });
+                $(this).children(".YwBG").stop();
+                $(this).children(".YwBG").animate({
+                  scale: 1.1
+                }, 3000);
+              });
+              $(".YwItem").mouseleave(function () {
+                $(this).children('.cover').stop();
+                $(this).children('.cover').fadeIn({
+                  duration: 1000
+                });
+                $(this).children(".YwBG").stop();
+                $(this).children(".YwBG").animate({
+                  scale: 1
+                }, 3000);
+              });
+
+              var isAnima = false;
+              $(".YwItem").click(function () {
+                if(isAnima)
+                return;
+                isAnima = true;
+                var Ele = ".SubPage:eq(" + $(this).index() + ")";
+                YwItemMoveOut();
+                setTimeout(() => {
+                  isAnima = false;
+                  $(Ele).fadeIn({
+                  duration: 1000
+                });
+                $(".YwItem").stop();
+                $(".YwItem").removeAttr("style");
+                $("#Items").hide();
+                }, 1000);
+              });
+
+              $(".CloseBtn").click(function () {
+                $(".SubPage").fadeOut({
+                  duration: 1000
+                });
+                $("#Items").show();
+              })
+            });
+
+            function YwItemMoveOut(){
+                for(var i=3;i>-1;i--){
+                  $(".YwItem:eq("+i+")").animate({top:"3000px"},(4-i)*500);
+                }
+            }
+          </script>
+        </div>
+        <!--页面内容至此结束-->
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</body>
+
+</html>

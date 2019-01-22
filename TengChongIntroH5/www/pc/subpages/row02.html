@@ -1,0 +1,204 @@
+<!--
+  腾冲专题页著名温泉介绍页
+作者：李洪
+版本：1.0
+时间：2018年10月12日
+-->
+<section class="swiper-slide">
+  <!--页面内容从此开始-->
+  <div class="page">
+    <div class="PageCon">
+      <div class="Mainpage">
+        <div class="topbar">
+          <div id="zmTitle">
+            <p>到“世界温泉朝圣地”，开启一段康养之旅</p>
+          </div>
+        </div>
+        <div class="topbluebar"></div>
+        <div id="zmword" class="anime LeftIn">
+          <p id="zmbig" class="bigtitle">用温泉消解疲惫、愈合身心</p>
+          <p>“一气无冬夏，三秋永驻春。”自古以来，温泉所带来的舒适就为人们所颂扬。</p>
+        </div>
+        <div id="zmword2" class="anime MoveUp autobg">
+          <p>
+            Q1 在家里浴缸放出来的热水，为什么不叫温泉？
+            <br> A 关于温泉
+            <br> 不同于常见的湖水、河水或家里的自来水，温泉是伴随地壳内部的岩浆作用或火山喷发所形成的一种泉水，含有多种活性作用的微量元素并有一定的矿化度，对改善体质，增强抵抗力和预防疾病有显著的促进作用。
+            <br>
+            <br> Q2 温泉具体有些什么功效？
+            <br> A 关于温泉功效
+            <br> 温泉所含丰富的钙、钾、氡等成分对调整心脑血管疾病，对糖尿病、痛风、神经痛、关节炎等均有疗效。比如，富含碳酸钙的温泉对改善体质、恢复体力有显著作用；而硫磺泉则可软化角质，含钠元素的碳酸水有漂白软化肌肤的效果。
+          </p>
+        </div>
+        <div id="zmitem">
+          <div class="zmitem"></div>
+          <div class="zmitem"></div>
+          <div class="zmitem"></div>
+          <div class="search" id="zmsh1"></div>
+          <div class="search" id="zmsh2"></div>
+          <div class="search" id="zmsh3"></div>
+        </div>
+      </div>
+      <div class="Subpage">
+        <div class="subpgsel">
+          <div class="pgsel pgsel_hl">加拿大</div>
+          <div class="pgsel">日本</div>
+          <div class="pgsel">冰岛</div>
+        </div>
+        <div class="wtbg"></div>
+        <div class="subitem">
+          <div id="ca1"></div>
+          <div id="ca2"></div>
+          <div id="ca3"></div>
+          <div id="cades" class="wqdes">
+            <div class="wqbar"></div>
+            <p class="wqtitle">加拿大·镭温泉</p>
+            <p>
+              加拿大最具规模的矿物温泉，
+              <br> 座落于库特尼国家公园南方的瑞迪恩度假胜地，当地温泉的历史就和落基山脉一样久远。
+              <br> 这里的泉水无臭无味、呈现美丽的蓝色泽，富含镭、铁、钠、镁等具有健康疗效的矿物质。
+            </p>
+          </div>
+        </div>
+        <div class="subitem">
+          <div id="jp1"></div>
+          <div id="jp2"></div>
+          <div id="jp3"></div>
+          <div id="jpdes" class="wqdes">
+            <div class="wqbar"></div>
+            <p class="wqtitle">日本·別府温泉</p>
+            <p>
+              别府是日本的著名温泉城市，拥有世界上罕见的丰富温泉资源。
+              <br> 温泉富含碳酸氢盐，有很好的美肤效果，被人称为“美人之汤”。
+              <br> 其泉水涌出量仅次于美国黄石国家公园，居世界第2位。
+              <br> 根据温泉水质分类，世界上温泉共有11种，
+              <br> 而别府就有10种之多，是世界上温泉种类最集中的地区。
+            </p>
+          </div>
+        </div>
+        <div class="subitem">
+          <div id="isl1"></div>
+          <div id="isl2"></div>
+          <div id="isl3"></div>
+          <div id="isldes" class="wqdes">
+            <div class="wqbar"></div>
+            <p class="wqtitle">冰岛·蓝湖温泉</p>
+            <p>
+              蓝湖是冰岛最大的温泉,也是全世界最大的户外天然温泉,
+              <br> 温泉内富含有多种矿物质，具有舒缓精神压力和保健功效。
+              <br> 蓝湖是闻名遐迩的“天然美容院”，在这里泡温泉被称为“地热水疗”，
+              <br> 已成为冰岛旅游非常热门的疗养方式之一。
+            </p>
+          </div>
+        </div>
+
+        <div class="CloseBtn"></div>
+      </div>
+    </div>
+    <script>
+      var idx1 = 0, idx2 = 0, idx3 = 0;
+      var sh1 = null, sh2 = null, sh3 = null;
+      var str1 = "加拿大·镭温泉&nbsp;&nbsp;|&nbsp;",
+        str2 = "日本·别府温泉&nbsp;&nbsp;|&nbsp;",
+        str3 = "冰岛·蓝湖温泉&nbsp;&nbsp;|&nbsp;";
+      $(document).ready(function () {
+        $(".Subpage").hide();
+
+        $(".search").click(function () {
+          $(".Subpage").fadeIn({
+            duration: 1000
+          });
+          $(".Mainpage").fadeOut({
+            duration: 1000
+          });
+          OpenSubpage($(this).index() - 3, 10);
+        });
+
+        $(".pgsel").click(function () {
+          OpenSubpage($(this).index(), 500);
+        });
+
+        $(".CloseBtn").click(function () {
+          $(".Subpage").fadeOut({
+            duration: 1000
+          });
+          $(".Mainpage").fadeIn({
+            duration: 1000
+          });
+        });
+
+        sh1 = setTimeout(ArrowTipAni1, 500);
+        $(".zmitem:eq(0)").prepend("<p id='" + sh1 + "'>" + str1 + "</p>");
+
+        sh2 = setTimeout(ArrowTipAni2, 500);
+        $(".zmitem:eq(1)").prepend("<p id='" + sh2 + "'>" + str2 + "</p>");
+
+        sh3 = setTimeout(ArrowTipAni3, 500);
+        $(".zmitem:eq(2)").prepend("<p id='" + sh3 + "'>" + str3 + "</p>");
+
+      });
+      function ArrowTipAni1() {
+        if (idx1 == -1) {
+          $(".zmitem:eq(0)>#" + sh1).html(str1);
+        } else if (idx1 == 0) {
+          $(".zmitem:eq(0)>#" + sh1).html(str1 + ">");
+        } else if (idx1 == 1) {
+          $(".zmitem:eq(0)>#" + sh1).html(str1 + ">>");
+        } else {
+          $(".zmitem:eq(0)>#" + sh1).html(str1 + ">>>");
+        }
+        idx1++;
+        if (idx1 >= 3)
+          idx1 = -1;
+        clearTimeout(sh1);
+        setTimeout(ArrowTipAni1, 500);
+      }
+
+      function ArrowTipAni2() {
+        if (idx2 == -1) {
+          $(".zmitem:eq(1)>#" + sh2).html(str2);
+        } else if (idx2 == 0) {
+          $(".zmitem:eq(1)>#" + sh2).html(str2 + ">");
+        } else if (idx2 == 1) {
+          $(".zmitem:eq(1)>#" + sh2).html(str2 + ">>");
+        } else {
+          $(".zmitem:eq(1)>#" + sh2).html(str2 + ">>>");
+        }
+        idx2++;
+        if (idx2 >= 3)
+          idx2 = -1;
+        clearTimeout(sh2);
+        setTimeout(ArrowTipAni2, 500);
+      }
+
+      function ArrowTipAni3() {
+        if (idx3 == -1) {
+          $(".zmitem:eq(2)>#" + sh3).html(str3);
+        } else if (idx3 == 0) {
+          $(".zmitem:eq(2)>#" + sh3).html(str3 + ">");
+        } else if (idx3 == 1) {
+          $(".zmitem:eq(2)>#" + sh3).html(str3 + ">>");
+        } else {
+          $(".zmitem:eq(2)>#" + sh3).html(str3 + ">>>");
+        }
+        idx3++;
+        if (idx3 >= 3)
+          idx3 = -1;
+        clearTimeout(sh3);
+        setTimeout(ArrowTipAni3, 500);
+      }
+      function OpenSubpage(index, tm) {
+        $(".pgsel").removeClass("pgsel_hl");
+        $(".pgsel:eq(" + index + ")").addClass("pgsel_hl");
+
+        $(".subitem").fadeOut({
+          duration: tm
+        });
+        $(".subitem:eq(" + index + ")").fadeIn({
+          duration: tm
+        });
+      }
+    </script>
+  </div>
+  <!--页面内容至此结束-->
+</section>

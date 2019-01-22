@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+云游网介绍H5公司简介
+作者：李洪
+版本：1.0
+时间：2017年03月07日
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link href="css/default-shell.css" rel="stylesheet" type="text/css" />
+  <title>公司简介</title>
+</head>
+
+<body class="bg01 page">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide">
+        <!--页面内容从此开始-->
+        <div class="page">
+          <div class="VerInfo CnItem"></div>
+          <div class="VerInfo EnItem"></div>
+          <div id="ItemCon">
+            <div class="IntroItem" onmouseover="Rotate(4)">
+              <div class="IntroBG"></div>
+              <div class="cover"></div>
+              <div class="IntroTitle CnItem"></div>
+              <div class="EnIntroTitle EnItem"></div>
+            </div>
+            <div class="IntroItem" onmouseover="Rotate(1)">
+              <div class="IntroBG"></div>
+              <div class="cover"></div>
+              <div class="IntroTitle CnItem"></div>
+              <div class="EnIntroTitle EnItem"></div>
+            </div>
+            <div class="IntroItem" onmouseover="Rotate(3)">
+              <div class="IntroBG"></div>
+              <div class="cover"></div>
+              <div class="IntroTitle CnItem"></div>
+              <div class="EnIntroTitle EnItem"></div>
+            </div>
+            <div class="IntroItem" onmouseover="Rotate(2)">
+              <div class="IntroBG"></div>
+              <div class="cover"></div>
+              <div class="IntroTitle CnItem"></div>
+              <div class="EnIntroTitle EnItem"></div>
+            </div>
+            <div class="IntroCenter CnItem" onmouseover="Rotate(0.5)">
+              <div class="PointCon">
+                <div id="Point"></div>
+              </div>
+            </div>
+            <div class="IntroCenter EnItem" onmouseover="Rotate(0.5)">
+                <div class="PointCon">
+                  <div id="Point"></div>
+                </div>
+              </div>
+          </div>
+          <div id="IntroSubPages">
+            <div class="IntroSubPage">
+              <div class="TeamIcon CnItem"></div>
+              <div class="TeamIcon EnItem"></div>
+              <div class="TeamDetail CnItem"></div>
+              <div class="TeamDetail EnItem"></div>
+              <div id="TeamWord" class="IntroPageTitle CnItem"></div>
+              <div id="EnTeamWord" class="IntroPageTitle EnItem"></div>
+              <div class="CloseBtn CloseBlack"></div>
+            </div>
+            <div class="IntroSubPage">
+              <div id="QimgScroll" class="swiper-no-swiping">
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+                <div class="qimg"></div>
+              </div>
+              <div id="QualifWord" class="IntroPageTitle CnItem"></div>
+              <div id="EnQualifWord" class="IntroPageTitle EnItem"></div>
+              <div class="CloseBtn CloseBlack"></div>
+              <div id="bigIcon">
+                <img id="showIcon">
+              </div>
+            </div>
+            <div class="IntroSubPage">
+              <div class="CustomIcon CnItem"></div>
+              <div class="CustomIcon EnItem"></div>
+              <div id="CustomWord" class="IntroPageTitle CnItem"></div>
+              <div id="EnCustomWord" class="IntroPageTitle EnItem"></div>
+              <div class="CloseBtn CloseBlack"></div>
+            </div>
+            <div class="IntroSubPage">
+              <div id="PartnerWord" class="IntroPageTitle CnItem"></div>
+              <div id="EnPartnerWord" class="IntroPageTitle EnItem"></div>
+              <div id="PartnerItems">
+                <div class="PartnerItem"></div>
+                <div class="PartnerItem"></div>
+                <div class="PartnerItem"></div>
+                <div class="PartnerItem"></div>
+                <div class="PartnerItem"></div>
+                <div class="PartnerItem"></div>
+                <div class="PartnerItem"></div>
+              </div>
+              <div class="CloseBtn CloseBlack"></div>
+            </div>
+            <div class="IntroSubPage">
+              <div class="YeWuIcon CnItem"></div>
+              <div class="YeWuIcon EnItem"></div>
+              <div id="YeWuIntrWord" class="CnItem"></div>
+              <div id="EnYeWuIntrWord" class="EnItem"></div>
+              <div id="YeWuWord" class="CnItem"></div>
+              <div id="EnYeWuWord" class="EnItem"></div>
+              <div id="EnYeWuTitle" class="IntroPageTitle EnItem"></div>
+              <div class="CloseBtn CloseBlack"></div>
+            </div>
+            <div class="IntroSubPage">
+              <div id="VerLogoIcon"></div>
+              <div class="VerPosWord CnItem"></div>
+              <div class="VerPosWord EnItem"></div>
+              <div class="CloseBtn CloseBlack"></div>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $(".IntroSubPage").hide();
+              $("#bigIcon").hide();
+              $(".IntroItem").mouseenter(function () {
+                $(this).children('.cover').stop();
+                $(this).children('.cover').fadeOut({
+                  duration: 1000
+                });
+                $(this).children(".IntroBG").stop();
+                $(this).children(".IntroBG").animate({
+                  scale: 1.1
+                }, 3000);
+              });
+
+              $(".IntroItem").mouseleave(function () {
+                $(this).children('.cover').stop();
+                $(this).children('.cover').fadeIn({
+                  duration: 1000
+                });
+                $(this).children(".IntroBG").stop();
+                $(this).children(".IntroBG").animate({
+                  scale: 1
+                }, 3000);
+              });
+
+              $(".qimg").click(function () {
+                $("#showIcon").attr("src", "image/row04/03/qIcon/" + ($(this).index() + 1) + ".jpg");
+                $("#bigIcon").fadeIn({ duration: 500 });
+              });
+
+              $("#showIcon,#bigIcon").click(function () {
+                $("#bigIcon").fadeOut({ duration: 500 });
+              });
+
+              $("#ItemCon .IntroItem").click(function () {
+                $(".IntroSubPage:eq(" + $(this).index() + ")").fadeIn({ duration: 500 });
+              });
+
+              $(".IntroCenter").click(function () {
+                $(".IntroSubPage:eq(4)").fadeIn({ duration: 500 });
+              });
+
+              $(".VerInfo").click(function () {
+                $(".IntroSubPage").hide();
+                $("#bigIcon").hide();
+                $(".IntroSubPage:eq(5)").fadeIn({ duration: 500 });
+              });
+
+              $(".CloseBtn").click(function () {
+                $(".IntroSubPage").fadeOut({ duration: 500 });
+              });
+            });
+
+            function Rotate(num) {
+              var angle = num * 90 - 45;
+              $('.PointCon').stop();
+              $('.PointCon').animate({ borderSpacing: angle }, {
+                step: function (now, fx) {
+                  $(this).css('-webkit-transform', 'rotate(' + now + 'deg)');
+                  $(this).css('-moz-transform', 'rotate(' + now + 'deg)');
+                  $(this).css('-ms-transform', 'rotate(' + now + 'deg)');
+                  $(this).css('-o-transform', 'rotate(' + now + 'deg)');
+                  $(this).css('transform', 'rotate(' + now + 'deg)');
+                },
+                duration: "normal"
+              }, 'swing');
+            }
+
+
+          </script>
+        </div>
+        <!--页面内容至此结束-->
+      </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- jquery JS -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+</body>
+
+</html>
